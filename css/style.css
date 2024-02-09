@@ -1,9 +1,214 @@
 * {
    box-sizing: border-box;
 }
+html,
 body {
+   width: 100%; 
    margin: 0;
+   padding: 0;
 }
-.box {
-   min-width: 1920px;
+.body {
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   padding-top: 147px;
+   color: #1F1E1E;
+   font-family: "Open Sans", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   font-style: normal;
+   line-height: 1.375;
+}
+.main {
+   flex: 1 0 auto;
+   padding-top: 147px;
+   
+}
+.page-footer {
+   flex: 0 0 auto;
+}
+
+.page-header__container{
+   box-sizing: border-box;
+   display: flex;
+   align-items: center;
+   width: 100%;
+   max-width: 1414px;
+   margin: 0 auto;
+   padding-left: 40px;
+   padding-right: 40px;
+}
+.page-header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 147px;
+   display: flex;
+   align-items: center;
+   background-color: rgba(222, 222, 222, 0.98);
+   z-index: 100;
+}
+@supports (backdrop-filter: blur(20px)) {
+   .page-header {
+      background-color: rgba(222, 222, 222, 0.5);
+      backdrop-filter: blur(20px);
+   }
+}
+.page-header__logo {
+   flex-shrink: 0;
+   width: 202px;
+   height: 147px;
+   font-size: 0;
+   text-decoration: none;
+}
+.page-header__logo-icon {
+   width: 100%;
+   height: 100%;
+}
+
+.logo {
+   width: 202px;
+   height: 147px;
+}
+.page-header__nav {
+   display: flex;
+   align-items: baseline;
+   margin: 0 auto;
+   font-family: "Open Sans", sans-serif;
+   font-size: 18px;
+   font-weight: 600;
+}
+.page-header__nav-link {
+   margin: 0 25px;
+   color: #1f1e1e;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 25px;
+   text-decoration: none;
+   transition: color 0.2s;
+}
+.page-header__nav-link:hover {
+   color: #bc3324;
+}
+.btn {
+   display: inline-block;
+   box-sizing: border-box;
+   padding: 15px 40px;
+   border: 1px solid #1F1E1E;
+   background-color: transparent;
+   outline: none;
+   color: #1F1E1E;
+   font-family: "Open Sans", sans-serif;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 20px;
+   text-align: center;
+   text-decoration: none;
+   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+   overflow: hidden;
+   cursor: pointer;
+}
+.btn:hover {
+   background-color: #1F1E1E;
+   color: #ffffff;
+}
+.page-header__right-block {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   width: 202px;
+}
+.section__content {
+   box-sizing: border-box;
+   display: block;
+   align-items: center;
+   width: 100%;
+   max-width: 1414px;
+   margin: 0 auto;
+   margin-top: 116px;
+}
+.section__image {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 325px;
+   margin-top: 375px;
+}
+.section__caption {
+   width: 990px;
+   margin-left: 233px;
+   font-weight: 400;
+   font-size: 45px;
+   text-transform: uppercase;
+   text-align: center;
+   font-family: "Lora";
+}
+.caption {
+   margin-top: 449px;
+}
+.section__title {
+   margin: 110px 0 52px;;
+   font-family: "Lora";
+   font-weight: 400;
+   font-size: 22px;
+   line-height: 136%;
+   letter-spacing: 0.02em;
+   text-transform: uppercase;
+   text-align: center;
+}
+div.button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.btn-1,
+.btn-2 {
+   display: inline-block;
+   box-sizing: border-box;
+   padding: 15px 40px;
+   border: 1px solid #1F1E1E;
+   background-color: transparent;
+   outline: none;
+   color: #1F1E1E;
+   font-family: "Open Sans", sans-serif;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 20px;
+   text-align: center;
+   text-decoration: none;
+   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+   overflow: hidden;
+   cursor: pointer;
+}
+.section__event-btn {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   width: 272px;
+   white-space: nowrap;
+   height: 52px;
+   color: #fff;
+   background-color: #BC3324;
+}
+.section__right-block{
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   margin-left: 106px;
+   
+}
+.section__tenant-btn {
+   white-space: nowrap;
+}
+
+.btn-1:hover {
+   background-color: #a51505;
+   color: #fff;
+}
+.btn-2:hover {
+   background-color: #1F1E1E;
+   color: #ffffff;
 }
