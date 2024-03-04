@@ -3,30 +3,288 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="/css/style_event.css">
+   <link rel="icon" type="image/png" href="/img/logo_favicon.png">
    <title>Event</title>
 </head>
 <body>
+   <header class="page-header">
+      <div class="page-header__container">
+         <a href="index.html" class="page-header__logo">
+            <img src="/img/logo.svg" alt="logo" class="page-header__logo-icon">
+         </a>
+         <nav class="page-header__nav">
+            <a href="#" class="page-header__nav-link">Мероприятия</a>
+            <a href="#" class="page-header__nav-link">Блог</a>
+            <a href="#" class="page-header__nav-link">О нас</a>
+            <a href="#" class="page-header__nav-link">Контакты</a>
+         </nav>
+         <div class="page-header__nav-user">
+            <a href="#" class="page-header__nav-user-link">Александр С.</a>
+            <a href="#" class="page-header__nav-logout">
+               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 17L15 12L10 7" stroke="#1F1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M15 12H3" stroke="#1F1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M15 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H15" stroke="#1F1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+               </svg>
+            </a>
+         </div>
+         <!-- <div class="page-header__right-block">
+            <a href="#" class="btn page-header__user-btn">Войти</a>
+         </div> -->
+      </div>
+   </header>
    <main class="main">
-      <!-- Здесь будут хлебные крошки -->
-      <article class="event">
-         <!-- Здесь пропущенное содержимое страницы -->
+      <div class="main__container">
+
+      <article class="event article">
+         <div class="event__container">
+            <div class="event__block">
+               <h4 class="event__block__nav">Главная  / Мероприятия / Вечер | The Best of Sade</h4>
+            </div>
+
+            <div class="article__block">
+               <h1 class="article__title"> Вечер | The Best of Sade</h1>
+
+                  <div class="article__card">
+
+                     <div class="article__card__left">
+                        <div class="article__card__line-left article__card__line-top"></div>
+                        <time datetime="2022-12-16" class="article__card__left__time">
+                           16/12/2022
+                        </time>
+                        <p class="article__card__text">Кафе «Птичка»</p>
+                        <div class="article__card__line-left"></div>
+                     </div>
+
+                     <picture class="article__card__picture">
+                        <img src="/img/best.png" alt="Best" class="article__card__picture__img">
+                     </picture>
+
+                     
+                     <div class="article__card__right">
+                        <div class="article__card__line-right article__card__line-top"></div>
+                        <time datetime="T18:00" class="article__card__right__time">
+                           <span class="article__card__right__upp">20.00</span> начало 
+                        </time>
+                        <p class="article__card__text">Ленина 10 | 2 этаж</p>
+                        <div class="article__card__line-right"></div>
+                     </div>
+
+                  </div>
+
+
+            <div class="article__content content">
+         
+               <h4>Программа мероприятия:</h4>
+               
+               <ul>
+                  <li>20:15 — Приветствие гостей</li>
+                  <li>20:30 — Первая подача блюд | Салаты</li>
+                  <li>20:40 — Живой вокал | Композиции 1-3</li>
+                  <li>21:20 — Подача горячих блюд</li>
+                  <li>21:30 — Живой вокал | Композиции 4-7</li>
+                  <li>22:15 — Подача десерта</li>
+                  <li>22:30 — Живой вокал | Композиции 8-9</li>
+                  <li>23:00 — Завершение вечера</li>
+               </ul>
+
+               <h4>The Best Of Sade</h4>
+               <p>
+                  Первый альбом-компиляция Sade, выпущенный в 1994 году. Он содержит 9 треков, включая самые популярные хиты группы, раритеты и их любимые треки. 
+                  <br>
+                  <br>
+                  Группа продемонстрировала необычайное долголетие и креативность своей творческой карьеры.
+                  Она лидировала музыкальных чартах с 1994 по 1995 год, став четырехкратно платиновой в США и продав более 2 миллионов копий в Европе.
+               </p>
+
+               <ol>
+                  <li>Your Love Is King</li>
+                  <li>Hang On To Your Love</li>
+                  <li>Smooth Operator</li>
+                  <li>Jezebel</li>
+                  <li>The Sweetest Taboo</li>
+                  <li>Is It A Crime</li>
+                  <li>Never As Good As The First Time</li>
+                  <li>Love Is Stronger Than Pride</li>
+                  <li>Paradise</li>
+               </ol>
+               
+            </div>
+         </div>
+
          <form class="reserve event__reserve">
          <div class="reserve__checks">
-            Чекбоксы
+            <h4>Забронировать столик</h4>
+            
+            <div class="form__check-list1">
+               <label class="form__check check">
+                  <input type="checkbox" name="agree" class="check__input" required checked/>
+                  <span class="check__mark"></span>
+                  <span class="check__label check__label--s">
+                  1 стол
+                  </span>
+               </label>
+               <label class="form__check check">
+                  <input type="checkbox" name="agree" class="check__input" required checked/>
+                  <span class="check__mark"></span>
+                  <span class="check__label check__label--s">
+                  2 стол
+                  </span>
+               </label>
+               <label class="form__check check">
+                  <input type="checkbox" name="agree" class="check__input" required checked/>
+                  <span class="check__mark"></span>
+                  <span class="check__label check__label--s">
+                  3 стол
+                  </span>
+               </label>
+               <label class="form__check check">
+                  <input type="checkbox" name="agree" class="check__input" required checked/>
+                  <span class="check__mark"></span>
+                  <span class="check__label check__label--s">
+                  4 стол
+                  </span>
+               </label>
+               <label class="form__check check">
+                  <input type="checkbox" name="agree" class="check__input" required checked/>
+                  <span class="check__mark"></span>
+                  <span class="check__label check__label--s">
+                  5 стол
+                  </span>
+               </label>
+               <label class="form__check check">
+                  <input type="checkbox" name="agree" class="check__input" required checked/>
+                  <span class="check__mark"></span>
+                  <span class="check__label check__label--s">
+                  6 стол
+                  </span>
+               </label>
+               <label class="form__check check">
+                  <input type="checkbox" name="agree" class="check__input" required checked/>
+                  <span class="check__mark"></span>
+                  <span class="check__label check__label--s">
+                  7 стол
+                  </span>
+               </label>
+               <label class="form__check check">
+                  <input type="checkbox" name="agree" class="check__input" required checked/>
+                  <span class="check__mark"></span>
+                  <span class="check__label check__label--s">
+                  8 стол
+                  </span>
+               </label>
+               <label class="form__check check">
+                  <input type="checkbox" name="agree" class="check__input" required checked/>
+                  <span class="check__mark"></span>
+                  <span class="check__label check__label--s">
+                  9 стол
+                  </span>
+               </label>
+               <label class="form__check check">
+                  <input type="checkbox" name="agree" class="check__input" required checked/>
+                  <span class="check__mark"></span>
+                  <span class="check__label check__label--s">
+                  10 стол
+                  </span>
+               </label>
+               <label class="form__check check">
+                  <input type="checkbox" name="agree" class="check__input" required checked/>
+                  <span class="check__mark"></span>
+                  <span class="check__label check__label--s">
+                  11 стол
+                  </span>
+               </label>
+            </div>
          </div>
          <div class="reserve__scheme">
-            Схема столов
+            <h4>Сцена</h4>
+            <picture>
+               <img src="img/карта_заведения.png" alt="карта_заведения">
+            </picture>
          </div>
          <div class="reserve__order">
+            <h4>Ваши пригласительные билеты</h4>
             Оформление заказа
          </div>
          <div class="reserve__legend">
+            <h4>Стоимость пригласительного билета</h4>
             Легенда
          </div>
          </form>
+      </div>
       </article>
+   
+   </div>
    </main>
+
+   <footer class="page-footer">
+      <!-- Две линии -->
+         <div class="page-footer__line ">
+            <div class="footer-line__left"></div>
+            <div class="footer-line__right"></div>
+         </div>
+         <!-- сам футер -->
+         <div class="page-footer__container footer">
+            
+            <div class="page-footer__content-1 footer-listing">
+            <div class="page-footer__nav">
+               <ul class="page-footer__nav-list">
+                  <li><a href="#" class="page-footer__nav-link">Календарь мероприятий</a></li>
+                  <li><a href="#" class="page-footer__nav-link">Провести мероприятие</a></li>
+                  <li><a href="#" class="page-footer__nav-link">Стать арендатором</a></li>
+                  <li><a href="#" class="page-footer__nav-link">Наши проекты</a></li>
+                  <li><a href="#" class="page-footer__nav-link">Контакты</a></li>
+               </ul>
+            </div>
+            <div class="page-footer__form">
+               <form action="" method="post" class="form">
+                  <label class="form__first field">
+                     <span class="field__text">Подпишись и будь в курсе происходящего</span>
+                  </label>
+                  <label class="form__first field-2">
+                     <div class="field-2__div">
+                        <input type="email" placeholder="Email" name="email" class="page-footer__field">
+                        <button class="page-footer__button footer-btn">Подписаться</button>
+                     </div>
+                  </label>
+                  <label class="check">
+                     <input id="check" type="checkbox" class="page-footer__input" required checked>
+                     <span class="check__mark"></span>
+                     <span class="check__label check__label--s">Согласен на обработку персональных данных</span>
+                  </label> 
+               </form>
+            </div>
+            </div>
+   
+            <div class="page-footer__content-2">
+               <div class="footer-navigation">
+                  <div class="page-footer__copy">
+                     <p class="page-footer__copy-text">&copy; Millennials 2022</p>
+                  </div>
+                  <div class="page-footer__navigation1">
+                     <a href="#" class="footer-navigation__link footer-link">Политика конфиденциальности</a>
+                     <a href="#" class="footer-navigation__link footer-link link1">Cookies</a>
+                  </div>
+                  <div class="page-footer__image">
+                     <a href="#" class="footer-navigation__link ">
+                        <img src="/img/insta.svg" alt="insta" class="footer-navigation__img">
+                        <img src="/img/vk.svg" alt="vk" class="footer-navigation__img-vk">
+                     </a>
+                  </div>
+                  <div class="page-footer__navigation2">
+                     <a href="#" class="footer-navigation__link footer-link">Создание и продвижение</a>
+                     <a href="#" class="footer-navigation__link">
+                        <img src="/img/tagree.png" alt="logo" class="page-footer__logo">
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+   </footer>
 
 
 </body>

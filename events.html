@@ -3,10 +3,15 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="/css/style_events.css">
+   <link rel="icon" type="image/png" href="/img/logo_favicon.png">
    <title>Events</title>
 </head>
 <body class="body">
+   <!-- Header -->
    <header class="page-header">
       <div class="page-header__container">
          <a href="index.html" class="page-header__logo">
@@ -18,17 +23,29 @@
             <a href="#" class="page-header__nav-link">О нас</a>
             <a href="#" class="page-header__nav-link">Контакты</a>
          </nav>
-         <div class="page-header__right-block">
-            <a href="#" class="btn page-header__user-btn">Войти</a>
+         <div class="page-header__nav-user">
+            <a href="#" class="page-header__nav-user-link">Александр С.</a>
+            <a href="#" class="page-header__nav-logout">
+               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 17L15 12L10 7" stroke="#1F1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M15 12H3" stroke="#1F1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M15 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H15" stroke="#1F1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+               </svg>
+            </a>
          </div>
+         <!-- <div class="page-header__right-block">
+            <a href="#" class="btn page-header__user-btn">Войти</a>
+         </div> -->
       </div>
    </header>
-
+   <!-- Main -->
    <main class="main">
-
-
-   <div class="events">
+   <!-- Секция - Мероприятия -->
+   <div class="events">  
    <section class="section-events listing">
+      <div class="listing-main">
+         <h4 class="listing-main__title">Главная  / Мероприятия</h4>
+      </div>
       <div class="section-events__container">
          <h2 class="section-events__title section-title">Мероприятия</h2>
          <div class="section-events__list">
@@ -116,16 +133,257 @@
                   </time>
                </a>
             </article>
-            <div class="event-card__slider">
-               <img src="" alt="slider">
+      </div>
+      <div class="section-events__button">
+         <a href="#" class="section-events__logout">
+            Показать еще
+            <svg width="62" height="92" viewBox="0 0 62 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M9.78681 40C5.59124 44.1781 2.73401 49.5013 1.57646 55.2966C0.418903 61.0918 1.013 67.0986 3.28363 72.5576C5.55426 78.0166 9.39943 82.6824 14.3329 85.9651C19.2664 89.2479 25.0666 91 31 91C36.9334 91 42.7336 89.2479 47.6671 85.9651C52.6006 82.6824 56.4457 78.0166 58.7164 72.5576C60.987 67.0986 61.5811 61.0918 60.4235 55.2965C59.266 49.5013 56.4088 44.1781 52.2132 40" stroke="#1F1E1E" stroke-width="2" stroke-linecap="round"/>
+               <g clip-path="url(#clip0_24657_1926)">
+               <path d="M31 5L31 65" stroke="#1F1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+               <path d="M38 58L31 65L24 58" stroke="#1F1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+               </g>
+               <defs>
+               <clipPath id="clip0_24657_1926">
+               <rect width="70" height="24" fill="white" transform="translate(43) rotate(90)"/>
+               </clipPath>
+               </defs>
+            </svg>
+         </a>
+      </div>
+      </div>
+   </section>
+   <!-- Секция - дополнительные услуги -->
+   <section class="section-services">
+      <div class="section-services__container services">
+         <h2 class="section-services__title section-title">Дополнительные услуги</h2>
+         <div class="section-services__content">
+            <p class="section-services__text">
+               Перед запуском проекта, мы подготавливаем подробную смету и согласуем ее с клиентом. Убедившись, что <br> все пожеланию учтены и мы можем приступать к реализациии проекта, начинается сложная, но интересная <br> работа, результатом которой будет проведение вашего мероприятия на высшем уровне.
+            </p>
+            <!-- таблица -->
+            <table class="section-services__table table">
+               <thead class="table__thead">
+                  <tr class="table__thead-tr">
+                     <th class="table__th"></th>
+                     <th class="table__th">Тариф «Light»</th>
+                     <th class="table__th">Тариф «Promo»</th>
+                     <th class="table__th">Тариф «All stars»</th>
+                  </tr>
+               </thead>
+               <tbody class="table__tbody">
+                  <tr class="table__tr">
+                     <th class="table__body-th">Стоимость за час</th>
+                     <td class="table__td">1 000 ₽</td>
+                     <td class="table__td">3 000 ₽</td>
+                     <td class="table__td">3 000 ₽</td>
+                  </tr>
+                  <tr class="table__tr">
+                     <th class="table__body-th">Ведущий мероприятия</th>
+                     <td class="table__td"></td>
+                     <td class="table__td">
+                     <span class="ok"></span>
+                     </td>
+                     <td class="table__td">
+                        <span class="ok"></span>
+                     </td>
+                  </tr>
+                  <tr class="table__tr">
+                     <th class="table__body-th">Фотосъемка</th>
+                     <td class="table__td">
+                        <span class="ok"></span>
+                     </td>
+                     <td class="table__td">
+                        <span class="ok"></span>
+                     </td>
+                     <td class="table__td">
+                        <span class="ok"></span>
+                     </td>
+                  </tr>
+                  <tr class="table__tr">
+                     <th class="table__body-th">Видеосъемка</th>
+                     <td class="table__td"></td>
+                     <td class="table__td"></td>
+                     <td class="table__td">
+                        <span class="ok"></span>
+                     </td>
+                  </tr>
+                  <tr class="table__tr">
+                     <th class="table__body-th">Организация питания</th>
+                     <td class="table__td"></td>
+                     <td class="table__td">
+                        <span class="ok"></span>
+                     </td>
+                     <td class="table__td">
+                        <span class="ok"></span>
+                     </td>
+                  </tr>
+                  <tr class="table__tr">
+                     <th class="table__body-th">Декор</th>
+                     <td class="table__td"></td>
+                     <td class="table__td"></td>
+                     <td class="table__td">
+                        <span class="ok"></span>
+                     </td>
+                     </tr>
+                  <tr class="table__tr">
+                     <th class="table__body-th">Звуковое сопровождение</th>
+                     <td class="table__td"></td>
+                        <td class="table__td">
+                        <span class="ok"></span>
+                     </td>
+                     <td class="table__td">
+                        <span class="ok"></span>
+                     </td>
+                  </tr>
+                  <tr class="table__tr">
+                     <th class="table__body-th">Дополнительное освещение</th>
+                     <td class="table__td"></td>
+                     <td class="table__td"></td>
+                     <td class="table__td">
+                        <span class="ok"></span>
+                     </td>
+                  </tr>
+               
+                  <tr class="table__tr">
+                     <th class="table__body-th">Клининг</th>
+                     <td class="table__td"></td>
+                     <td class="table__td"></td>
+                     <td class="table__td">
+                        <span class="ok"></span>
+                     </td>
+                  </tr>
+               </tbody>
+               <tfoot class="table__tfoot">
+                  <tr class="table__footer-tr">
+                     <th class="table__footer-th"></th>
+                     <th class="table__footer-th">Тариф «Light»</th>
+                     <th class="table__footer-th">Тариф «Promo»</th>
+                     <th class="table__footer-th">Тариф «All stars»</th>
+                  </tr>
+               </tfoot>
+            </table>
+         </div>
+         <!-- Кнопки -->
+         <div class="section-services__contacts">
+            <div class="section-services__title-btn">
+               <h3 class="section-services__title-choice">Я хочу:</h3>
             </div>
-               <div class="section-events__btn-card">
-                  <a href="#" class="ssection-events__btn-right">Смотреть все</a>
+            <div class="section-services__block-btn">
+               <div class="section-services__left-block">
+                  <a href="#" class="btn section-services__event-btn">Провести мероприятие</a>
+               </div>
+               <div class="section-services__right-block">
+                  <a href="#" class="btn section-services__tenant-btn">Стать арендатором</a>
                </div>
             </div>
-      </div>
+         </div>
+         <!-- Карточки - контакты -->
+         <div class="section-services__list service">
+            <article class="service-card section-services__prices">
+               <a href="#" class="service-card__link">
+                  <picture class="service-card__picture">
+                     <img src="img/information.png" alt="information" class="service-card__img"/>
+                  </picture>
+                  <h4 class="service-card__title">Цены</h4>
+                  <p class="service-card__description">
+                     Цены, указанные на сайте носят<br>информационный характер. Мы придерживаемся индивидуального подхода в работе с клиентом.
+                  </p>
+               </a>
+            </article>
+            <article class="service-card section-services__contact">
+               <a href="#" class="service-card__link">
+                  <picture class="service-card__picture">
+                     <img src="img/contact.png" alt="contact" class="service-card__img"/>
+                  </picture>
+                  <h4 class="service-card__title">Контакты</h4>
+               </a>
+                  <p class="service-card__description">
+                     Отдел организации мероприятий
+                     <a href="tel:+74993500730" class="service-card__link cservices-list__text">+7 499 350 0730</a>
+                     <a href="mailto:hi@tagree.ru" class="service-card__link services-list__text">hi@tagree.ru</a>
+                  </p>
+               
+            </article>
+            <article class="service-card section-services__handshake">
+               <a href="#" class="service-card__link">
+                  <picture class="service-card__picture">
+                     <img src="img/handshake.png" alt="handshake" class="service-card__img"/>
+                  </picture>
+                  <h4 class="service-card__title">Преимущество</h4>
+                  <p class="service-card__description">
+                     Мы имеем все возможности для того, чтобы помочь как малому бизнесу и молодым талантам, <br>так и большим корпорациям и холдингам.
+                  </p>
+               </a>
+            </article>
+      </div> 
+      </div>   
    </section>
    </div>
 </main>
+<footer class="page-footer">
+   <!-- Две линии -->
+      <div class="page-footer__line ">
+         <div class="footer-line__left"></div>
+         <div class="footer-line__right"></div>
+      </div>
+      <!-- сам футер -->
+      <div class="page-footer__container footer">
+         
+         <div class="page-footer__content-1 footer-listing">
+         <div class="page-footer__nav">
+            <ul class="page-footer__nav-list">
+               <li><a href="#" class="page-footer__nav-link">Календарь мероприятий</a></li>
+               <li><a href="#" class="page-footer__nav-link">Провести мероприятие</a></li>
+               <li><a href="#" class="page-footer__nav-link">Стать арендатором</a></li>
+               <li><a href="#" class="page-footer__nav-link">Наши проекты</a></li>
+               <li><a href="#" class="page-footer__nav-link">Контакты</a></li>
+            </ul>
+         </div>
+         <div class="page-footer__form">
+            <form action="" method="post" class="form">
+               <label class="form__first field">
+                  <span class="field__text">Подпишись и будь в курсе происходящего</span>
+               </label>
+               <label class="form__first field-2">
+                  <div class="field-2__div">
+                     <input type="email" placeholder="Email" name="email" class="page-footer__field">
+                     <button class="page-footer__button footer-btn">Подписаться</button>
+                  </div>
+               </label>
+               <label class="check">
+                  <input id="check" type="checkbox" class="page-footer__input" required checked>
+                  <span class="check__mark"></span>
+                  <span class="check__label check__label--s">Согласен на обработку персональных данных</span>
+               </label> 
+            </form>
+         </div>
+         </div>
+
+         <div class="page-footer__content-2">
+            <div class="footer-navigation">
+               <div class="page-footer__copy">
+                  <p class="page-footer__copy-text">&copy; Millennials 2022</p>
+               </div>
+               <div class="page-footer__navigation1">
+                  <a href="#" class="footer-navigation__link footer-link">Политика конфиденциальности</a>
+                  <a href="#" class="footer-navigation__link footer-link link1">Cookies</a>
+               </div>
+               <div class="page-footer__image">
+                  <a href="#" class="footer-navigation__link ">
+                     <img src="/img/insta.svg" alt="insta" class="footer-navigation__img">
+                     <img src="/img/vk.svg" alt="vk" class="footer-navigation__img-vk">
+                  </a>
+               </div>
+               <div class="page-footer__navigation2">
+                  <a href="#" class="footer-navigation__link footer-link">Создание и продвижение</a>
+                  <a href="#" class="footer-navigation__link">
+                     <img src="/img/tagree.png" alt="logo" class="page-footer__logo">
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+</footer>
 </body>
 </html>

@@ -6,15 +6,17 @@
    <title>Lenni Art</title>
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="/css/style.css">
+   <link rel="icon" type="image/png" href="/img/logo_favicon.png">
 </head>
 <body class="body">
+
       <!-- Шапка сайта -->
       <header class="page-header">
          <div class="page-header__container">
             <a href="index.html" class="page-header__logo">
-               <img src="/img/logo.svg" alt="logo" class="page-header__logo-icon">
+               <img src="img/logo.svg" alt="logo" class="page-header__logo-icon">
             </a>
             <nav class="page-header__nav">
                <a href="#" class="page-header__nav-link">Мероприятия</a>
@@ -22,37 +24,55 @@
                <a href="#" class="page-header__nav-link">О нас</a>
                <a href="#" class="page-header__nav-link">Контакты</a>
             </nav>
+
+            <!-- <div class="page-header__nav-user">
+               <a href="#" class="page-header__nav-user-link">Александр С.</a>
+               <a href="#" class="page-header__nav-logout">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M10 17L15 12L10 7" stroke="#1F1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                     <path d="M15 12H3" stroke="#1F1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                     <path d="M15 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H15" stroke="#1F1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+               </a>
+            </div> -->
+            
             <div class="page-header__right-block">
                <a href="#" class="btn page-header__user-btn">Войти</a>
             </div>
          </div>
       </header>
+
       <!-- Основное содержимое страницы -->
       <main class="main">
          <div class="main__container">
-      <!-- Арт пространство  -->
-         <section class="section-lenni">
-               <div class="section-lenni__container lenni-art">
-                  <div class="section-lenni__content">
-                     <h1 class="section-lenni__caption">
-                        <span class="lenni__caption caption-1">Арт - Пространство</span>
-                        <span class="lenni__caption caption-2">Для людей, горящих сердцем и делом <br> место для настоящего</span>
-                     </h1>
-                  </div>
-               <div class="lenni-image">
-                  <img src="/img/LENNI.png" alt="image" class="section-lenni__image">
+      <!-- Постер - Арт пространство  -->
+         <section class="section-poster">
+            <div class="section-poster__container poster">
+               <div class="section-poster__title poster-title">
+                  <h1 class="poster-title__main">
+                     <span class="poster-title__span poster-title__main-top">Арт - Пространство</span>
+                     <span class="poster-title__span poster-title__main-bottom">Для людей, горящих сердцем и делом <br> место для настоящего</span>
+                  </h1> 
                </div>
-               <div class="section-lenni__text">
-                  <h3 class="section-lenni__title">Я хочу:</h3>
+
+               <div class="section-poster__image">
+                  <img src="img/LENNI.png" alt="image" class="section-poster__img">
                </div>
-               <div class="lenni-button button">
-                  <div class="section-lenni__left-block">
-                     <a href="#" class="btn-1 section__event-btn">Провести мероприятие</a>
+
+               <div class="section-poster__buttons">
+                  <div class="section-poster__title-btn">
+                     <h3 class="section-poster__title-choice">Я хочу:</h3>
                   </div>
-                  <div class="section-lenni__right-block">
-                     <a href="#" class="btn-2 section__tenant-btn">Стать арендатором</a>
+                  <div class="section-poster__block-btn">
+                     <div class="section-poster__left-block">
+                        <a href="#" class="btn section-poster__event-btn">Провести мероприятие</a>
+                     </div>
+                     <div class="section-poster__right-block">
+                        <a href="#" class="btn section-poster__tenant-btn">Стать арендатором</a>
+                     </div>
                   </div>
                </div>
+               
             </div>
          </section>
       <!-- О нас -->
@@ -62,20 +82,29 @@
                <div class="section-about__listing">
                   <div class="section-about__content">
                      <h2 class="section-about__title">Проект «Millennials»</h2>
-                        <p class="section-about__text">Вдохновлен молодыми идейными людьми, увлеченными творчеством, эмоциями и желанием сделать мир лучше, проявить себя. У них есть талант и стремление, у нас возможность помочь им воплотить их мечту в реальность.
+                        <p class="section-about__text-1 about-text">Вдохновлен молодыми идейными людьми, увлеченными творчеством, эмоциями и желанием сделать мир лучше, проявить себя. У них есть талант и стремление, у нас возможность помочь им воплотить их мечту в реальность.
                         </p>
                   </div>
-                  <div class="section-about__image">
-                     <img src="/img/pic.png" alt="image" class="section-about__image-left">
-                     <img src="/img/pic1.png" alt="image" class="section-about__image-right">
-                  </div>
+
                   <div class="section-about__content-2">
-                     <h2 class="section-about__title title-about">Мы предоставляем площади для вашего мероприятия</h2>
-                        <p class="section-about__text about-text">
-                           И оказываем помощь с организацией, если вам это нужно.<br>
-                           Наша цель: вовлечь в культурную жизнь города как можно больше людей, помочь молодым <br> ребятам сделать первые шаги к своей мечте и рассказать всем о том,    что их волнует.
+                     <picture class="section-about__picture1">
+                        <img src="/img/pic.png" alt="image" class="section-about__image-left">
+                     </picture>
+                     <picture class="section-about__picture2">
+                        <img src="/img/pic1.png" alt="image" class="section-about__image-right">
+                     </picture>
+                     <div class="section-about__title-content">
+                        <h2 class="section-about__title">Мы предоставляем площади для вашего мероприятия</h2>
+                     </div>
+                     <div class="section-about__text-content">
+                        <p class="section-about__text-2 about-text">
+                           И оказываем помощь с организацией, если вам это нужно. <br>
+                        Наша цель: вовлечь в культурную жизнь города как можно больше людей, помочь молодым <br>
+                        ребятам сделать первые шаги к своей мечте и рассказать всем о том,    что их волнует.
                         </p>
+                     </div>
                   </div>
+
                   <div class="section-about__content-3">
                      <div class="section-about__image-2">
                         <img src="/img/pic2.png" alt="image" class="section-about__image-left-2">
@@ -190,6 +219,7 @@
                   <!-- <div class="event-card__slider">
                            <img src="/img/slider.svg" alt="slider">
                         </div> -->
+                        
                   </div>
                   <div class="section-events__btn-card">
                      <a href="#" class="section-events__btn-right">Смотреть все</a>
@@ -260,9 +290,9 @@
                      </div>
                   </a>
                </article>
-            </div>
-            <div class="blog-card__btn">
-               <a href="#" class="blog-card__btn-right">Смотреть все</a>
+               <div class="blog-card__btn">
+                  <a href="#" class="blog-card__btn-right">Смотреть все</a>
+               </div>
             </div>
          </div>
       </section>
@@ -314,16 +344,20 @@
                   </div>
                </div>  
          </div> 
-      </section>
-         
+      </section> 
       <!-- Секция Цитата -->
-         <section class="section-quote">
-            
-            <pucture class="section-quote__pucture quote">
-               <img src="/img/quote.png" alt="quote" class="section-quote__img">
-            </pucture>
-         </section>
+      
+      <section class="section-quote">
+         <div class="section-quote__container">
+            <blockquote class="section-quote__blockqoute">
+               <h2 class="section-quote__title">
+                  <span class="section-quote__top">Просто делайте, что нравится</span>
+                  <span class="section-quote__bottom">а мы вам поможем</span>
+               </h2> 
+            </blockquote>
          </div>
+      </section>
+      </div>
       </main>
 
       <!-- Секция Футер -->
@@ -332,12 +366,9 @@
             <div class="page-footer__line">
                <div class="footer-line__left"></div>
                <div class="footer-line__right"></div>
-               
             </div>
             <!-- сам футер -->
-
             <div class="page-footer__container footer">
-
                <div class="page-footer__content-nav nav-container">
                <div class="page-footer__nav">
                   <ul class="page-footer__nav-list">
@@ -362,37 +393,36 @@
                      <label class="check">
                         <input id="check" type="checkbox" class="page-footer__input" required checked>
                         <span class="check__mark"></span>
-                        <span class="check__label check__label-1">Согласен на обработку персональных данных</span>
-                     </label>
-                     
+                        <span class="check__label check__label--s">Согласен на обработку персональных данных</span>
+                     </label> 
                   </form>
                </div>
                </div>
-      
+
                <div class="page-footer__content-2">
-                  <div class="page-footer__nav-2 footer-nav">  
-                     <nav class="pafe-footer__navigation footer-navigation">
-                        <div>
-                           <div class="page-footer__copy"> &copy; Millennials 2022</div>
-                           <a href="#" class="footer-navigation__link footer-link">Политика конфиденциальности</a>
-                           <a href="#" class="footer-navigation__link footer-link link1">Cookies</a>
-                        </div>
-                        <div class="footer-image">
-                           <a href="#" class="footer-navigation__link ">
+                  <div class="footer-navigation">
+                     <div class="page-footer__copy">
+                        <p class="page-footer__copy-text">&copy; Millennials 2022</p>
+                     </div>
+                     <div class="page-footer__navigation1">
+                        <a href="#" class="footer-navigation__link footer-link">Политика конфиденциальности</a>
+                        <a href="#" class="footer-navigation__link footer-link link1">Cookies</a>
+                     </div>
+                     <div class="page-footer__image">
+                        <a href="#" class="footer-navigation__link ">
                            <img src="/img/insta.svg" alt="insta" class="footer-navigation__img">
                            <img src="/img/vk.svg" alt="vk" class="footer-navigation__img-vk">
                         </a>
-                        </div>
-                        <div>
-                           <a href="#" class="footer-navigation__link footer-link">Создание и продвижение</a>
-                           <a href="#" class="footer-navigation__link">
-                              <img src="/img/tagree.png" alt="logo" class="page-footer__logo">
-                           </a>
-                        </div>
-                     </nav>
+                     </div>
+                     <div class="page-footer__navigation2">
+                        <a href="#" class="footer-navigation__link footer-link">Создание и продвижение</a>
+                        <a href="#" class="footer-navigation__link">
+                           <img src="/img/tagree.png" alt="logo" class="page-footer__logo">
+                        </a>
+                     </div>
                   </div>
                </div>
             </div>
-
+      </footer>
 </body>
 </html>
