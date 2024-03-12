@@ -1,6 +1,6 @@
 @font-face {
-   font-family: "MAK";
-   src: url(/src/assets/fonts/mak-bold.woff);
+   font-family: Mak;
+   src: url(/src/assets/fonts/MAK-bold.otf);
 }
 /* Сброс дефолтных стилей */
 * {
@@ -84,6 +84,7 @@ body {
 }
 .page-header__nav-link {
    /* margin: 0 50px; */
+   
    color: #1f1e1e;
    font-weight: 600;
    font-size: 18px;
@@ -383,7 +384,6 @@ s.ection-poster__box__right-block {
    position: relative;
    padding: 50px 0 50px;
    width: 100%;
-   background-color: rgba(255, 255, 255, 0.6);
 }
 .section-events::before,
 .section-events::after {
@@ -689,7 +689,7 @@ p.blog-card__description {
 .doit__text {
    position: relative;
    margin: 0 0 0 -2.5vw;
-   font-family: "MAK", serif;
+   font-family: "Mak", sans-serif;
    color: #1f1e1e;
    font-weight: 700;
    font-size: 128px; 
@@ -913,6 +913,55 @@ p.blog-card__description {
 .footer-link:hover {
    color: #bc3324;
 }
+.page-footer {
+   position: relative;
+   display: inline-block;
+   width: 100%;
+}
+.page-footer__line {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 140px;
+}
+.footer-line__left {
+   border: 2px solid;
+   border-radius: 5px;
+   border-image: linear-gradient(to right, #dedede80 36%, #1f1e1e);
+   width: 618px;
+   border-image-slice: 1;
+}
+.footer-line__right {
+   border: 2px solid;
+   border-radius: 5px;
+   border-image: linear-gradient(to left, #dedede80 20%, #1f1e1e);
+   width: 618px;
+   border-image-slice: 1;
+}
+
+/* .page-footer__line {
+   position: relative;
+   
+}
+.page-footer__line::before,
+.page-footer__line::after {
+   content: "";
+   display: block;
+   position: absolute;
+   top: 0;
+   width: 0;
+   height: 0;
+   border-bottom: 2px solid #dedede80;
+}
+.page-footer__line::before {
+   left: 0;
+   border-right: 40vw solid transparent;
+   border-image: linear-gradient(to right, #dedede80 36%, #1f1e1e);
+}
+.page-footer__line::after {
+   right: 0;
+   border-left: 40vw solid transparent;
+   border-image: linear-gradient(to left, #dedede80 36%, #1f1e1e);
+} */
 .page-footer__line {
    display: flex;
 }

@@ -1,7 +1,10 @@
-/img
-/fonts
-/font_css
-/indexxx.html
+node_modules
+assets/
+css/
+fontawesome/
+indexxx.html
+test.html
+
 
 
 
