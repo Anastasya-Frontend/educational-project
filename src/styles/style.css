@@ -916,7 +916,7 @@ p.blog-card__description {
    display: inline-block;
    width: 100%;
 }
-.page-footer__line {
+/* .page-footer__line {
    display: flex;
    justify-content: space-between;
    margin-top: 140px;
@@ -934,7 +934,7 @@ p.blog-card__description {
    border-image: linear-gradient(to left, #dedede80 20%, #1f1e1e);
    width: 618px;
    border-image-slice: 1;
-}
+} */
 
 /* .page-footer__line {
    position: relative;
