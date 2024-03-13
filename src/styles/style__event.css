@@ -705,19 +705,19 @@ td {
 }
 .page-footer__line {
    display: flex;
-   justify-content: space-between;
 }
-.footer-line__left {
-   border: 2px solid;
-   border-radius: 5px;
-   border-image: linear-gradient(to right, #dedede80 36%, #1f1e1e);
-   width: 618px;
-   border-image-slice: 1;
+.page-footer__line::before,
+.page-footer__line::after {
+   content: "";
+   flex-grow: 1;
+   width: 2px;
+   height: 2px;
 }
-.footer-line__right {
-   border: 2px solid;
-   border-radius: 5px;
-   border-image: linear-gradient(to left, #dedede80 20%, #1f1e1e);
-   width: 618px;
-   border-image-slice: 1;
+.page-footer__line::before {
+   margin-right: 50px;
+   background: linear-gradient(to left, #1C1B1B 0%, rgba(255, 255, 255, 0) 82.86% );
 }
+.page-footer__line::after {
+   margin-left: 50px;
+   background: linear-gradient(to right, #1C1B1B 0%, rgba(255, 255, 255, 0) 82.86% );
+} 
