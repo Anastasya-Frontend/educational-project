@@ -19,7 +19,7 @@
                </h2>
                <div class="section-poster__box">
                   <picture class="section-poster__picture">
-                     <img src="/src/assets/images/LENNI.png" alt="image" class="section-poster__img">
+                     <img src="assets/images/LENNI.png" alt="image" class="section-poster__img">
                   </picture>
                   <div class="section-poster__box__button section-poster__btn">
                      <h4 class="section-poster__box__title">Я хочу:</h4>
@@ -46,10 +46,10 @@
                   </div>
                   <div class="section-about__block2">
                      <picture class="section-about__picture1">
-                        <img src="/src/assets/images/pic.png" alt="image" class="section-about__image-left">
+                        <img src="assets/images/pic.png" alt="image" class="section-about__image-left">
                      </picture>
                      <picture class="section-about__picture2">
-                        <img src="/src/assets/images/pic1.png" alt="image" class="section-about__image-right">
+                        <img src="assets/images/pic1.png" alt="image" class="section-about__image-right">
                      </picture>
                      <h2 class="section-about__title section-about__content-2__title">Мы предоставляем площади для вашего мероприятия</h2>
                      <p class="section-about__text-2 about-text section-about__text-content">
@@ -60,7 +60,7 @@
                   </div>
                   <div class="section-about__block3">
                      <picture class="section-about__image-2">
-                        <img src="/src/assets/images/pic_1.png" alt="image" class="section-about__image-left2">
+                        <img src="assets/images/pic_1.png" alt="image" class="section-about__image-left2">
                      </picture>
                      <div class="section-about__content-btn">
                         <p class="section-about__text-3">
@@ -68,15 +68,17 @@
                         </p>
                         <a href="#" class="section-about__btn-right"> 
                            <span class="section-about__btn-text">Смотреть</span>
-                           <div class="section-about__image-link">
-                              <img src="/src/assets/svg-sprite/link.svg" alt="link" class="section-about__svg">
-                           </div>
+                           <picture class="section-about__image-link">
+                              <svg class="section-about__svg" width="92" height="62">
+                                 <use xlink:href="assets/icons/symbols.svg#link"></use>
+                              </svg>
+                           </picture>
                         </a>
                      </div>
                      <!-- сделать так, чтобы менялся цвет svg при наведении -->
                   </div>
                </div>
-         </div>
+               </div>
             </section>
       <!-- Мероприятия  -->   
             <div class="lines">
@@ -87,7 +89,7 @@
                      <article class="event-card listing__event-card">
                         <a href="#" class="event-card__link">
                            <picture class="event-card__picture">
-                              <img src="/src/assets/images/nirvana.png" alt="nirvana" class="event-card__img" />
+                              <img src="assets/images/nirvana.png" alt="nirvana" class="event-card__img" />
                            </picture>
                            <h4 class="event-card__title">Собираемся и слушаем альбом Nirvana</h4>
                            <p class="event-card__description">
@@ -101,7 +103,7 @@
                      <article class="event-card listing__event-card">
                         <a href="#" class="event-card__link">
                            <picture class="event-card__picture">
-                              <img src="/src/assets/images/HowStuffWorks.png" alt="HowStuffWorks" class="event-card__img" />
+                              <img src="assets/images/HowStuffWorks.png" alt="HowStuffWorks" class="event-card__img" />
                            </picture>
                            <h4 class="event-card__title">Есть тема, нужно обсудить с HowStuffWorks</h4>
                            <p class="event-card__description">
@@ -115,7 +117,7 @@
                      <article class="event-card listing__event-card">
                         <a href="#" class="event-card__link">
                            <picture class="event-card__picture">
-                              <img src="/src/assets/images/the_best_of_sade.png" alt="the_best_of_sade" class="event-card__img" />
+                              <img src="assets/images/the_best_of_sade.png" alt="the_best_of_sade" class="event-card__img" />
                            </picture>
                            <h4 class="event-card__title">Вечер | The Best of Sade</h4>
                            <p class="event-card__description">
@@ -129,7 +131,7 @@
                      <!-- <article class="event-card listing__event-card">
                         <a href="#" class="event-card__link">
                            <picture class="event-card__picture">
-                              <img src="/src/assets/images/выставка.png" alt="exhibition" class="event-card__img"/>
+                              <img src="assets/images/выставка.png" alt="exhibition" class="event-card__img"/>
                            </picture>
                            <h4 class="event-card__title">Выставка Малевича в Томске</h4>
                            <p class="event-card__description">
@@ -143,7 +145,7 @@
                      <article class="event-card listing__event-card">
                         <a href="#" class="event-card__link">
                            <picture class="event-card__picture">
-                              <img src="/src/assets/images/Tatler.png" alt="tatler" class="event-card__img"/>
+                              <img src="assets/images/Tatler.png" alt="tatler" class="event-card__img"/>
                            </picture>
                            <h4 class="event-card__title">Мастер — класс по студийной съемке от Tatler</h4>
                            <p class="event-card__description">
@@ -157,7 +159,7 @@
                      <article class="event-card listing__event-card">
                         <a href="#" class="event-card__link">
                            <picture class="event-card__picture">
-                              <img src="/src/assets/images/hatters.png" alt="hatters" class="event-card__img"/>
+                              <img src="assets/images/hatters.png" alt="hatters" class="event-card__img"/>
                            </picture>
                            <h4 class="event-card__title">Повесилимся на славу на концерте The Hatters</h4>
                            <p class="event-card__description">
@@ -171,7 +173,9 @@
                      </div>
                      <div class="listing__btn-card">
                         <picture class="event__slider">
-                           <img src="/src/assets/svg-sprite/slider.svg" alt="slider">
+                           <svg class="event__slider__center" width="527" height="62">
+                              <use xlink:href="assets/icons/symbols.svg#slider"></use>
+                           </svg>
                         </picture>
                         <a href="#" class="listing__btn-right">Смотреть все</a>
                      </div>
@@ -186,7 +190,7 @@
                <article class="blog-card__link blog__listing">
                   <a href="#" class="blog-card__link">
                      <picture class="blog-card__picture">
-                        <img src="/src/assets/images/photoshoot.png" alt="photoshoot" class="blog-card__img">
+                        <img src="assets/images/photoshoot.png" alt="photoshoot" class="blog-card__img">
                      </picture>
                      <div class="section-blog__content blog-card">
                         <time datetime="2022-12-27" class="blog-card__time">
@@ -197,16 +201,18 @@
                            Организовывая фотосессию для локального бренда одежды мы смогли воплотить все пожелания заказчика и у нас получилась отличная работа. Смотрите как это было
                         </p>
                      </div>
-                     <div class="blog-card__button">
-                        <img src="/src/assets/svg-sprite/link.svg" alt="link" class="section-blog__btn-right">
-                     </div>
+                     <picture class="blog-card__button">
+                        <svg class="section-blog__btn-right" width="92" height="62">
+                           <use xlink:href="assets/icons/symbols.svg#link"></use>
+                        </svg>
+                     </picture>
                   </a>
                </article>
                <div class="line"></div>
                <article class="blog-card__link blog__listing">
                   <a href="#" class="blog-card__link">
                      <picture class="blog-card__picture">
-                        <img src="/src/assets/images/VR.png" alt="VR" class="blog-card__img">
+                        <img src="assets/images/VR.png" alt="VR" class="blog-card__img">
                      </picture>
                      <div class="section-blog__content blog-card">
                         <time datetime="2022-12-05" class="blog-card__time">
@@ -217,16 +223,18 @@
                            Клуб виртуальной реальности - это другие миры. яркие эмоции. новый опыт. ... Мы предоставляем нашим клиентам лучший игровой VR-опыт в Томске.
                         </p>
                      </div>
-                     <div class="blog-card__button">
-                        <img src="/src/assets/svg-sprite/link.svg" alt="link" class="section-blog__btn-right">
-                     </div>
+                     <picture class="blog-card__button">
+                        <svg class="ssection-blog__btn-right" width="92" height="62">
+                           <use xlink:href="assets/icons/symbols.svg#link"></use>
+                        </svg>
+                     </picture>
                   </a>
                </article>
                <div class="line"></div>
                <article class="blog-card__link blog__listing">
                   <a href="#" class="blog-card__link">
                      <picture class="blog-card__picture">
-                        <img src="/src/assets/images/rocking.png" alt="rocking" class="blog-card__img">
+                        <img src="assets/images/rocking.png" alt="rocking" class="blog-card__img">
                      </picture>
                      <div class="section-blog__content blog-card">
                         <time datetime="2022-11-01" class="blog-card__time">
@@ -237,9 +245,11 @@
                            15 электрогенераторов, километры проводов и пару тонн света. Все это для того, чтобы организовать лучшую вечеринку года для ребят из Новосибирска.
                         </p>
                      </div>
-                     <div class="blog-card__button">
-                        <img src="/src/assets/svg-sprite/link.svg" alt="link" class="section-blog__btn-right">
-                     </div>
+                     <picture class="blog-card__button">
+                        <svg class="section-blog__btn-right" width="92" height="62">
+                           <use xlink:href="assets/icons/symbols.svg#link"></use>
+                        </svg>
+                     </picture>
                   </a>
                </article>
                <div class="blog-card__btn">
@@ -256,7 +266,7 @@
                      <div class="section-contacts__address">
                         <div class="section-contacts__item contacts-item-1">
                            <div class="section-contacts__picture">
-                              <img src="/src/assets/images/location.png" alt="icons" class="section-contacts__icons icons-contacts">
+                              <img src="assets/images/location.png" alt="icons" class="section-contacts__icons icons-contacts">
                            </div>
                            <div class="contacts__address-text contacts-info">
                               <ul class="contacts-info__list">
@@ -268,7 +278,7 @@
                         </div>
                         <div class="section-contacts__item contacts-item-2">
                            <div class="section-contacts__picture">
-                              <img src="/src/assets/images/home.png" alt="icons" class="section-contacts__icons icons-contacts">
+                              <img src="assets/images/home.png" alt="icons" class="section-contacts__icons icons-contacts">
                            </div>
                            <div class="contacts__address-text contacts-info">
                               <ul class="contacts-info__list ">
@@ -280,7 +290,7 @@
                         </div>
                         <div class="section-contacts__item contacts-item-3">
                            <div class="section-contacts__picture">
-                              <img src="/src/assets/images/star.png" alt="icons" class="section-contacts__icons icons-contacts">
+                              <img src="assets/images/star.png" alt="icons" class="section-contacts__icons icons-contacts">
                            </div>
                            <div class="contacts__address-text contacts-info">
                               <ul class="contacts-info__list ">
@@ -292,7 +302,7 @@
                         </div> 
                      </div>
                      <div class="section-contacts__map map-image">
-                        <img src="/src/assets/images/Frame.png" alt="image" class="map-image__right">
+                        <img src="assets/images/Frame.png" alt="image" class="map-image__right">
                      </div>
                   </div>  
             </div> 

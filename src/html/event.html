@@ -7,18 +7,20 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="/src/styles/style__event.css">
-   <link rel="icon" type="image/png" href="/src/assets/images/logo_favicon.png">
-   <link href="/fontawesome/css/fontawesome.css" rel="stylesheet" />
+   <link rel="stylesheet" href="styles/style__event.css">
+   <link rel="icon" type="image/png" href="assets/images/logo_favicon.png">
+   <!-- <link href="/fontawesome/css/fontawesome.css" rel="stylesheet" />
    <link href="/fontawesome/css/brands.css" rel="stylesheet" />
-   <link href="/fontawesome/css/solid.css" rel="stylesheet" />
+   <link href="/fontawesome/css/solid.css" rel="stylesheet" /> -->
 </head>
 <body class="body">
       <!-- Шапка сайта -->
       <header class="page-header">
          <div class="page-header__container">
             <a href="index.html" class="page-header__logo">
-               <img src="/src/assets/svg-sprite/logo.svg" alt="logo" class="page-header__logo-icon">
+               <svg class="page-header__logo-icon" width="202" height="147">
+                  <use xlink:href="assets/icons/symbols.svg#logo"></use>
+               </svg>
             </a>
             <nav class="page-header__nav">
                <a href="#" class="page-header__nav-link">Мероприятия</a>
@@ -30,10 +32,8 @@
             <div class="page-header__nav-user">
                <a href="#" class="page-header__nav-user-link">Александр С.</a>
                <a href="#" class="page-header__nav-logout">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <path d="M10 17L15 12L10 7" stroke="#1F1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                     <path d="M15 12H3" stroke="#1F1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                     <path d="M15 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H15" stroke="#1F1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <svg class="page-header__nav-logout__icon" width="24" height="24">
+                     <use xlink:href="assets/icons/symbols.svg#log-in"></use>
                   </svg>
                </a>
             </div>
@@ -67,7 +67,7 @@
                            <div class="event__card__box1__line1 event__card__line"></div>
                         </div>
                         <picture class="event__card__picture">
-                           <img src="/src/assets/images/best.png" alt="Best" class="event__card__picture__img">
+                           <img src="assets/images/best.png" alt="Best" class="event__card__picture__img">
                         </picture>
                         <div class="event__card__box2">
                            <div class="event__card__box2__line2 event__card__line line"></div>
@@ -204,7 +204,9 @@
                   <div class="reserve__scheme">
                      <h4 class="title reserve__scheme__title">Сцена</h4>
                      <picture class="reserve__scheme__picture">
-                        <img src="/src/assets/images/карта_заведения.png" alt="карта_заведения" class="reserve__scheme__img">
+                        <svg class="reserve__scheme__img" width="780" height="399">
+                           <use xlink:href="assets/icons/symbols.svg#карта_заведения"></use>
+                        </svg>
                      </picture>
                   </div>
          
@@ -242,64 +244,6 @@
          </div>
       </main>
       <!-- Секция Футер -->
-      <footer class="page-footer">
-         <div class="page-footer__line"></div>
-            <!-- сам футер -->
-            <div class="page-footer__container footer">
-               <div class="page-footer__content-nav nav-container">
-               <div class="page-footer__nav">
-                  <ul class="page-footer__nav-list">
-                     <li><a href="#" class="page-footer__nav-link">Календарь мероприятий</a></li>
-                     <li><a href="#" class="page-footer__nav-link">Провести мероприятие</a></li>
-                     <li><a href="#" class="page-footer__nav-link">Стать арендатором</a></li>
-                     <li><a href="#" class="page-footer__nav-link">Наши проекты</a></li>
-                     <li><a href="#" class="page-footer__nav-link">Контакты</a></li>
-                  </ul>
-               </div>
-               <div class="page-footer__form">
-                  <form action="" method="post" class="form">
-                     <label class="form__first field">
-                        <span class="field__text">Подпишись и будь в курсе происходящего</span>
-                     </label>
-                     <label class="form__first field__second">
-                        <div class="field-2">
-                           <input type="email" placeholder="Email" name="email" class="page-footer__field">
-                           <button class="page-footer__button footer-btn">Подписаться</button>
-                        </div>
-                     </label>
-                     <label class="check">
-                        <input id="check" type="checkbox" class="page-footer__input" required checked>
-                        <span class="check__mark"></span>
-                        <span class="check__label check__label--s">Согласен на обработку персональных данных</span>
-                     </label> 
-                  </form>
-               </div>
-               </div>
-
-               <div class="page-footer__content-2">
-                  <div class="footer-navigation">
-                     <div class="page-footer__copy">
-                        <p class="page-footer__copy-text">&copy; Millennials 2022</p>
-                     </div>
-                     <div class="page-footer__navigation1">
-                        <a href="#" class="footer-navigation__link footer-link">Политика конфиденциальности</a>
-                        <a href="#" class="footer-navigation__link footer-link link1">Cookies</a>
-                     </div>
-                     <div class="page-footer__image">
-                        <a href="#" class="footer-navigation__link ">
-                           <img src="/src/assets/svg-sprite/insta.svg" alt="insta" class="footer-navigation__img">
-                           <img src="/src/assets/svg-sprite/vk.svg" alt="vk" class="footer-navigation__img-vk">
-                        </a>
-                     </div>
-                     <div class="page-footer__navigation2">
-                        <a href="#" class="footer-navigation__link footer-link">Создание и продвижение</a>
-                        <a href="#" class="footer-navigation__link">
-                           <img src="/src/assets/images/tagree.png" alt="logo" class="page-footer__logo">
-                        </a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-      </footer>
+      @@include('blocks/page-footer.html')
 </body>
 </html>

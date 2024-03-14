@@ -6,17 +6,17 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="/src/styles/style_events.css">
-   <link rel="icon" type="image/png" href="/src/assets/images/logo_favicon.png">
+   <link rel="stylesheet" href="styles/style_events.css">
+   <link rel="icon" type="image/png" href="assets/images/logo_favicon.png">
    <title>Events</title>
 </head>
 <body class="body">
    <!-- Header -->
    <header class="page-header">
       <div class="page-header__container">
-         <a href="index.html" class="page-header__logo">
-            <img src="/src/assets/svg-sprite/logo.svg" alt="logo" class="page-header__logo-icon">
-         </a>
+         <svg class="page-header__logo-icon" width="202" height="147">
+            <use xlink:href="assets/icons/symbols.svg#logo"></use>
+         </svg>
          <nav class="page-header__nav">
             <a href="#" class="page-header__nav-link">Мероприятия</a>
             <a href="#" class="page-header__nav-link">Блог</a>
@@ -26,10 +26,8 @@
          <div class="page-header__nav-user">
             <a href="#" class="page-header__nav-user-link">Александр С.</a>
             <a href="#" class="page-header__nav-logout">
-               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 17L15 12L10 7" stroke="#1F1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M15 12H3" stroke="#1F1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M15 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H15" stroke="#1F1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+               <svg class="page-header__nav-logout__icon" width="24" height="24">
+                  <use xlink:href="assets/icons/symbols.svg#log-in"></use>
                </svg>
             </a>
          </div>
@@ -43,16 +41,19 @@
    <!-- Секция - Мероприятия -->
    <div class="events">  
    <section class="section-events listing">
-      <div class="listing-main">
-         <h4 class="listing-main__title">Главная  / Мероприятия</h4>
-      </div>
+      <div class="listing__block">
+         <nav class="listing__block__nav">
+            <a href="#" class="listing__block__nav-link event__block__nav__hover">Главная</a>
+            <a href="#" class="listing__block__nav-link event__block__nav__hover">/ Мероприятия</a>
+         </nav>
+      </div> 
       <div class="section-events__container">
          <h2 class="section-events__title section-title">Мероприятия</h2>
          <div class="section-events__list">
             <article class="event-card listing__event-card">
                <a href="#" class="event-card__link">
                   <picture class="event-card__picture">
-                     <img src="/src/assets/images/nirvana.png" alt="nirvana" class="event-card__img" />
+                     <img src="assets/images/nirvana.png" alt="nirvana" class="event-card__img" />
                   </picture>
                   <h4 class="event-card__title">Собираемся и слушаем альбом Nirvana</h4>
                   <p class="event-card__description">
@@ -66,7 +67,7 @@
             <article class="event-card listing__event-card">
                <a href="#" class="event-card__link">
                   <picture class="event-card__picture">
-                     <img src="/src/assets/images/HowStuffWorks.png" alt="HowStuffWorks" class="event-card__img" />
+                     <img src="assets/images/HowStuffWorks.png" alt="HowStuffWorks" class="event-card__img" />
                   </picture>
                   <h4 class="event-card__title">Есть тема, нужно обсудить с HowStuffWorks</h4>
                   <p class="event-card__description">
@@ -80,7 +81,7 @@
             <article class="event-card listing__event-card">
                <a href="#" class="event-card__link">
                   <picture class="event-card__picture">
-                  <img src="/src/assets/images/the_best_of_sade.png" alt="the_best_of_sade" class="event-card__img" />
+                  <img src="assets/images/the_best_of_sade.png" alt="the_best_of_sade" class="event-card__img" />
                   </picture>
                   <h4 class="event-card__title">Вечер | The Best of Sade</h4>
                   <p class="event-card__description">
@@ -94,7 +95,7 @@
             <article class="event-card listing__event-card">
                <a href="#" class="event-card__link">
                   <picture class="event-card__picture">
-                     <img src="/src/assets/images/Exhibition.png" alt="exhibition" class="event-card__img"/>
+                     <img src="assets/images/Exhibition.png" alt="exhibition" class="event-card__img"/>
                   </picture>
                   <h4 class="event-card__title">Выставка Малевича в Томске</h4>
                   <p class="event-card__description">
@@ -108,7 +109,7 @@
             <article class="event-card listing__event-card">
                <a href="#" class="event-card__link">
                   <picture class="event-card__picture">
-                     <img src="/src/assets/images/Tatler.png" alt="tatler" class="event-card__img"/>
+                     <img src="assets/images/Tatler.png" alt="tatler" class="event-card__img"/>
                   </picture>
                   <h4 class="event-card__title">Мастер — класс по студийной съемке от Tatler</h4>
                   <p class="event-card__description">
@@ -122,7 +123,7 @@
             <article class="event-card listing__event-card">
                <a href="#" class="event-card__link">
                   <picture class="event-card__picture">
-                     <img src="/src/assets/images/hatters.png" alt="hatters" class="event-card__img"/>
+                     <img src="assets/images/hatters.png" alt="hatters" class="event-card__img"/>
                   </picture>
                   <h4 class="event-card__title">Повесилимся на славу на концерте The Hatters</h4>
                   <p class="event-card__description">
@@ -137,17 +138,8 @@
       <div class="section-events__button">
          <a href="#" class="section-events__logout">
             Показать еще
-            <svg width="62" height="92" viewBox="0 0 62 92" fill="none" xmlns="http://www.w3.org/2000/svg">
-               <path d="M9.78681 40C5.59124 44.1781 2.73401 49.5013 1.57646 55.2966C0.418903 61.0918 1.013 67.0986 3.28363 72.5576C5.55426 78.0166 9.39943 82.6824 14.3329 85.9651C19.2664 89.2479 25.0666 91 31 91C36.9334 91 42.7336 89.2479 47.6671 85.9651C52.6006 82.6824 56.4457 78.0166 58.7164 72.5576C60.987 67.0986 61.5811 61.0918 60.4235 55.2965C59.266 49.5013 56.4088 44.1781 52.2132 40" stroke="#1F1E1E" stroke-width="2" stroke-linecap="round"/>
-               <g clip-path="url(#clip0_24657_1926)">
-               <path d="M31 5L31 65" stroke="#1F1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-               <path d="M38 58L31 65L24 58" stroke="#1F1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-               </g>
-               <defs>
-               <clipPath id="clip0_24657_1926">
-               <rect width="70" height="24" fill="white" transform="translate(43) rotate(90)"/>
-               </clipPath>
-               </defs>
+            <svg class="section-events__logout__icon" width="62" height="92">
+               <use xlink:href="assets/icons/symbols.svg#link-2"></use>
             </svg>
          </a>
       </div>
@@ -283,7 +275,7 @@
             <article class="service-card section-services__prices">
                <a href="#" class="service-card__link">
                   <picture class="service-card__picture">
-                     <img src="/src/assets/images/information.png" alt="information" class="service-card__img"/>
+                     <img src="assets/images/information.png" alt="information" class="service-card__img"/>
                   </picture>
                   <h4 class="service-card__title">Цены</h4>
                   <p class="service-card__description">
@@ -294,7 +286,7 @@
             <article class="service-card section-services__contact">
                <a href="#" class="service-card__link">
                   <picture class="service-card__picture">
-                     <img src="/src/assets/images/contact.png" alt="contact" class="service-card__img"/>
+                     <img src="assets/images/contact.png" alt="contact" class="service-card__img"/>
                   </picture>
                   <h4 class="service-card__title">Контакты</h4>
                </a>
@@ -308,7 +300,7 @@
             <article class="service-card section-services__handshake">
                <a href="#" class="service-card__link">
                   <picture class="service-card__picture">
-                     <img src="/src/assets/images/handshake.png" alt="handshake" class="service-card__img"/>
+                     <img src="assets/images/handshake.png" alt="handshake" class="service-card__img"/>
                   </picture>
                   <h4 class="service-card__title">Преимущество</h4>
                   <p class="service-card__description">
@@ -321,66 +313,6 @@
    </section>
    </div>
 </main>
-<footer class="page-footer">
-   <!-- Две линии -->
-      <div class="page-footer__line "></div>
-      <!-- сам футер -->
-      <div class="page-footer__container footer">
-         
-         <div class="page-footer__content-1 footer-listing">
-         <div class="page-footer__nav">
-            <ul class="page-footer__nav-list">
-               <li><a href="#" class="page-footer__nav-link">Календарь мероприятий</a></li>
-               <li><a href="#" class="page-footer__nav-link">Провести мероприятие</a></li>
-               <li><a href="#" class="page-footer__nav-link">Стать арендатором</a></li>
-               <li><a href="#" class="page-footer__nav-link">Наши проекты</a></li>
-               <li><a href="#" class="page-footer__nav-link">Контакты</a></li>
-            </ul>
-         </div>
-         <div class="page-footer__form">
-            <form action="" method="post" class="form">
-               <label class="form__first field">
-                  <span class="field__text">Подпишись и будь в курсе происходящего</span>
-               </label>
-               <label class="form__first field-2">
-                  <div class="field-2__div">
-                     <input type="email" placeholder="Email" name="email" class="page-footer__field">
-                     <button class="page-footer__button footer-btn">Подписаться</button>
-                  </div>
-               </label>
-               <label class="check">
-                  <input id="check" type="checkbox" class="page-footer__input" required checked>
-                  <span class="check__mark"></span>
-                  <span class="check__label check__label--s">Согласен на обработку персональных данных</span>
-               </label> 
-            </form>
-         </div>
-         </div>
-
-         <div class="page-footer__content-2">
-            <div class="footer-navigation">
-               <div class="page-footer__copy">
-                  <p class="page-footer__copy-text">&copy; Millennials 2022</p>
-               </div>
-               <div class="page-footer__navigation1">
-                  <a href="#" class="footer-navigation__link footer-link">Политика конфиденциальности</a>
-                  <a href="#" class="footer-navigation__link footer-link link1">Cookies</a>
-               </div>
-               <div class="page-footer__image">
-                  <a href="#" class="footer-navigation__link ">
-                     <img src="/src/assets/svg-sprite/insta.svg" alt="insta" class="footer-navigation__img">
-                     <img src="/src/assets/svg-sprite/vk.svg" alt="vk" class="footer-navigation__img-vk">
-                  </a>
-               </div>
-               <div class="page-footer__navigation2">
-                  <a href="#" class="footer-navigation__link footer-link">Создание и продвижение</a>
-                  <a href="#" class="footer-navigation__link">
-                     <img src="/src/assets/images/tagree.png" alt="logo" class="page-footer__logo">
-                  </a>
-               </div>
-            </div>
-         </div>
-      </div>
-</footer>
+@@include('blocks/page-footer.html')
 </body>
 </html>

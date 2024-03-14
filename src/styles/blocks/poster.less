@@ -1,0 +1,75 @@
+.poster {
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   max-width: 1414px;
+   margin: 0 auto;
+   padding-left: 40px;
+   padding-right: 40px;
+}
+.poster__title {
+   display: block;
+   margin: 0 auto;
+   width: 100%;
+   min-width: 274px;
+   height: 100%;
+   min-height: 182px;
+   font-family: "Lora";
+   font-weight: 400;
+   font-size: 45px;
+   line-height: 136%;
+   text-transform: uppercase;
+   text-align: center;
+}
+.section-poster__title__span {
+   margin-top: 465px;
+}
+.section-poster__img {
+   position: absolute;
+   top: 375px;
+   left: 0;
+   right: 0;
+   display: flex;
+   width: 100%;
+   height: 325px;
+   min-height: 74px;
+}
+.section-poster__btn {
+   display: grid;;
+   margin: 0 auto;
+   gap: 0 108px;
+   width: 100%;
+   max-width: 624px;
+   grid-template-columns: 1fr 1fr;
+   grid-template-areas: 
+   'p-title p-title '
+   'left-btn right-btn';
+}
+.section-poster__box__title {
+   grid-area: p-title;
+   justify-self: center;
+   font-family: "Lora";
+   font-weight: 400;
+   font-size: 22px;
+   line-height: 136%;
+   letter-spacing: 0.02em;
+   text-transform: uppercase;
+}
+.section-poster__box__left-block {
+   grid-area: left-btn;
+   width: 272px;
+}
+s.ection-poster__box__right-block {
+   grid-area: right-btn;
+   width: 272px;
+}
+.btn_red {
+   color: #fff;
+   background-color: #BC3324;
+   border: none;
+}
+.btn_red:hover {
+   background-color: #a51505;
+   color: #fff;
+}
