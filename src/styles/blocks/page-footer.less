@@ -37,14 +37,13 @@
    flex-direction: column;
 }
 .field-2 {
-   width: 410px;
-   height: 49px;
-   position:relative
+   position: relative;
+   display: flex;
 }
 .field__text {
    margin: 0 0 14px 6px;
-   color: #1f1e1e;
-   font-family: "Open Sans", sans-serif;
+   color: @black;
+   font-family: @font1;
    font-weight: 600;
    font-size: 16px;
    line-height: 1.375;
@@ -52,13 +51,14 @@
 .page-footer__field {
    width: 410px;
    height: 49px;
-   padding-left: 22px;
+   padding: 0 0 0 22px;
 }
 .footer-btn {
-   width: 135px;
-   height: 49px;
    position: absolute;
+   padding: 0;
    right: 0;
+   width: 135px;
+   height: 51.5px;
    color: #fff;
    background-color: #1f1e1e;
    font-family: "Open Sans", sans-serif;

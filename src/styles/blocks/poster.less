@@ -1,75 +1,79 @@
-.poster {
+.section-poster__container {
    box-sizing: border-box;
    display: flex;
    flex-direction: column;
    width: 100%;
-   max-width: 1414px;
    margin: 0 auto;
-   padding-left: 40px;
-   padding-right: 40px;
 }
-.poster__title {
-   display: block;
-   margin: 0 auto;
-   width: 100%;
-   min-width: 274px;
-   height: 100%;
-   min-height: 182px;
-   font-family: "Lora";
-   font-weight: 400;
-   font-size: 45px;
-   line-height: 136%;
+.section-poster__title,
+.section-poster__description {
+   margin: 0;
+   font-family: @font2;
+   font-weight: @font_weight2;
+   font-size: @font_size9;
+   line-height: @line_height8;
    text-transform: uppercase;
    text-align: center;
 }
-.section-poster__title__span {
-   margin-top: 465px;
-}
-.section-poster__img {
-   position: absolute;
-   top: 375px;
-   left: 0;
-   right: 0;
-   display: flex;
+.section-poster__svg {
    width: 100%;
-   height: 325px;
-   min-height: 74px;
+   overflow: hidden;
+   &__box {
+      position: relative;
+      width: 100%;
+      margin: 70px 0;
+      &::after{
+         content: '';
+         display: block;
+         width: 100%;
+         padding-bottom: 16.927%;
+      }
+   }
+   &__icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+   }
 }
-.section-poster__btn {
-   display: grid;;
-   margin: 0 auto;
+.section-poster__box-button {
+   display: grid;
+   margin: 100px auto 0;
    gap: 0 108px;
    width: 100%;
    max-width: 624px;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 272px 1fr;
    grid-template-areas: 
    'p-title p-title '
    'left-btn right-btn';
+   &__title {
+      grid-area: p-title;
+      justify-self: center;
+      font-family: @font2;
+      font-weight: @font_weight2;
+      font-size: @font_size5;
+      line-height: @line_height8;
+      text-transform: uppercase;
+      margin: 0 0 46px;
+   }
+   &__left-bnt {
+      grid-area: left-btn;
+   }
+   &__right-bnt {
+      grid-area: right-btn;
+   }
 }
-.section-poster__box__title {
-   grid-area: p-title;
-   justify-self: center;
-   font-family: "Lora";
-   font-weight: 400;
-   font-size: 22px;
-   line-height: 136%;
-   letter-spacing: 0.02em;
-   text-transform: uppercase;
-}
-.section-poster__box__left-block {
-   grid-area: left-btn;
-   width: 272px;
-}
-s.ection-poster__box__right-block {
-   grid-area: right-btn;
-   width: 272px;
+.section-poster__btn__tenant {
+   padding: 15px 44px;
+   white-space: nowrap;
 }
 .btn_red {
-   color: #fff;
-   background-color: #BC3324;
+   color: @white;
+   background-color: @red;
    border: none;
 }
 .btn_red:hover {
-   background-color: #a51505;
-   color: #fff;
+   background-color: @red_dark;
+   color: @white;
 }

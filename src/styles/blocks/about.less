@@ -1,66 +1,28 @@
-.section-about {
-   margin-top: 200px;
-}
-.about
-{
+.section-about__container {
    box-sizing: border-box;
    display: flex;
    flex-direction: column;
    width: 100%;
    max-width: 1414px;
    margin: 0 auto;
-   padding-left: 40px;
-   padding-right: 40px;
-}
-.section-title {
-   box-sizing: border-box;
-   display: flex;
-   justify-content: center;
-   align-items: center;  
-   width: 100%;
-   max-width: 624px;
-   min-height: 62px;
-   margin: 0 auto 150px;
-   padding: 8px 45px;
-   background-color: #1F1E1E;
-   color: #ffffff;
-   font-family: "Lora", serif;
-   font-weight: 500;
-   font-size: 36px;
-   line-height: 1.277;
-   text-align: center;
-   text-transform: uppercase;
+   padding: 200px 40px 90px;
 }
 .section-about__block {
    display: flex;
    flex-direction: column;
 }
-.about-text {
-   display: flex;
-   align-self: flex-end;
-   margin: 50px 0 0 auto;
-   width: 100%;
-   max-width: 870px;
-   font-family: "Open Sans", sans-serif;
-   font-weight: 400;
-   font-size: 18px;
-   color: #1f1e1e;
-   line-height: 1.388;
-}
 .section-about__title {
    width: 868px;
-   margin-bottom: 0;
-   color: #1f1e1e;
-   font-family: "Open Sans", sans-serif;
-   font-weight: 700;
-   font-size: 44px;
-   line-height: 1.363;
+   margin: 0;
+   color: @black;
+   font-family: @font1;
+   font-weight: @font_weight5;
+   font-size: @font_size8;
+   line-height: @line_height4;
 }
 .section-about__block2 {
    display: grid;
    margin-top: 100px;
-   max-width: 100%;
-   width: 1334px;
    grid-template-columns: 1fr 1fr 404px;
    grid-template-areas: 
    'picture1 picture1 picture2'
@@ -79,7 +41,7 @@
 .section-about__content-2__title {
    grid-area: title;
    align-self: end;
-   margin: 100px 0 0 0;
+   margin: 100px 0 0;
 }
 .section-about__text-2 {
    grid-area: text;
@@ -92,7 +54,7 @@
    right: 0;
    height: 65%;
    width: 930px;
-   background-color: #BC3324;
+   background-color: @red;
 }
 .section-about__image-left2 {
    position: absolute;
@@ -108,7 +70,7 @@
    display: flex;
    justify-content: space-between;
    height: 380px;
-   margin: 110px 0 90px 0;
+   margin: 110px 0 0;
 }
 .section-about__content-btn {
    display: flex;
@@ -126,13 +88,13 @@
    margin-top: 90px;
    align-items: center;
    text-decoration: none;
-   color: #1f1e1e;
-   font-family: "Open Sans", sans-serif;
-   font-weight: 600;
-   font-size: 16px;
-   line-height: 1.375;
+   color: @black;
+   font-family: @font1;
+   font-weight: @font_weight4;
+   font-size: @font_size2;
+   line-height: @line_height5;
    cursor: pointer;
-}
-.section-about__btn-right:hover {
-   color: #bc3324;
+   &:hover {
+      color: @red;
+   }
 }
