@@ -5,60 +5,50 @@
    width: 100%;
    max-width: 1414px;
    margin: 0 auto;
-   margin-top: 78px;
    padding-left: 40px;
    padding-right: 40px;
+   &__wrapper {
+      display: flex;
+      justify-content: space-between;
+   }
 }
-.contacts-container {
+.info-card {
+   box-sizing: border-box;
+   position: relative;
    display: flex;
-   justify-content: space-between;
+   margin-bottom: 67px;
+   color: @black;
+   &__content {
+      margin: 12px 0 7px 54px;
+   }
+   &__link {
+      display: block;
+      margin-bottom: 5px;
+      width: 236px;
+      color: inherit;
+      font-family: @font1;
+      font-size: @font_size2;
+      font-weight: @font_weight2;
+      text-decoration: none;
+      cursor: pointer;
+   }
+   &__title {
+      margin: 0 0 10px;
+      color: inherit;
+      font-family: @font1;
+      font-size: @font_size4;
+      font-weight: @font_weight4;
+      line-height: @line_height3;
+   }
+   &__desc {
+      margin: 0 0 5px;
+      color: inherit;
+      font-family: @font1;
+      font-size: @font_size2;
+      font-weight: @font_weight2;
+      line-height: @line_height5;
+   }
 }
-.section-contacts__address {
-   margin-top: 15px;
-}
-.section-contacts__item {
-   display: flex;
-   align-items: center;
-   width: 400px;
-   margin-bottom: 67px; 
-}
-.contacts-item-3 {
-   margin: 0;
-}
-.contacts__address-text {
-   display: flex;
-   width: 236px;
-   height: 86px;
-   align-items: center;
-   padding-bottom: 12px;
-   padding-top: 12px;
-   margin-left: 54px;
-}
-.contacts-info__list {
-   list-style-type: none;
-   padding: 0;
-}
-.address-text__title {
-   margin-bottom: 10px;
-   color: #1F1E1E;
-   font-family: "Open Sans", sans-serif;
-   font-size: 20px;
-   font-weight: 600;
-   line-height: 1.35;
-}
-.contacts__link {
-   text-decoration: none;
-   transition: color 0.2s;
-   cursor: pointer;
-}
-.contacts-info__text {
-   color: #1f1e1e;
-   font-family: "Open Sans", sans-serif;
-   font-size: 16px;
-   font-weight: 400;
-   line-height: 1.375;
-}
-.icons-contacts {
-   width: 110px;
-   height: 110px;
+.info-card:last-child {
+   margin-bottom: 0;
 }
