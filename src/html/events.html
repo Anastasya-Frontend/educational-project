@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="styles/style_events.css">
-   <link rel="icon" type="image/png" href="assets/images/logo_favicon.png">
-   <title>Events</title>
-</head>
+   @@include('blocks/head.html')
 <body class="body">
    <!-- Header -->
    <header class="page-header">
@@ -38,281 +29,113 @@
    </header>
    <!-- Main -->
    <main class="main">
-   <!-- Секция - Мероприятия -->
-   <div class="events">  
-   <section class="section-events listing">
-      <div class="listing__block">
-         <nav class="listing__block__nav">
-            <a href="#" class="listing__block__nav-link event__block__nav__hover">Главная</a>
-            <a href="#" class="listing__block__nav-link event__block__nav__hover">/ Мероприятия</a>
-         </nav>
-      </div> 
-      <div class="section-events__container">
-         <h2 class="section-events__title section-title">Мероприятия</h2>
-         <div class="section-events__list">
-            <article class="event-card listing__event-card">
-               <a href="#" class="event-card__link">
-                  <picture class="event-card__picture">
+      <div class="main__container">
+         <!-- Секция - Мероприятия -->
+         <section class="listing">
+            <nav class="listing__nav">
+               <a href="#" class="listing__nav__link">Главная</a>
+               <a href="#" class="listing__nav__link">/ Мероприятия</a>
+            </nav>
+            <div class="listing__events">
+               <h2 class="listing__title section-title">Мероприятия</h2>
+               <div class="listing__events__box">
+                  <article class="event-card listing__event-card">
+                     <a href="#" class="event-card__link">
+                        <picture class="event-card__picture">
                      <img src="assets/images/nirvana.png" alt="nirvana" class="event-card__img" />
-                  </picture>
-                  <h4 class="event-card__title">Собираемся и слушаем альбом Nirvana</h4>
-                  <p class="event-card__description">
-                     Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.
-                  </p>
-                  <time datetime="2022-12-07T18:00" class="event-card__time">
-                     07.12.2022 | начало 18.00
-                  </time>
-               </a>
-            </article>
-            <article class="event-card listing__event-card">
-               <a href="#" class="event-card__link">
-                  <picture class="event-card__picture">
-                     <img src="assets/images/HowStuffWorks.png" alt="HowStuffWorks" class="event-card__img" />
-                  </picture>
-                  <h4 class="event-card__title">Есть тема, нужно обсудить с HowStuffWorks</h4>
-                  <p class="event-card__description">
-                     Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.
-                  </p>
-                  <time datetime="2022-12-14T18:30" class="event-card__time">
-                     14.12.2022 | начало 18.30
-                  </time>
-               </a>
-            </article>
-            <article class="event-card listing__event-card">
-               <a href="#" class="event-card__link">
-                  <picture class="event-card__picture">
-                  <img src="assets/images/the_best_of_sade.png" alt="the_best_of_sade" class="event-card__img" />
-                  </picture>
-                  <h4 class="event-card__title">Вечер | The Best of Sade</h4>
-                  <p class="event-card__description">
-                     Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка.
-                  </p>
-                  <time datetime="2022-12-16T20:00" class="event-card__time">
-                     16.12.2022 | начало 20.00
-                  </time>
-               </a>
-            </article>
-            <article class="event-card listing__event-card">
-               <a href="#" class="event-card__link">
-                  <picture class="event-card__picture">
-                     <img src="assets/images/Exhibition.png" alt="exhibition" class="event-card__img"/>
-                  </picture>
-                  <h4 class="event-card__title">Выставка Малевича в Томске</h4>
-                  <p class="event-card__description">
-                     Это будет самая полная выставка с 1988 года, того времени, когда впервые заговорили о Малевиче. Экспозиция займёт два этажа павильона.
-                  </p>
-                  <time datetime="2022-12-23T20:00" class="event-card__time">
-                     23.12.2022 | начало 20.00
-                  </time>
-               </a>
-            </article>
-            <article class="event-card listing__event-card">
-               <a href="#" class="event-card__link">
-                  <picture class="event-card__picture">
-                     <img src="assets/images/Tatler.png" alt="tatler" class="event-card__img"/>
-                  </picture>
-                  <h4 class="event-card__title">Мастер — класс по студийной съемке от Tatler</h4>
-                  <p class="event-card__description">
-                     Фотографы издания расскажут, как им удается создавать потрясающие кадры и что может испортить весь процесс.
-                  </p>
-                  <time datetime="2022-12-25T13:00" class="event-card__time">
-                     25.12.2022 | начало 13.00
-                  </time>
-               </a>
-            </article>
-            <article class="event-card listing__event-card">
-               <a href="#" class="event-card__link">
-                  <picture class="event-card__picture">
-                     <img src="assets/images/hatters.png" alt="hatters" class="event-card__img"/>
-                  </picture>
-                  <h4 class="event-card__title">Повесилимся на славу на концерте The Hatters</h4>
-                  <p class="event-card__description">
-                     Российская джипси-фолк-рок группа, основанная в 2016 году в Санкт-Петербурге. В основной состав группы входят Юрий Музыченко
-                  </p>
-                  <time datetime="2022-12-27T10:00" class="event-card__time">
-                     27.12.2022 | начало 10.00
-                  </time>
-               </a>
-            </article>
-      </div>
-      <div class="section-events__button">
-         <a href="#" class="section-events__logout">
-            Показать еще
-            <svg class="section-events__logout__icon" width="62" height="92">
-               <use xlink:href="assets/icons/symbols.svg#link-2"></use>
-            </svg>
-         </a>
-      </div>
-      </div>
-   </section>
-   <!-- Секция - дополнительные услуги -->
-   <section class="section-services">
-      <div class="section-services__container services">
-         <h2 class="section-services__title section-title">Дополнительные услуги</h2>
-         <div class="section-services__content">
-            <p class="section-services__text">
-               Перед запуском проекта, мы подготавливаем подробную смету и согласуем ее с клиентом. Убедившись, что <br> все пожеланию учтены и мы можем приступать к реализациии проекта, начинается сложная, но интересная <br> работа, результатом которой будет проведение вашего мероприятия на высшем уровне.
-            </p>
-            <!-- таблица -->
-            <table class="section-services__table table">
-               <thead class="table__thead">
-                  <tr class="table__thead-tr">
-                     <th class="table__th"></th>
-                     <th class="table__th">Тариф «Light»</th>
-                     <th class="table__th">Тариф «Promo»</th>
-                     <th class="table__th">Тариф «All stars»</th>
-                  </tr>
-               </thead>
-               <tbody class="table__tbody">
-                  <tr class="table__tr">
-                     <th class="table__body-th">Стоимость за час</th>
-                     <td class="table__td">1 000 ₽</td>
-                     <td class="table__td">3 000 ₽</td>
-                     <td class="table__td">3 000 ₽</td>
-                  </tr>
-                  <tr class="table__tr">
-                     <th class="table__body-th">Ведущий мероприятия</th>
-                     <td class="table__td"></td>
-                     <td class="table__td">
-                     <span class="ok"></span>
-                     </td>
-                     <td class="table__td">
-                        <span class="ok"></span>
-                     </td>
-                  </tr>
-                  <tr class="table__tr">
-                     <th class="table__body-th">Фотосъемка</th>
-                     <td class="table__td">
-                        <span class="ok"></span>
-                     </td>
-                     <td class="table__td">
-                        <span class="ok"></span>
-                     </td>
-                     <td class="table__td">
-                        <span class="ok"></span>
-                     </td>
-                  </tr>
-                  <tr class="table__tr">
-                     <th class="table__body-th">Видеосъемка</th>
-                     <td class="table__td"></td>
-                     <td class="table__td"></td>
-                     <td class="table__td">
-                        <span class="ok"></span>
-                     </td>
-                  </tr>
-                  <tr class="table__tr">
-                     <th class="table__body-th">Организация питания</th>
-                     <td class="table__td"></td>
-                     <td class="table__td">
-                        <span class="ok"></span>
-                     </td>
-                     <td class="table__td">
-                        <span class="ok"></span>
-                     </td>
-                  </tr>
-                  <tr class="table__tr">
-                     <th class="table__body-th">Декор</th>
-                     <td class="table__td"></td>
-                     <td class="table__td"></td>
-                     <td class="table__td">
-                        <span class="ok"></span>
-                     </td>
-                     </tr>
-                  <tr class="table__tr">
-                     <th class="table__body-th">Звуковое сопровождение</th>
-                     <td class="table__td"></td>
-                        <td class="table__td">
-                        <span class="ok"></span>
-                     </td>
-                     <td class="table__td">
-                        <span class="ok"></span>
-                     </td>
-                  </tr>
-                  <tr class="table__tr">
-                     <th class="table__body-th">Дополнительное освещение</th>
-                     <td class="table__td"></td>
-                     <td class="table__td"></td>
-                     <td class="table__td">
-                        <span class="ok"></span>
-                     </td>
-                  </tr>
-               
-                  <tr class="table__tr">
-                     <th class="table__body-th">Клининг</th>
-                     <td class="table__td"></td>
-                     <td class="table__td"></td>
-                     <td class="table__td">
-                        <span class="ok"></span>
-                     </td>
-                  </tr>
-               </tbody>
-               <tfoot class="table__tfoot">
-                  <tr class="table__footer-tr">
-                     <th class="table__footer-th"></th>
-                     <th class="table__footer-th">Тариф «Light»</th>
-                     <th class="table__footer-th">Тариф «Promo»</th>
-                     <th class="table__footer-th">Тариф «All stars»</th>
-                  </tr>
-               </tfoot>
-            </table>
-         </div>
-         <!-- Кнопки -->
-         <div class="section-services__contacts">
-            <div class="section-services__title-btn">
-               <h3 class="section-services__title-choice">Я хочу:</h3>
-            </div>
-            <div class="section-services__block-btn">
-               <div class="section-services__left-block">
-                  <a href="#" class="btn section-services__event-btn">Провести мероприятие</a>
+                     </picture>
+                     <h4 class="event-card__title">Собираемся и слушаем альбом Nirvana</h4>
+                     <p class="event-card__description">
+                        Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.
+                     </p>
+                     <time datetime="2022-12-07T18:00" class="event-card__time">
+                        07.12.2022 | начало 18.00
+                     </time>
+                     </a>
+                  </article>
+                  <article class="event-card listing__event-card">
+                     <a href="#" class="event-card__link">
+                     <picture class="event-card__picture">
+                        <img src="assets/images/HowStuffWorks.png" alt="HowStuffWorks" class="event-card__img" />
+                     </picture>
+                     <h4 class="event-card__title">Есть тема, нужно обсудить с HowStuffWorks</h4>
+                     <p class="event-card__description">
+                        Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.
+                     </p>
+                     <time datetime="2022-12-14T18:30" class="event-card__time">
+                        14.12.2022 | начало 18.30
+                     </time>
+                     </a>
+                  </article>
+                  <article class="event-card listing__event-card">
+                     <a href="#" class="event-card__link">
+                     <picture class="event-card__picture">
+                        <img src="assets/images/the_best_of_sade.png" alt="the_best_of_sade" class="event-card__img" />
+                     </picture>
+                     <h4 class="event-card__title">Вечер | The Best of Sade</h4>
+                     <p class="event-card__description">
+                        Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка.
+                     </p>
+                     <time datetime="2022-12-16T20:00" class="event-card__time">
+                        16.12.2022 | начало 20.00
+                     </time>
+                     </a>
+                  </article>
+                  <article class="event-card listing__event-card">
+                     <a href="#" class="event-card__link">
+                        <picture class="event-card__picture">
+                           <img src="assets/images/выставка.png" alt="exhibition" class="event-card__img"/>
+                        </picture>
+                        <h4 class="event-card__title">Выставка Малевича в Томске</h4>
+                        <p class="event-card__description">
+                        Это будет самая полная выставка с 1988 года, того времени, когда впервые заговорили о Малевиче. Экспозиция займёт два этажа павильона.
+                        </p>
+                        <time datetime="2022-12-23T20:00" class="event-card__time">
+                           23.12.2022 | начало 20.00
+                        </time>
+                     </a>
+                  </article>
+                  <article class="event-card listing__event-card">
+                     <a href="#" class="event-card__link">
+                        <picture class="event-card__picture">
+                           <img src="assets/images/Tatler.png" alt="tatler" class="event-card__img"/>
+                        </picture>
+                        <h4 class="event-card__title">Мастер — класс по студийной съемке от Tatler</h4>
+                        <p class="event-card__description">
+                           Фотографы издания расскажут, как им удается создавать потрясающие кадры и что может испортить весь процесс.
+                        </p>
+                        <time datetime="2022-12-25T13:00" class="event-card__time">
+                           25.12.2022 | начало 13.00
+                        </time>
+                     </a>
+                  </article>
+                  <article class="event-card listing__event-card">
+                     <a href="#" class="event-card__link">
+                        <picture class="event-card__picture">
+                           <img src="assets/images/hatters.png" alt="hatters" class="event-card__img"/>
+                        </picture>
+                        <h4 class="event-card__title">Повесилимся на славу на концерте The Hatters</h4>
+                        <p class="event-card__description">
+                           Российская джипси-фолк-рок группа, основанная в 2016 году в Санкт-Петербурге. В основной состав группы входят Юрий Музыченко
+                        </p>
+                        <time datetime="2022-12-27T10:00" class="event-card__time">
+                           27.12.2022 | начало 10.00
+                        </time>
+                     </a>
+                  </article>      
                </div>
-               <div class="section-services__right-block">
-                  <a href="#" class="btn section-services__tenant-btn">Стать арендатором</a>
-               </div>
+               <a href="#" class="listing__button">
+                  Показать еще
+                  <svg class="listing__button__icon" width="62" height="92">
+                     <use xlink:href="assets/icons/symbols.svg#link-2"></use>
+                  </svg>
+               </a>
             </div>
-         </div>
-         <!-- Карточки - контакты -->
-         <div class="section-services__list service">
-            <article class="service-card section-services__prices">
-               <a href="#" class="service-card__link">
-                  <picture class="service-card__picture">
-                     <img src="assets/images/information.png" alt="information" class="service-card__img"/>
-                  </picture>
-                  <h4 class="service-card__title">Цены</h4>
-                  <p class="service-card__description">
-                     Цены, указанные на сайте носят<br>информационный характер. Мы придерживаемся индивидуального подхода в работе с клиентом.
-                  </p>
-               </a>
-            </article>
-            <article class="service-card section-services__contact">
-               <a href="#" class="service-card__link">
-                  <picture class="service-card__picture">
-                     <img src="assets/images/contact.png" alt="contact" class="service-card__img"/>
-                  </picture>
-                  <h4 class="service-card__title">Контакты</h4>
-               </a>
-                  <p class="service-card__description">
-                     Отдел организации мероприятий
-                     <a href="tel:+74993500730" class="service-card__link cservices-list__text">+7 499 350 0730</a>
-                     <a href="mailto:hi@tagree.ru" class="service-card__link services-list__text">hi@tagree.ru</a>
-                  </p>
-               
-            </article>
-            <article class="service-card section-services__handshake">
-               <a href="#" class="service-card__link">
-                  <picture class="service-card__picture">
-                     <img src="assets/images/handshake.png" alt="handshake" class="service-card__img"/>
-                  </picture>
-                  <h4 class="service-card__title">Преимущество</h4>
-                  <p class="service-card__description">
-                     Мы имеем все возможности для того, чтобы помочь как малому бизнесу и молодым талантам, <br>так и большим корпорациям и холдингам.
-                  </p>
-               </a>
-            </article>
-      </div> 
-      </div>   
-   </section>
-   </div>
-</main>
-@@include('blocks/page-footer.html')
+         </section>
+         <!-- Секция - дополнительные услуги -->
+         @@include('blocks/services.html')
+      </div>
+   </main>
+   @@include('blocks/page-footer.html')
 </body>
 </html>

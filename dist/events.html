@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lenni Art</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/style_events.css">
+  <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" type="image/png" href="assets/images/logo_favicon.png">
-  <title>Events</title>
 </head>
 
 <body class="body">
@@ -40,18 +40,16 @@
   </header>
   <!-- Main -->
   <main class="main">
-    <!-- Секция - Мероприятия -->
-    <div class="events">
-      <section class="section-events listing">
-        <div class="listing__block">
-          <nav class="listing__block__nav">
-            <a href="#" class="listing__block__nav-link event__block__nav__hover">Главная</a>
-            <a href="#" class="listing__block__nav-link event__block__nav__hover">/ Мероприятия</a>
-          </nav>
-        </div>
-        <div class="section-events__container">
-          <h2 class="section-events__title section-title">Мероприятия</h2>
-          <div class="section-events__list">
+    <div class="main__container">
+      <!-- Секция - Мероприятия -->
+      <section class="listing">
+        <nav class="listing__nav">
+          <a href="#" class="listing__nav__link">Главная</a>
+          <a href="#" class="listing__nav__link">/ Мероприятия</a>
+        </nav>
+        <div class="listing__events">
+          <h2 class="listing__title section-title">Мероприятия</h2>
+          <div class="listing__events__box">
             <article class="event-card listing__event-card">
               <a href="#" class="event-card__link">
                 <picture class="event-card__picture">
@@ -97,7 +95,7 @@
             <article class="event-card listing__event-card">
               <a href="#" class="event-card__link">
                 <picture class="event-card__picture">
-                  <img src="assets/images/Exhibition.png" alt="exhibition" class="event-card__img" />
+                  <img src="assets/images/выставка.png" alt="exhibition" class="event-card__img" />
                 </picture>
                 <h4 class="event-card__title">Выставка Малевича в Томске</h4>
                 <p class="event-card__description">
@@ -137,141 +135,136 @@
               </a>
             </article>
           </div>
-          <div class="section-events__button">
-            <a href="#" class="section-events__logout">
-              Показать еще
-              <svg class="section-events__logout__icon" width="62" height="92">
-                <use xlink:href="assets/icons/symbols.svg#link-2"></use>
-              </svg>
-            </a>
-          </div>
+          <a href="#" class="listing__button">
+            Показать еще
+            <svg class="listing__button__icon" width="62" height="92">
+              <use xlink:href="assets/icons/symbols.svg#link-2"></use>
+            </svg>
+          </a>
         </div>
       </section>
       <!-- Секция - дополнительные услуги -->
-      <section class="section-services">
-        <div class="section-services__container services">
-          <h2 class="section-services__title section-title">Дополнительные услуги</h2>
+      <section class="services">
+        <div class="services__container">
+          <h2 class="services__title section-title">Дополнительные услуги</h2>
           <div class="section-services__content">
-            <p class="section-services__text">
+            <p class="services__text">
               Перед запуском проекта, мы подготавливаем подробную смету и согласуем ее с клиентом. Убедившись, что
               <br> все пожеланию учтены и мы можем приступать к реализациии проекта, начинается сложная, но интересная
               <br> работа, результатом которой будет проведение вашего мероприятия на высшем уровне.
             </p>
             <!-- таблица -->
-            <table class="section-services__table table">
-              <thead class="table__thead">
-                <tr class="table__thead-tr">
-                  <th class="table__th"></th>
-                  <th class="table__th">Тариф «Light»</th>
-                  <th class="table__th">Тариф «Promo»</th>
-                  <th class="table__th">Тариф «All stars»</th>
-                </tr>
-              </thead>
-              <tbody class="table__tbody">
-                <tr class="table__tr">
-                  <th class="table__body-th">Стоимость за час</th>
-                  <td class="table__td">1 000 ₽</td>
-                  <td class="table__td">3 000 ₽</td>
-                  <td class="table__td">3 000 ₽</td>
-                </tr>
-                <tr class="table__tr">
-                  <th class="table__body-th">Ведущий мероприятия</th>
-                  <td class="table__td"></td>
-                  <td class="table__td">
-                    <span class="ok"></span>
-                  </td>
-                  <td class="table__td">
-                    <span class="ok"></span>
-                  </td>
-                </tr>
-                <tr class="table__tr">
-                  <th class="table__body-th">Фотосъемка</th>
-                  <td class="table__td">
-                    <span class="ok"></span>
-                  </td>
-                  <td class="table__td">
-                    <span class="ok"></span>
-                  </td>
-                  <td class="table__td">
-                    <span class="ok"></span>
-                  </td>
-                </tr>
-                <tr class="table__tr">
-                  <th class="table__body-th">Видеосъемка</th>
-                  <td class="table__td"></td>
-                  <td class="table__td"></td>
-                  <td class="table__td">
-                    <span class="ok"></span>
-                  </td>
-                </tr>
-                <tr class="table__tr">
-                  <th class="table__body-th">Организация питания</th>
-                  <td class="table__td"></td>
-                  <td class="table__td">
-                    <span class="ok"></span>
-                  </td>
-                  <td class="table__td">
-                    <span class="ok"></span>
-                  </td>
-                </tr>
-                <tr class="table__tr">
-                  <th class="table__body-th">Декор</th>
-                  <td class="table__td"></td>
-                  <td class="table__td"></td>
-                  <td class="table__td">
-                    <span class="ok"></span>
-                  </td>
-                </tr>
-                <tr class="table__tr">
-                  <th class="table__body-th">Звуковое сопровождение</th>
-                  <td class="table__td"></td>
-                  <td class="table__td">
-                    <span class="ok"></span>
-                  </td>
-                  <td class="table__td">
-                    <span class="ok"></span>
-                  </td>
-                </tr>
-                <tr class="table__tr">
-                  <th class="table__body-th">Дополнительное освещение</th>
-                  <td class="table__td"></td>
-                  <td class="table__td"></td>
-                  <td class="table__td">
-                    <span class="ok"></span>
-                  </td>
-                </tr>
-
-                <tr class="table__tr">
-                  <th class="table__body-th">Клининг</th>
-                  <td class="table__td"></td>
-                  <td class="table__td"></td>
-                  <td class="table__td">
-                    <span class="ok"></span>
-                  </td>
-                </tr>
-              </tbody>
-              <tfoot class="table__tfoot">
-                <tr class="table__footer-tr">
-                  <th class="table__footer-th"></th>
-                  <th class="table__footer-th">Тариф «Light»</th>
-                  <th class="table__footer-th">Тариф «Promo»</th>
-                  <th class="table__footer-th">Тариф «All stars»</th>
-                </tr>
-              </tfoot>
-            </table>
+            <div class="services__box">
+              <table class="table services__box__table">
+                <thead class="table__thead">
+                  <tr class="table__thead-tr">
+                    <th class="table__th"></th>
+                    <th class="table__th">Тариф «Light»</th>
+                    <th class="table__th">Тариф «Promo»</th>
+                    <th class="table__th">Тариф «All stars»</th>
+                  </tr>
+                </thead>
+                <tbody class="table__tbody">
+                  <tr class="table__tr">
+                    <th class="table__body-th">Стоимость за час</th>
+                    <td class="table__td">1 000 ₽</td>
+                    <td class="table__td">3 000 ₽</td>
+                    <td class="table__td">3 000 ₽</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <th class="table__body-th">Ведущий мероприятия</th>
+                    <td class="table__td"></td>
+                    <td class="table__td">
+                      <span class="ok"></span>
+                    </td>
+                    <td class="table__td">
+                      <span class="ok"></span>
+                    </td>
+                  </tr>
+                  <tr class="table__tr">
+                    <th class="table__body-th">Фотосъемка</th>
+                    <td class="table__td">
+                      <span class="ok"></span>
+                    </td>
+                    <td class="table__td">
+                      <span class="ok"></span>
+                    </td>
+                    <td class="table__td">
+                      <span class="ok"></span>
+                    </td>
+                  </tr>
+                  <tr class="table__tr">
+                    <th class="table__body-th">Видеосъемка</th>
+                    <td class="table__td"></td>
+                    <td class="table__td"></td>
+                    <td class="table__td">
+                      <span class="ok"></span>
+                    </td>
+                  </tr>
+                  <tr class="table__tr">
+                    <th class="table__body-th">Организация питания</th>
+                    <td class="table__td"></td>
+                    <td class="table__td">
+                      <span class="ok"></span>
+                    </td>
+                    <td class="table__td">
+                      <span class="ok"></span>
+                    </td>
+                  </tr>
+                  <tr class="table__tr">
+                    <th class="table__body-th">Декор</th>
+                    <td class="table__td"></td>
+                    <td class="table__td"></td>
+                    <td class="table__td">
+                      <span class="ok"></span>
+                    </td>
+                  </tr>
+                  <tr class="table__tr">
+                    <th class="table__body-th">Звуковое сопровождение</th>
+                    <td class="table__td"></td>
+                    <td class="table__td">
+                      <span class="ok"></span>
+                    </td>
+                    <td class="table__td">
+                      <span class="ok"></span>
+                    </td>
+                  </tr>
+                  <tr class="table__tr">
+                    <th class="table__body-th">Дополнительное освещение</th>
+                    <td class="table__td"></td>
+                    <td class="table__td"></td>
+                    <td class="table__td">
+                      <span class="ok"></span>
+                    </td>
+                  </tr>
+                  <tr class="table__tr">
+                    <th class="table__body-th">Клининг</th>
+                    <td class="table__td"></td>
+                    <td class="table__td"></td>
+                    <td class="table__td">
+                      <span class="ok"></span>
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot class="table__tfoot">
+                  <tr class="table__footer-tr">
+                    <th class="table__footer-th"></th>
+                    <th class="table__footer-th">Тариф «Light»</th>
+                    <th class="table__footer-th">Тариф «Promo»</th>
+                    <th class="table__footer-th">Тариф «All stars»</th>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
           </div>
           <!-- Кнопки -->
-          <div class="section-services__contacts">
-            <div class="section-services__title-btn">
-              <h3 class="section-services__title-choice">Я хочу:</h3>
+          <div class="section-poster__box-button section-poster__btn">
+            <h4 class="section-poster__box-button__title">Я хочу:</h4>
+            <div class="section-poster__box-button__left-bnt ">
+              <a href="#" class="btn section-poster__btn__event btn_red">Провести мероприятие</a>
             </div>
-            <div class="section-services__block-btn">
-              <div class="section-services__left-block">
-                <a href="#" class="btn section-services__event-btn">Провести мероприятие</a>
-              </div>
-              <div class="section-services__right-block">
-                <a href="#" class="btn section-services__tenant-btn">Стать арендатором</a>
-              </div>
+            <div class="section-poster__box-button__right-bnt">
+              <a href="#" class="btn section-poster__btn__tenant">Стать арендатором</a>
             </div>
           </div>
           <!-- Карточки - контакты -->
