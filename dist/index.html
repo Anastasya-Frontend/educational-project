@@ -57,13 +57,13 @@
           <p class="section-poster__description">Для людей, горящих сердцем и делом
             <br> место для настоящего
           </p>
-          <div class="section-poster__box-button section-poster__btn">
-            <h4 class="section-poster__box-button__title">Я хочу:</h4>
-            <div class="section-poster__box-button__left-bnt ">
-              <a href="#" class="btn section-poster__btn__event btn_red">Провести мероприятие</a>
+          <div class="poster__btn btns">
+            <h4 class="poster__btn__title btns__title">Я хочу:</h4>
+            <div class="poster__btn__left btns__left">
+              <a href="#" class="btn poster__btn__left__event poster__btn_red btns__left__event btns__red">Провести мероприятие</a>
             </div>
-            <div class="section-poster__box-button__right-bnt">
-              <a href="#" class="btn section-poster__btn__tenant">Стать арендатором</a>
+            <div class="poster__btn__right btns__right">
+              <a href="#" class="btn poster__btn__right__tenant btns__left__tenant">Стать арендатором</a>
             </div>
           </div>
         </div>
@@ -388,16 +388,17 @@
             </li>
           </ul>
         </div>
-        <form action="" method="post" class="form footer__content1__form">
-          <label class="form__first">
-            <span class="form__first__text">Подпишись и будь в курсе происходящего</span>
+        <form class="form footer__content1__form">
+          <label class="field form__field">
+            <span class="field__label">Подпишись и будь в курсе происходящего</span>
           </label>
-          <label class="form__second">
-            <div class="form__second__box">
-              <input id="form__second" type="email" placeholder="Email" name="email" class="form__second__box__input">
-              <button class="form__second__box__btn">Подписаться</button>
-            </div>
-          </label>
+          <div class="form__div">
+            <label class="field2 form__field2">
+              <input type="email" placeholder="Email" name="email" class="field2__input">
+            </label>
+            <button class="field2__button" type="submit">Подписаться</button>
+          </div>
+
           <label class="check">
             <input id="check" type="checkbox" class="check__input" required checked>
             <span class="check__mark"></span>

@@ -8,7 +8,20 @@
       <!-- Основное содержимое страницы -->
       <main class="main">
          <div class="main__container">
-            @@include('blocks/poster.html')
+            <section class="section-poster poster">
+               <div class="section-poster__container">
+                  <h1 class="section-poster__title">Арт - Пространство</h1>
+                  <div class="section-poster__svg">
+                     <div class="section-poster__svg__box">
+                        <svg class="section-poster__svg__icon" width="1920" height="325">
+                           <use xlink:href="assets/icons/symbols.svg#LENNI"></use>
+                        </svg>
+                     </div>
+                  </div>
+                  <p class="section-poster__description">Для людей, горящих сердцем и делом <br> место для настоящего</p>
+                  @@include('blocks/btns.html')
+               </div>
+            </section>
       <!-- О нас -->
             @@include('blocks/about.html')
       <!-- Мероприятия  --> 

@@ -60,30 +60,27 @@
 li:last-child {
    margin-bottom: 0;
 }
-
-.form__first {
-   display: flex;
-   flex-direction: column;
-   &__text {
-      margin: 0 0 14px 6px;
-      color: @black;
-      font-family: @font1;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 1.375;
-   }
-}
-.form__second__box {
+.form__div {
    position: relative;
    display: flex;
+}
+.field2 {
    &__input {
       width: 410px;
       height: 49px;
       padding: 0 0 0 22px;
+      &::placeholder {
+         color: @gray_plachol;
+      }
+      &:focus {
+         &::placeholder {
+            color: transparent
+         }
+      }
    }
-   &__btn {
+   &__button {
       position: absolute;
-      padding: 0;
+      padding: 15px 23px;
       right: 0;
       width: 135px;
       height: 51.5px;
@@ -93,6 +90,18 @@ li:last-child {
       font-weight: @font_weight2;
       font-size: @font_size1;
       cursor: pointer;
+   }
+}
+.field {
+   display: flex;
+   flex-direction: column;
+   &__label {
+      margin: 0 0 14px 6px;
+      color: @black;
+      font-family: @font1;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.375;
    }
 }
 .is-hidden {

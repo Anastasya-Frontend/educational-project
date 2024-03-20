@@ -1,0 +1,44 @@
+.btns {
+   display: grid;
+   margin: 100px auto 0;
+   gap: 0 108px;
+   width: 100%;
+   max-width: 624px;
+   grid-template-columns: 272px 1fr;
+   grid-template-areas: 
+   'p-title p-title '
+   'left-btn right-btn';
+   &__title {
+      grid-area: p-title;
+      justify-self: center;
+      font-family: @font2;
+      font-weight: @font_weight2;
+      font-size: @font_size5;
+      line-height: @line_height8;
+      text-transform: uppercase;
+      margin: 0 0 46px;
+   }
+   &__left {
+      grid-area: left-btn;
+      &__event {
+         white-space: nowrap;
+         padding: 15px 40px;
+      }
+   }
+   &__right {
+      grid-area: right-btn;
+      &__tenant {
+         padding: 15px 44px;
+         white-space: nowrap;
+      }
+   }
+}
+.btns__red {
+   color: @white;
+   background-color: @red;
+   border: none;
+   &:hover {
+      background-color: @red_dark;
+      color: @white;
+   }
+}

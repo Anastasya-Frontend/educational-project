@@ -147,13 +147,13 @@
       <section class="services">
         <div class="services__container">
           <h2 class="services__title section-title">Дополнительные услуги</h2>
-          <div class="section-services__content">
+          <div class="services__content">
             <p class="services__text">
               Перед запуском проекта, мы подготавливаем подробную смету и согласуем ее с клиентом. Убедившись, что
               <br> все пожеланию учтены и мы можем приступать к реализациии проекта, начинается сложная, но интересная
               <br> работа, результатом которой будет проведение вашего мероприятия на высшем уровне.
             </p>
-            <!-- таблица -->
+            <!-- Таблица -->
             <div class="services__box">
               <table class="table services__box__table">
                 <thead class="table__thead">
@@ -258,54 +258,57 @@
             </div>
           </div>
           <!-- Кнопки -->
-          <div class="section-poster__box-button section-poster__btn">
-            <h4 class="section-poster__box-button__title">Я хочу:</h4>
-            <div class="section-poster__box-button__left-bnt ">
-              <a href="#" class="btn section-poster__btn__event btn_red">Провести мероприятие</a>
+          <div class="poster__btn btns">
+            <h4 class="poster__btn__title btns__title">Я хочу:</h4>
+            <div class="poster__btn__left btns__left">
+              <a href="#" class="btn poster__btn__left__event poster__btn_red btns__left__event btns__red">Провести мероприятие</a>
             </div>
-            <div class="section-poster__box-button__right-bnt">
-              <a href="#" class="btn section-poster__btn__tenant">Стать арендатором</a>
+            <div class="poster__btn__right btns__right">
+              <a href="#" class="btn poster__btn__right__tenant btns__left__tenant">Стать арендатором</a>
             </div>
           </div>
           <!-- Карточки - контакты -->
-          <div class="section-services__list service">
-            <article class="service-card section-services__prices">
-              <a href="#" class="service-card__link">
-                <picture class="service-card__picture">
-                  <img src="assets/images/information.png" alt="information" class="service-card__img" />
-                </picture>
-                <h4 class="service-card__title">Цены</h4>
-                <p class="service-card__description">
-                  Цены, указанные на сайте носят
-                  <br>информационный характер. Мы придерживаемся индивидуального подхода в работе с клиентом.
-                </p>
+          <div class="services__contacts">
+            <article class="article-box services__article-box services__contacts__el1">
+              <a href="#" class="article-box__link">
+                <div class="article-box__img img">
+                  <svg class="img__icon" width="110" height="110">
+                    <use xlink:href="assets/icons/symbols.svg#information"></use>
+                  </svg>
+                </div>
+                <h4 class="article-box__title">Цены</h4>
               </a>
+              <p class="article-box__descr">Цены, указанные на сайте носят информационный характер. Мы придерживаемся индивидуального подхода в работе с клиентом.
+              </p>
             </article>
-            <article class="service-card section-services__contact">
-              <a href="#" class="service-card__link">
-                <picture class="service-card__picture">
-                  <img src="assets/images/contact.png" alt="contact" class="service-card__img" />
-                </picture>
-                <h4 class="service-card__title">Контакты</h4>
+            <article class="article-box services__article-box services__contacts__el2">
+              <a href="#" class="article-box__link">
+                <div class="article-box__img img">
+                  <svg class="img__icon" width="110" height="110">
+                    <use xlink:href="assets/icons/symbols.svg#contact"></use>
+                  </svg>
+                </div>
+                <h4 class="article-box__title">Контакты</h4>
               </a>
-              <p class="service-card__description">
-                Отдел организации мероприятий
+
+              <div class="article-box__div">
+                <p class="article-box__descr">Отдел организации мероприятий</p>
                 <a href="tel:+74993500730" class="service-card__link cservices-list__text">+7 499 350 0730</a>
                 <a href="mailto:hi@tagree.ru" class="service-card__link services-list__text">hi@tagree.ru</a>
-              </p>
+              </div>
 
             </article>
-            <article class="service-card section-services__handshake">
-              <a href="#" class="service-card__link">
-                <picture class="service-card__picture">
-                  <img src="assets/images/handshake.png" alt="handshake" class="service-card__img" />
-                </picture>
-                <h4 class="service-card__title">Преимущество</h4>
-                <p class="service-card__description">
-                  Мы имеем все возможности для того, чтобы помочь как малому бизнесу и молодым талантам,
-                  <br>так и большим корпорациям и холдингам.
-                </p>
+            <article class="article-box services__article-box services__contacts__el3">
+              <a href="#" class="article-box__link">
+                <div class="article-box__img img">
+                  <svg class="img__icon" width="110" height="110">
+                    <use xlink:href="assets/icons/symbols.svg#handshake"></use>
+                  </svg>
+                </div>
+                <h4 class="article-box__title">Преимущество</h4>
               </a>
+              <p class="article-box__descr">Мы имеем все возможности для того, чтобы помочь как малому бизнесу и молодым талантам, так и большим корпорациям и холдингам.
+              </p>
             </article>
           </div>
         </div>
@@ -335,16 +338,17 @@
             </li>
           </ul>
         </div>
-        <form action="" method="post" class="form footer__content1__form">
-          <label class="form__first">
-            <span class="form__first__text">Подпишись и будь в курсе происходящего</span>
+        <form class="form footer__content1__form">
+          <label class="field form__field">
+            <span class="field__label">Подпишись и будь в курсе происходящего</span>
           </label>
-          <label class="form__second">
-            <div class="form__second__box">
-              <input id="form__second" type="email" placeholder="Email" name="email" class="form__second__box__input">
-              <button class="form__second__box__btn">Подписаться</button>
-            </div>
-          </label>
+          <div class="form__div">
+            <label class="field2 form__field2">
+              <input type="email" placeholder="Email" name="email" class="field2__input">
+            </label>
+            <button class="field2__button" type="submit">Подписаться</button>
+          </div>
+
           <label class="check">
             <input id="check" type="checkbox" class="check__input" required checked>
             <span class="check__mark"></span>

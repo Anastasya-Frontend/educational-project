@@ -1,61 +1,58 @@
 <section class="services">
    <div class="services__container">
       <h2 class="services__title section-title">Дополнительные услуги</h2>
-      <div class="section-services__content">
+      <div class="services__content">
          <p class="services__text">
             Перед запуском проекта, мы подготавливаем подробную смету и согласуем ее с клиентом. Убедившись, что <br> все пожеланию учтены и мы можем приступать к реализациии проекта, начинается сложная, но интересная <br> работа, результатом которой будет проведение вашего мероприятия на высшем уровне.
          </p>
-            <!-- таблица -->
-            @@include('table.html')
+         <!-- Таблица -->
+         @@include('table.html')
       </div>
          <!-- Кнопки -->
-         <div class="section-poster__box-button section-poster__btn">
-            <h4 class="section-poster__box-button__title">Я хочу:</h4>
-            <div class="section-poster__box-button__left-bnt ">
-               <a href="#" class="btn section-poster__btn__event btn_red">Провести мероприятие</a>
-            </div>
-            <div class="section-poster__box-button__right-bnt">
-               <a href="#" class="btn section-poster__btn__tenant">Стать арендатором</a>
-            </div>
-         </div>
+      @@include('btns.html')
          <!-- Карточки - контакты -->
-         <div class="section-services__list service">
-            <article class="service-card section-services__prices">
-               <a href="#" class="service-card__link">
-                  <picture class="service-card__picture">
-                     <img src="assets/images/information.png" alt="information" class="service-card__img"/>
-                  </picture>
-                  <h4 class="service-card__title">Цены</h4>
-                  <p class="service-card__description">
-                     Цены, указанные на сайте носят<br>информационный характер. Мы придерживаемся индивидуального подхода в работе с клиентом.
-                  </p>
-               </a>
-            </article>
-            <article class="service-card section-services__contact">
-               <a href="#" class="service-card__link">
-                  <picture class="service-card__picture">
-                     <img src="assets/images/contact.png" alt="contact" class="service-card__img"/>
-                  </picture>
-                  <h4 class="service-card__title">Контакты</h4>
-               </a>
-                  <p class="service-card__description">
-                     Отдел организации мероприятий
-                     <a href="tel:+74993500730" class="service-card__link cservices-list__text">+7 499 350 0730</a>
-                     <a href="mailto:hi@tagree.ru" class="service-card__link services-list__text">hi@tagree.ru</a>
-                  </p>
-               
-            </article>
-            <article class="service-card section-services__handshake">
-               <a href="#" class="service-card__link">
-                  <picture class="service-card__picture">
-                     <img src="assets/images/handshake.png" alt="handshake" class="service-card__img"/>
-                  </picture>
-                  <h4 class="service-card__title">Преимущество</h4>
-                  <p class="service-card__description">
-                     Мы имеем все возможности для того, чтобы помочь как малому бизнесу и молодым талантам, <br>так и большим корпорациям и холдингам.
-                  </p>
-               </a>
-            </article>
+      <div class="services__contacts">
+         <article class="article-box services__article-box services__contacts__el1">
+            <a href="#" class="article-box__link">
+               <div class="article-box__img img">
+                  <svg class="img__icon" width="110" height="110">
+                     <use xlink:href="assets/icons/symbols.svg#information"></use>
+                  </svg>
+               </div>
+               <h4 class="article-box__title">Цены</h4>
+            </a>
+            <p class="article-box__descr">Цены, указанные на сайте носят информационный характер. Мы придерживаемся индивидуального подхода в работе с клиентом.
+            </p>
+         </article>
+         <article class="article-box services__article-box services__contacts__el2">
+            <a href="#" class="article-box__link">
+               <div class="article-box__img img">
+                  <svg class="img__icon" width="110" height="110">
+                     <use xlink:href="assets/icons/symbols.svg#contact"></use>
+                  </svg>
+               </div>
+               <h4 class="article-box__title">Контакты</h4>
+            </a>
+            
+            <div class="article-box__div">
+               <p class="article-box__descr">Отдел организации мероприятий</p>
+               <a href="tel:+74993500730" class="service-card__link cservices-list__text">+7 499 350 0730</a>
+               <a href="mailto:hi@tagree.ru" class="service-card__link services-list__text">hi@tagree.ru</a>
+            </div>
+            
+         </article>
+         <article class="article-box services__article-box services__contacts__el3">
+            <a href="#" class="article-box__link">
+               <div class="article-box__img img">
+                  <svg class="img__icon" width="110" height="110">
+                     <use xlink:href="assets/icons/symbols.svg#handshake"></use>
+                  </svg>
+               </div>
+               <h4 class="article-box__title">Преимущество</h4>
+            </a>
+            <p class="article-box__descr">Мы имеем все возможности для того, чтобы помочь как малому бизнесу и молодым талантам, так и большим корпорациям и холдингам.
+            </p>
+         </article>
       </div> 
-            </div>   
+   </div>   
 </section>
