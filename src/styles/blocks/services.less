@@ -14,44 +14,15 @@
       font-size: 16px;
       line-height: 1.375;
    }
-   &__contacts {
-      display: grid;
-      margin-top: 100px;
-      grid-template-columns: repeat(3, 401px);
-      gap: 0 65px;
-      
-      grid-template-areas: 
-      'el1 el2 el3';
-      &__el1 {
-         grid-area: el1;
-         
-         
-      }
-      &__el2 {
-         grid-area: el2;
-         
-      }
-      &__el3 {
-         grid-area: el3;
-      }
-      
+}
+.listing__nav__link {
+   color: #1f1e1e;
+   font-family: "Open Sans", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   text-decoration: none;
+   cursor: pointer;
+   &:hover {
+      color: red;
    }
-   
-}
-.article-box {
-   box-sizing: border-box;
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-   align-items: center;
-   text-align: center;
-   &__descr {
-      
-         margin: 0;
-      }
-}
-.article-box__div {
-   display: flex;
-   flex-direction: column;
-   
 }
