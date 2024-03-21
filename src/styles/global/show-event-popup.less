@@ -1,0 +1,379 @@
+.show-event-popup {
+   body {
+      overflow: hidden;
+   }
+   #eventPP {
+      display: flex;
+   }
+}
+@supports (backdrop-filter: blur(50px)) {
+   .pp {
+      background-color: @black66;
+      backdrop-filter: blur(50px);
+   }
+}
+.pp {
+   box-sizing: border-box;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   padding: 90px 95px 50px;
+   overflow-y: auto;
+   z-index: 110;
+   display: none;
+
+   &__wrapper {
+      box-sizing: border-box;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 1210px;
+      margin: auto;
+      background-color: @gray;
+      // background-image: url(../assets/images/noise.png);
+      background-position: 0 0;
+      background-size: auto;
+      background-repeat: repeat;
+   }
+   &__container {
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 0 40px 40px;
+   }
+   &__title {
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      margin: -40px 0 70px -85px;
+      padding: 10px 85px;
+      width: 595px;
+      min-height: 80px;
+      background-color: @black;
+      text-transform: uppercase;
+      font-weight: @font_weight2;
+      font-family: @font2;
+      font-size: @font_size5;
+      line-height: @line_height8;
+      color: @white;
+      letter-spacing: 0.02em;
+      z-index: 1;
+   }
+   &__sticky-close {
+      position: sticky;
+      top: 0;
+      align-self: flex-end;
+      width: 0;
+      height: 0;
+   }
+   &__x-btn {
+      position: absolute;
+      top: -30px;
+      right: -30px;
+   }
+}
+.form {
+   &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+   &__field,
+   &__group {
+      width: 100%;
+      &--w50 {
+         width: calc(50% - 30px);
+      }
+   }
+   &__field {
+      margin: 0 0 30px;
+   }
+   &__check-list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0 0 30px;
+   }
+   &__check {
+      margin-bottom: 10px;
+      &:last-child {
+         margin-bottom: 0;
+      }
+   }
+   &__section {
+      margin: 0 0 20px;
+   }
+   &__section-title {
+      margin: 0 0 10px;
+      color: @black;
+      font-weight: @font_weight5;
+      font-size: @font_size3;
+      line-height: @line_height6;
+   }
+   &__btns {
+      display: flex;
+      align-items: center;
+      margin-top: 40px;
+   }
+   
+   &__submit {
+      &--w50 {
+         width: calc(50% - 30px);
+      }
+   }
+   &__close-btn {
+      margin: 0 auto;
+      padding: 15px 40px;
+      border: none;
+      background: transparent;
+      color: @black;
+      font-family: @font1;
+      font-weight: @font_weight4;
+      font-size: @font_size2;
+      line-height: @line_height5;
+      text-decoration: underline;
+      transition: color 0.2s;
+      &:hover {
+         color: @red;
+      }
+   }
+}
+.is-hidden {
+   position: absolute !important;
+   width: 0 !important;
+   height: 0 !important;
+   margin: 0 !important;
+   padding: 0 !important;
+   border: 0 !important;
+   clip: rect(0 0 0 0) !important;
+   clip-path: inset(100%) !important;
+   white-space: nowrap !important;
+   overflow: hidden !important;
+   visibility: hidden !important;
+   pointer-events: none !important;
+}
+input,
+textarea,
+button,
+select {
+   box-shadow: none;
+   outline: none;
+   color: @black;
+   font-family: @font1;
+}
+button {
+   cursor: pointer;
+}
+textarea {
+   resize: none;
+}
+input,
+textarea {
+   &::placeholder {
+      color: @gray_plachol;
+   }
+}
+input:focus,
+textarea:focus {
+   &::placeholder {
+      color: transparent
+   }
+}
+.check {
+   box-sizing: border-box;
+   position: relative;
+   display: inline-flex;
+   flex-direction: column;
+   align-items: flex-start;
+   min-height: 24px;
+   padding-top: 2px;
+   padding-left: 24px;
+   color: @black;
+   cursor: pointer;
+
+   &__input {
+      position: absolute !important;
+      width: 0 !important;
+      height: 0 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      border: 0 !important;
+      clip: rect(0 0 0 0) !important;
+      clip-path: inset(100%) !important;
+      white-space: nowrap !important;
+      overflow: hidden !important;
+      visibility: hidden !important;
+      pointer-events: none !important;
+
+      &:checked ~ .check__mark {
+         background-color: @black;
+         
+         &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 7px;
+            top: 2px;
+            width: 6px;
+            height: 12px;
+            border-bottom: 2px solid @white;
+            border-right: 2px solid @white;
+            transform: rotate(45deg);
+         }
+      }
+   }
+   &__mark {
+      box-sizing: border-box;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 24px;
+      height: 24px;
+      border: 1px solid @black;
+   }
+   &__label {
+      margin-left: 15px;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+
+      &--s {
+         font-size: 14px;
+         line-height: 19px;
+      }
+   }
+}
+.radio {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   &__item {
+      box-sizing: border-box;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 15px;
+      min-height: 23px;
+      padding-left: 23px;
+      color: @black;
+      cursor: pointer;
+
+      &:last-child {
+         margin-bottom: 0;
+      }
+   }
+   &__input {
+      position: absolute !important;
+      width: 0 !important;
+      height: 0 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      border: 0 !important;
+      clip: rect(0 0 0 0) !important;
+      clip-path: inset(100%) !important;
+      white-space: nowrap !important;
+      overflow: hidden !important;
+      visibility: hidden !important;
+      pointer-events: none !important;
+      &:checked ~ .radio__mark {
+         background-color: #1f1e1e;
+      }
+   }
+   &__mark {
+      box-sizing: border-box;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 23px;
+      height: 23px;
+      border: 2px solid @black;
+      border-radius: 50%;
+      padding: 3px;
+      background-clip: content-box;
+      background-color: transparent;
+      transition: background-color 0.2s;
+   }
+   &__label {
+      margin-left: 20px;
+      color: @black;
+      font-family: @font1;
+      font-weight: @font_weight2;
+      font-size: @font_size2;
+      line-height: @line_height5;
+   }
+}
+.field {
+   display: flex;
+   flex-direction: column;
+   &__title {
+      display: block;
+      margin: 0 0 10px;
+      color: @black;
+      font-family: @font1;
+      font-weight: @font_weight5;
+      font-size: @font_size3;
+      line-height: @line_height6;
+   }
+   &__label {
+      display: block;
+      margin-bottom: 5px;
+      color: @black;
+      font-family: @font1;
+      font-size: @font_size2;
+      font-weight: @font_weight2;
+      line-height: @line_height5;
+   }
+   &__input,
+   &__textarea,
+   &__select {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      background-color: @white;
+      font-size: @font_size2;
+      line-height: @line_height5;
+   }
+   &__input,
+   &__select {
+      height: 55px;
+      padding: 0 20px;
+   }
+   &__textarea {
+      height: 150px;
+      padding: 20px;
+   }
+   &__date-inputs {
+      display: flex;
+      width: 100%;
+      max-width: 251px;
+      height: 55px
+   }
+   &__date-input {
+      box-sizing: border-box;
+      display: block;
+      width: 55px;
+      height: 55px;
+      margin-right: 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: @white;
+      padding: 0 5px;
+      font-size: @font_size2;
+      line-height: @line_height5;
+      text-align: center;
+      &--year {
+         flex-grow: 1;
+         margin-right: 0;
+      }
+   
+   }
+}
