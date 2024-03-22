@@ -6,12 +6,6 @@
       display: flex;
    }
 }
-@supports (backdrop-filter: blur(50px)) {
-   .pp {
-      background-color: @black66;
-      backdrop-filter: blur(50px);
-   }
-}
 .pp {
    box-sizing: border-box;
    position: fixed;
@@ -38,6 +32,7 @@
       background-size: auto;
       background-repeat: repeat;
    }
+
    &__container {
       box-sizing: border-box;
       width: 100%;
@@ -45,6 +40,7 @@
       margin: 0 auto;
       padding: 0 40px 40px;
    }
+
    &__title {
       box-sizing: border-box;
       display: flex;
@@ -63,6 +59,7 @@
       letter-spacing: 0.02em;
       z-index: 1;
    }
+
    &__sticky-close {
       position: sticky;
       top: 0;
@@ -70,10 +67,17 @@
       width: 0;
       height: 0;
    }
+   
    &__x-btn {
       position: absolute;
       top: -30px;
       right: -30px;
+   }
+}
+@supports (backdrop-filter: blur(50px)) {
+   .pp {
+      background-color: @black66;
+      backdrop-filter: blur(50px);
    }
 }
 .form {
@@ -117,7 +121,7 @@
    &__btns {
       display: flex;
       align-items: center;
-      margin-top: 40px;
+      margin-top: 10px;
    }
    
    &__submit {
@@ -209,20 +213,21 @@ textarea:focus {
       visibility: hidden !important;
       pointer-events: none !important;
 
-      &:checked ~ .check__mark {
-         background-color: @black;
-         
-         &::after {
-            content: "";
-            display: block;
-            position: absolute;
-            left: 7px;
-            top: 2px;
-            width: 6px;
-            height: 12px;
-            border-bottom: 2px solid @white;
-            border-right: 2px solid @white;
-            transform: rotate(45deg);
+      &:checked {
+         & ~ .check__mark {
+            background-color: @black;
+            &::after {
+               content: "";
+               display: block;
+               position: absolute;
+               left: 7px;
+               top: 2px;
+               width: 6px;
+               height: 12px;
+               border-bottom: 2px solid @white;
+               border-right: 2px solid @white;
+               transform: rotate(45deg);
+            }
          }
       }
    }
@@ -238,13 +243,14 @@ textarea:focus {
    }
    &__label {
       margin-left: 15px;
-      font-weight: 300;
-      font-size: 16px;
-      line-height: 22px;
-
+      font-weight: @font_weight1;
+      font-size: @font_size2;
+      line-height: @line_height5;
       &--s {
-         font-size: 14px;
-         line-height: 19px;
+         font-family: @font1;
+         font-size: @font_size1;
+         line-height: @line_height3;
+         font-weight: @font_weight2;
       }
    }
 }
@@ -260,10 +266,9 @@ textarea:focus {
       align-items: flex-start;
       margin-bottom: 15px;
       min-height: 23px;
-      padding-left: 23px;
+      padding-left: 20px;
       color: @black;
       cursor: pointer;
-
       &:last-child {
          margin-bottom: 0;
       }
@@ -282,7 +287,7 @@ textarea:focus {
       visibility: hidden !important;
       pointer-events: none !important;
       &:checked ~ .radio__mark {
-         background-color: #1f1e1e;
+         background-color: @black;
       }
    }
    &__mark {
@@ -323,7 +328,7 @@ textarea:focus {
    }
    &__label {
       display: block;
-      margin-bottom: 5px;
+      margin: 0 0 5px;
       color: @black;
       font-family: @font1;
       font-size: @font_size2;
@@ -374,6 +379,5 @@ textarea:focus {
          flex-grow: 1;
          margin-right: 0;
       }
-   
    }
 }
