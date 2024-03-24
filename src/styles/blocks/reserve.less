@@ -4,8 +4,8 @@
 }
 .reserve {
    display: grid;
-   grid-gap: 67px 0;
-   grid-template-columns: 405px calc(100% - 405px);
+   grid-gap: 67px 149px;
+   grid-template-columns: 405px calc(89% - 405px);
    grid-template-areas: 
    "checks scheme"
    "order legend"; 
@@ -21,7 +21,6 @@
 }
 .reserve__scheme {
    grid-area: scheme;
-   justify-self: end;
 }
 .reserve__legend {
    grid-area: legend;
@@ -85,20 +84,28 @@
    font-family: @font1;
    line-height: @line_height6;
 }
-.reserve__scheme {
-   &__div {
-      box-sizing: border-box;
+
+
+.reserve {
+   &__checks__title {
+      margin-bottom: 5px;
+   }
+   &__order__title {
+      margin-bottom: 20px;
+   }
+   &__legend__title {
+      margin-bottom: 20px;
+   }
+   &__scheme-div {
       display: flex;
       justify-content: center;
-      align-items: center;
-      margin: 0 auto;
-      width: 162px;
-      max-height: 34px;
-      padding: 6px 56px;
+      align-items: baseline;
       background-color: @black;
+      margin: 0 auto 40px;
+      width: 162px;
       &__title {
          margin: 0;
-         background-color: @black;
+         padding: 6px 0;
          color: @white;
          font-weight: @font_weight5;
          font-size: @font_size3;
@@ -106,8 +113,6 @@
          line-height: @line_height6;
       }
    }
-}
-.reserve {
    &__scheme-wrapper {
       position: relative;
       width: 100%;
@@ -129,13 +134,24 @@
       display: flex;
       justify-content: space-between;
       align-items: baseline;
+
    }
    &__qty {
+      color: @black;
+      font-family: @font1;
+      font-size: @font_size2;
+      font-weight: @font_weight2;
+      margin-bottom: 15px;
       &::after {
          content: " " attr(data-caption) " | " attr(data-price);
       }
    }
    &__sum {
+      padding-right: 15px;
+      color: @black;
+      font-family: @font1;
+      font-size: @font_size3;
+      font-weight: @font_weight4;
       &::after {
          content: attr(data-currency);
          margin-left: 4px;
@@ -143,6 +159,12 @@
       }
    }
    &__total {
+      margin-top: 10px;
+      color: @black;
+      font-size: @font_size4;
+      font-family: @font1;
+      font-weight: @font_weight4;
+      text-align: center;
       &::before {
          content: attr(data-caption);
          margin-right: 30px;
@@ -153,14 +175,33 @@
          font-size: 0.95em;
       }
    }
+   &__submit {
+      margin-top: 53px;
+      color: @white;
+      font-family: @font1;
+      font-weight: @font_weight4;
+      font-size: @font_size2;
+      width: 405px;
+      height: 52px;
+      padding: 15px 131px;
+      border: none;
+      background-color: @red;
+      text-decoration: none;
+      transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+      cursor: pointer;
+      &:hover {
+         color: @red_dark;
+      }
+   }
 }
 .reserve__total-list {
    display: flex;
-   
+   flex-direction: column;
    justify-content: center;
    align-items: baseline;
 }
 .reserve__legend__div1 {
+   
    width: 24px;
    height: 24px;
    background-color: @red_dark;
@@ -170,66 +211,7 @@
    height: 24px;
    background-color: @black;
 }
-// td {
-//    padding: 0 0 15px 0;
-// }
-// .reserve__legend__title {
-//    margin-left: 425px;
-//    text-align: right;
-// }
-// .reserve__legend__text {
-//    text-align: right;
-   
-// }
-// .table {
-//    width: 405px;
-// }
-// .table__tr1__td,
-// .table__tr2__td {
-//    font-family: "Open Sans", sans-serif;
-//    color: #1f1e1e;
-//    font-weight: 400;
-//    font-size: 16px;
-//    line-height: 22px;
-// }
-// .table__el {
-//    font-family: "Open Sans", sans-serif;
-//    color: #1f1e1e;
-//    font-weight: 600;
-//    font-size: 18px;
-//    text-align: right;
-//    padding-top: 10px;
-//    padding-right: 15px;
-//    line-height: 25px;
-// }
-// .table__el2 {
-//    font-family: "Open Sans", sans-serif;
-//    color: #1f1e1e;
-//    font-weight: 600;
-//    font-size: 20px;
-//    text-align: center;
-//    line-height: 27px;
-// }
-// .reserve__order__button {
-//    display: flex;
-//    align-items: center;
-//    margin-top: 53px;
-// }
-.reserve__order__button__btn {
-   color: #fff;
-   font-family: "Open Sans", sans-serif;
-   font-weight: 600;
-   font-size: 16px;
-   padding: 15px 131px;
-   border: none;
-   background-color: #bc3324;
-   text-decoration: none;
-   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-   cursor: pointer;
-}
-.reserve__order__button__btn:hover {
-   background-color: #a51505;
-}
+
 
 
 

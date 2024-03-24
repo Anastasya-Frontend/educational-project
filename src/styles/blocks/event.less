@@ -1,15 +1,29 @@
-.main__container {
+.event {
    box-sizing: border-box;
    display: flex;
    flex-direction: column;
    width: 100%;
-   margin: 0 auto;
    max-width: 1414px;
-   padding-left: 40px;
-   padding-right: 40px;
-}
-.event {
+   margin: 0 auto;
    padding: 0 40px 10px;
+   &__title {
+      margin: 38px 0 80px;
+      text-align: center;
+      color: @black;
+      font-family: @font2;
+      font-weight: @font_weight3;
+      font-size: @font_size11;
+      line-height: @line_height10;
+   }
+   &__card {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 943px;
+      margin: 0 auto;
+   }
 }
 .event__nav {
    box-sizing: border-box;
@@ -55,12 +69,7 @@
 } 
 
 
-/* IMG */
-.event__picture-block {
-   display: flex;
-   flex-direction: column;
-   margin-left: 210px;
-}
+
 .event__picture-block__title {
    text-align: center;
    color: #1f1e1e;
@@ -130,66 +139,63 @@
    border-image:linear-gradient(to left, #dedede80 25%, #1f1e1e);
    border-image-slice: 1;
 }
-/* <!-- Текст --> */
-.event__block2 {
+// Текст
+.event__text-box {
    box-sizing: border-box;
    display: flex;
    flex-direction: column;
    width: 100%;
-   max-width: 1414px;
-   padding-left: 40px;
-   padding-right: 40px;
-}
-.event__block2__content {
    margin-top: 80px;
+   &__title {
+      margin: 0;
+      padding-bottom: 15px;
+      color: @black;
+      font-weight: @font_weight5;
+      font-size: @font_size3;
+      font-family: @font1;
+      line-height: @line_height6;
+   }
+   &__list {
+      color: @black;
+      font-family: @font1;
+      font-size: @font_size2;
+      font-weight: @font_weight2;
+      font-style: normal;
+      line-height: @line_height5;
+      word-wrap: break-word;
+   }
+   &__description {
+      margin: 0;
+      width: 868px;
+      color: @black;
+      font-weight: @font_weight2;
+      font-size: @font_size2;
+      font-family: @font1;
+   }
 }
-.event__block2__content__title {
-   color: #1f1e1e;
-   font-weight: 700;
-   font-size: 18px;
-   font-family: "Open Sans", sans-serif;
-   line-height: 25px;
-}
-.event__block2__content__list {
-   color: #1f1e1e;
-   font-family: "Open Sans", sans-serif;
-   font-size: 16px;
-   font-weight: 400;
-   font-style: normal;
-   line-height: 1.375;
-   word-wrap: break-word;
-}
-.event__block2__content__text {
-   margin-top: 15px;
-   width: 868px;
-   color: #1f1e1e;
-   font-weight: 400;
-   font-size: 16px;
-   font-family: "Open Sans", sans-serif;
-}
-.event__block2__content ol:first-child,
-.event__block2__content ul:first-child,
-.event__block2__content p:first-child {
+.event__text-box ol:first-child,
+.event__text-box ul:first-child,
+.event__text-box p:first-child {
    margin-top: 0;
 }
-.event__block2__content ol:last-child,
-.event__block2__content ul:last-child,
-.event__block2__content p:last-child {
+.event__text-box ol:last-child,
+.event__text-box ul:last-child,
+.event__text-box p:last-child {
    margin-bottom: 0;
 }
-.event__block2__content ul,
-.event__block2__content ol {
+.event__text-box ul,
+.event__text-box ol {
    position: relative;
    padding: 0;
    list-style: none;
-   font-family: "Open Sans", sans-serif;
+   font-family: @font1;
 }
-.event__block2__content ul > li {
+.event__text-box ul > li {
    box-sizing: border-box;
    position: relative;
    padding-left: 20px;
 } 
-.event__block2__content ul > li::before {
+.event__text-box ul > li::before {
    content: "";
    display: block;
    position: absolute;
@@ -198,34 +204,37 @@
    width: 6px;
    height: 6px;
    border-radius: 50%;
-   background-color: #bc3324;
+   background-color: @red;
    pointer-events: none;
+}
+ul {
+   margin: 6px 0 75px;
 }
 ol {
    margin-top: 50px;
 }
-.event__block2__content ol {
+.event__text-box ol {
    counter-reset: li;
    padding: 0;
 }
-.event__block2__content ol > li {
+.event__text-box ol > li {
    counter-increment: li;
 }
-.event__block2__content ol > li::before {
+.event__text-box ol > li::before {
    content: counter(li) ". ";
    box-sizing: border-box;
    display: inline-block;
    min-width: 20px;
-   color: #bc3324;
+   color: @red;
    white-space: pre;
 }
-.event__block2__content ul > li,
-.event__block2__contentt ol > li {
+.event__text-box ul > li,
+.event__text-box ol > li {
    margin: 0 0 8px;
    cursor: default;
 }
-.event__block2__content ul > li:last-child,
-.event__block2__content ol > li:last-child {
+.event__text-box ul > li:last-child,
+.event__text-box ol > li:last-child {
    margin-bottom: 0;
 }
-/* Форма */
+
