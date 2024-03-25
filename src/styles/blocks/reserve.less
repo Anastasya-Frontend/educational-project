@@ -134,7 +134,6 @@
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-
    }
    &__qty {
       color: @black;
@@ -143,7 +142,7 @@
       font-weight: @font_weight2;
       margin-bottom: 15px;
       &::after {
-         content: " " attr(data-caption) " | " attr(data-price);
+         content: " " attr(data-caption)  " | " attr(data-price);
       }
    }
    &__sum {
@@ -159,12 +158,13 @@
       }
    }
    &__total {
+      display: flex;
+      justify-content: center;
       margin-top: 10px;
       color: @black;
       font-size: @font_size4;
       font-family: @font1;
       font-weight: @font_weight4;
-      text-align: center;
       &::before {
          content: attr(data-caption);
          margin-right: 30px;
@@ -194,24 +194,83 @@
       }
    }
 }
-.reserve__total-list {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: baseline;
-}
-.reserve__legend__div1 {
+
+.reserve__qty2 {
+   color: @black;
+   font-family: @font1;
+   font-size: @font_size2;
+   font-weight: @font_weight2;
+   margin-bottom: 15px;
+   width: 161px;
+   text-align: right;
+   &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-color: black;
+   }
    
-   width: 24px;
-   height: 24px;
-   background-color: @red_dark;
-}
-.reserve__legend__div2 {
-   width: 24px;
-   height: 24px;
-   background-color: @black;
+   &::after {
+      content: " " attr(data-price) " " attr(data-currency)" | " attr(data-caption) ;
+   }
 }
 
 
 
+.text {
+   color: rgb(22, 20, 20);
+   position: relative;
+   width: 200px;
+   text-align: right;
+}
+
+.text::after,
+.text::before {
+   content: "";
+   position: absolute;
+   display: block;
+   width: 24px;
+   height: 24px;
+   left: 0;
+   top: 0;
+   border: 1px solid black;
+   border-radius: 50%;
+}
+
+.text::after {
+   left: 12px;
+   border-color: red;
+}
+.text1 {
+   color: rgb(22, 20, 20);
+   position: relative;
+   width: 200px;
+   text-align: right;
+   margin-top: 15px;
+}
+
+.text1::after,
+.text1::before {
+   content: "";
+   position: absolute;
+   display: block;
+   width: 24px;
+   height: 24px;
+   left: 12px;
+   top: 0;
+   background-color: gray;
+   border-radius: 50%;
+   
+}
+
+
+
+.reserve__legend__div {
+   display: flex;
+   box-sizing: border-box;
+   flex-direction: column;
+   align-items: end;
+}
 
