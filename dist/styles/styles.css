@@ -529,7 +529,7 @@ textarea {
   cursor: pointer;
 }
 .reserve__submit:hover {
-  color: #a51505;
+  background-color: #a51505;
 }
 .reserve__tickets-box1 {
   display: -webkit-box;
@@ -563,6 +563,7 @@ textarea {
 .reserve__qty2 {
   position: relative;
   width: 161px;
+  height: 24px;
   color: #1f1e1e;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -582,6 +583,9 @@ textarea {
 }
 .reserve__qty2::after {
   content: " " attr(data-price) " " attr(data-currency) " | " attr(data-caption);
+}
+.reserve__qty2:last-child {
+  margin-bottom: 0;
 }
 .reserve__black::before {
   background-color: #1f1e1e;
@@ -1125,6 +1129,9 @@ textarea {
 .section-events__button__link:hover {
   color: #bc3324;
 }
+.event-card__btn__slider__icon:hover {
+  color: #bc3324;
+}
 .listing__events {
   padding: 138px 0 100px;
 }
@@ -1629,6 +1636,21 @@ ol {
 .section-blog__btn__right:hover {
   color: #bc3324;
 }
+.services {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 1414px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
 .contacts {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1802,6 +1824,9 @@ ol {
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
   cursor: pointer;
+}
+.page-header__nav-logout__icon:hover {
+  color: #bc3324;
 }
 @supports ((-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px))) {
   .page-header {

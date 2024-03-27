@@ -190,7 +190,7 @@
       transition: color 0.2s, background-color 0.2s, border-color 0.2s;
       cursor: pointer;
       &:hover {
-         color: @red_dark;
+         background-color: @red_dark;
       }
    }
    &__tickets-box1 {
@@ -198,7 +198,6 @@
       box-sizing: border-box;
       flex-direction: column;
       align-items: end;
-      
    }
    &__tickets-box2 {
       display: flex;
@@ -210,6 +209,7 @@
    &__qty2 {
       position: relative;
       width: 161px;
+      height: 24px;
       color: @black;
       font-family: @font1;
       font-size: @font_size1;
@@ -228,6 +228,10 @@
       }
       &::after {
          content: " " attr(data-price) " " attr(data-currency)" | " attr(data-caption);
+         
+      }
+      &:last-child {
+         margin-bottom: 0;
       }
    }
    &__black {
