@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1,maximum-scale=1,user-scalable=no">
   <title>Lenni Art</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,24 +26,32 @@
         <a href="#" class="page-header__nav-link">Блог</a>
         <a href="#" class="page-header__nav-link">О нас</a>
         <a href="#" class="page-header__nav-link">Контакты</a>
+        <div class="page-header__nav-user">
+          <a href="#" class="page-header__nav-user-link">
+            Александр С.
+          </a>
+          <a href="#" class="page-header__nav-logout">
+            <svg class="page-header__nav-logout-icon" width="24" height="24">
+              <use xlink:href="assets/icons/symbols.svg#log-in"></use>
+            </svg>
+          </a>
+        </div>
       </nav>
-      <!-- Когда пользователь авторизован -->
-      <!-- <div class="page-header__nav-user">
-         <a href="#" class="page-header__nav-user__link">Александр С.</a>
-            <a href="#" class="page-header__nav-logout">
-               <svg class="page-header__nav-logout__icon" width="24" height="24">
-                  <use xlink:href="assets/icons/symbols.svg#log-in"></use>
-               </svg>
-            </a>
-      </div> -->
       <div class="page-header__right-block">
-        <a href="#" class="btn page-header__user-btn">Войти</a>
+        <a href="#" class="page-header__user-btn">
+          Войти
+          <svg class="page-header__user-icon" width="21" height="18">
+            <use xlink:href="assets/icons/symbols.svg#user"></use>
+          </svg>
+        </a>
+        <button type="button" class="page-header__nav-toggle"></button>
       </div>
     </div>
   </header>
   <!-- Основное содержимое страницы -->
   <main class="main">
     <div class="main__container">
+      <!-- Постер - Арт Пространство -->
       <section class="section-poster poster">
         <div class="section-poster__container">
           <h1 class="section-poster__title">Арт - Пространство</h1>
@@ -57,17 +65,20 @@
           <p class="section-poster__description">Для людей, горящих сердцем и делом
             <br> место для настоящего
           </p>
-          <div class="poster__btn btns">
-            <h4 class="poster__btn__title btns__title">Я хочу:</h4>
-            <div class="poster__btn__left btns__left">
-              <a href="#" class="btn poster__btn__left__event poster__btn_red btns__left__event btns__red">Провести мероприятие</a>
-            </div>
-            <div class="poster__btn__right btns__right">
-              <a href="#" class="btn poster__btn__right__tenant btns__left__tenant">Стать арендатором</a>
-            </div>
-          </div>
         </div>
       </section>
+      <!-- Кнопки -->
+      <div class="poster__btn btns">
+        <h4 class="btns__title">Я хочу:</h4>
+        <div class="btns__box">
+          <div class="btns__right-block">
+            <a href="#" class="btns__event">Провести мероприятие</a>
+          </div>
+          <div class="btns__left-block">
+            <a href="#" class="btns__tenant">Стать арендатором</a>
+          </div>
+        </div>
+      </div>
       <!-- О нас -->
       <section class="section-about about">
         <div class="section-about__container ">
@@ -432,6 +443,7 @@
       </div>
     </div>
   </footer>
+  <!-- Форма -->
   <div class="pp" id="eventPP">
     <div class="pp__wrapper">
       <div class="pp__sticky-close">

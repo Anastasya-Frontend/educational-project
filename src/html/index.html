@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="ru">
-   @@include('blocks/head.html')
-
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1,maximum-scale=1,user-scalable=no">
+      <title>Lenni Art</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="styles/styles.css">
+      <link rel="icon" type="image/png" href="assets/images/logo_favicon.png">
+   </head>
 <body class="body">
-      <!-- Шапка сайта -->
-      @@include('blocks/page-header.html')
-      <!-- Основное содержимое страницы -->
-      <main class="main">
-         <div class="main__container">
-            <section class="section-poster poster">
-               <div class="section-poster__container">
-                  <h1 class="section-poster__title">Арт - Пространство</h1>
-                  <div class="section-poster__svg">
-                     <div class="section-poster__svg__box">
-                        <svg class="section-poster__svg__icon" width="1920" height="325">
-                           <use xlink:href="assets/icons/symbols.svg#LENNI"></use>
-                        </svg>
-                     </div>
-                  </div>
-                  <p class="section-poster__description">Для людей, горящих сердцем и делом <br> место для настоящего</p>
-                  @@include('blocks/btns.html')
-               </div>
-            </section>
+   <!-- Шапка сайта -->
+   @@include('blocks/page-header.html')
+   <!-- Основное содержимое страницы -->
+   <main class="main">
+      <div class="main__container">
+      <!-- Постер - Арт Пространство -->
+         @@include('blocks/poster.html')
+      <!-- Кнопки -->
+         @@include('blocks/btns.html')
       <!-- О нас -->
-            @@include('blocks/about.html')
+         @@include('blocks/about.html')
       <!-- Мероприятия  --> 
-            @@include('blocks/listing.html')
+         @@include('blocks/listing.html')
       <!-- Секция Блог -->
-            @@include('blocks/blog.html')
+         @@include('blocks/blog.html')
       <!-- Секция Контакты -->
-            @@include('blocks/contacts.html')
+         @@include('blocks/contacts.html')
       <!-- Блок - текст -->
-            @@include('blocks/doit.html')
-         </div>
-      </main>
-      <!-- Футер -->
-      @@include('blocks/page-footer.html')
-      @@include('blocks/event-pp.html')
+         @@include('blocks/doit.html')
+      </div>
+   </main>
+   <!-- Футер -->
+   @@include('blocks/page-footer.html')
+   <!-- Форма -->
+   @@include('blocks/event-pp.html')
 </body>
 </html>
