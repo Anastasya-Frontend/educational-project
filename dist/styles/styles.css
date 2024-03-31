@@ -252,7 +252,7 @@ textarea {
 .doit {
   position: relative;
   width: 100%;
-  height: 325px;
+  height: 308px;
   overflow: hidden;
   margin-top: 150px;
 }
@@ -1734,6 +1734,11 @@ ol {
 .contacts {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  width: 100%;
+  max-width: 1414px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1741,11 +1746,6 @@ ol {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
-  max-width: 1414px;
-  margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
 }
 .contacts__wrapper {
   display: -webkit-box;
@@ -1759,6 +1759,12 @@ ol {
 .contacts__wrapper__content {
   margin-top: 15px;
   height: 464px;
+}
+.contacts__wrapper__map__img {
+  width: 100%;
+  max-width: 752px;
+  min-width: 280px;
+  height: auto;
 }
 .info-card {
   -webkit-box-sizing: border-box;
@@ -2788,6 +2794,24 @@ textarea:focus::placeholder {
   body {
     padding-top: 111px;
   }
+  .doit {
+    height: 216px;
+  }
+  .doit__text {
+    font-size: 90px;
+  }
+  .doit__row1 {
+    left: -3.5vw;
+  }
+  .doit__row2 {
+    top: -8.2vw;
+    left: 60.5vw;
+  }
+  .doit__row3 {
+    top: -8vw;
+    right: -9.2vw;
+    left: 38.5vw;
+  }
   .page-header {
     height: 111px;
   }
@@ -2804,6 +2828,10 @@ textarea:focus::placeholder {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .contacts {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   .page-header__container {
     padding-left: 30px;
     padding-right: 30px;
@@ -2814,6 +2842,24 @@ textarea:focus::placeholder {
   }
 }
 @media (max-width: 1019px) {
+  .doit {
+    height: 321px;
+  }
+  .doit__text {
+    font-size: 80px;
+  }
+  .doit__row1 {
+    left: -2vw;
+  }
+  .doit__row2 {
+    top: 1vw;
+    left: 34.5vw;
+  }
+  .doit__row3 {
+    white-space: nowrap;
+    top: 2vw;
+    left: 1.5vw;
+  }
   .page-header__nav {
     position: absolute;
     left: 0;
@@ -2928,7 +2974,27 @@ textarea:focus::placeholder {
   .btns__left-block {
     width: 280px;
   }
+  .doit {
+    height: 162px;
+  }
+  .doit__text {
+    font-size: 40px;
+  }
+  .doit__row1 {
+    left: -2vw;
+    white-space: nowrap;
+  }
+  .doit__row2 {
+    left: 27.5vw;
+  }
+  .doit__row3 {
+    left: -15vw;
+  }
   .listing {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .contacts {
     padding-left: 20px;
     padding-right: 20px;
   }
