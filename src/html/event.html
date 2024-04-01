@@ -5,95 +5,22 @@
 </head>
 <body class="body">
    <!-- Шапка сайта -->
-   <header class="page-header">
-      <div class="page-header__container">
-         <a href="index.html" class="page-header__logo">
-            <svg class="page-header__logo-icon" width="202" height="147">
-               <use xlink:href="assets/icons/symbols.svg#logo"></use>
-            </svg>
-         </a>
-         <nav class="page-header__nav">
-            <a href="#" class="page-header__nav-link">Мероприятия</a>
-            <a href="#" class="page-header__nav-link">Блог</a>
-            <a href="#" class="page-header__nav-link">О нас</a>
-            <a href="#" class="page-header__nav-link">Контакты</a>
-         </nav>
-         <!-- Когда пользователь авторизован -->
-         <div class="page-header__nav-user">
-            <a href="#" class="page-header__nav-user-link">Александр С.</a>
-            <a href="#" class="page-header__nav-logout">
-               <svg class="page-header__nav-logout__icon" width="24" height="24">
-                  <use xlink:href="assets/icons/symbols.svg#log-in"></use>
-               </svg>
-            </a>
-         </div>
-         <!-- <div class="page-header__right-block">
-            <a href="#" class="btn page-header__user-btn">Войти</a>
-         </div> -->
-      </div>
-   </header>
+   @@include('blocks/page-header.html')
    <!-- Основное содержимое страницы -->
    <main class="main">
       <div class="main__container">
          <article class="event">
             <!-- Навигация -->
-            <nav class="event__nav">
-               <a href="#" class="event__nav__link">Главная</a>
-               <a href="#" class="event__nav__link">/ Мероприятия</a>
-               <span class="event__nav__span">/ Вечер | The Best of Sade</span>
-            </nav>
+            <ul class="event__nav">
+               <li><a href="#" class="event__nav__li event__nav__link">Главная</a></li>
+               <li><a href="#" class="event__nav__li event__nav__link">Мероприятия</a></li>
+               <li class="event__nav__li">Вечер | The Best of Sade</li>
+            </ul>
             <!-- Картинка -->
             <h1 class="event__title"> Вечер | The Best of Sade</h1>
-            <div class="event__box">
-               <div class="event__box__item">
-                  <time datetime="2022-12-16" class="event__box__time event__card__time__right">
-                     16/12/2022
-                  </time>
-                  <p class="event__box__text event__box__cafe">Кафе «Птичка»</p>
-               </div>
-               <picture class="event__box__picture">
-                  <img src="assets/images/best.png" alt="Best" class="event__box__picture__img">
-               </picture>
-               <div class="event__box__item">
-                  <time datetime="T20:00" class="event__box__time event__box__time__right">
-                     20.00<span class="event__box__text"> начало </span>
-                  </time>
-                  <p class="event__box__text">Ленина 10 | 2 этаж</p>
-               </div>
-            </div>
+            @@include('blocks/event__box.html')
             <!-- Текст -->
-            <div class="event__text-box">
-               <h4 class="event__text-box__title">Программа мероприятия:</h4>
-               <ul class="event__text-box__list">
-                  <li>20:15 — Приветствие гостей</li>
-                  <li>20:30 — Первая подача блюд | Салаты</li>
-                  <li>20:40 — Живой вокал | Композиции 1-3</li>
-                  <li>21:20 — Подача горячих блюд</li>
-                  <li>21:30 — Живой вокал | Композиции 4-7</li>
-                  <li>22:15 — Подача десерта</li>
-                  <li>22:30 — Живой вокал | Композиции 8-9</li>
-                  <li>23:00 — Завершение вечера</li>
-               </ul>
-               <h4 class="event__text-box__title">The Best Of Sade</h4>
-               <p class="event__text-box__description">
-                  Первый альбом-компиляция Sade, выпущенный в 1994 году. Он содержит 9 треков, включая самые популярные хиты группы, раритеты и их любимые треки. 
-                  <br>
-                  <br>
-                  Группа продемонстрировала необычайное долголетие и креативность своей творческой карьеры.
-                  <br>Она лидировала музыкальных чартах с 1994 по 1995 год, став четырехкратно платиновой в США и продав более 2 миллионов копий в Европе.
-               </p>
-               <ol class="event__text-box__list">
-                  <li>Your Love Is King</li>
-                  <li>Hang On To Your Love</li>
-                  <li>Smooth Operator</li>
-                  <li>Jezebel</li>
-                  <li>The Sweetest Taboo</li>
-                  <li>Is It A Crime</li>
-                  <li>Never As Good As The First Time</li>
-                  <li>Love Is Stronger Than Pride</li>
-                  <li>Paradise</li>
-               </ol>
-            </div>
+            @@include('blocks/event-content.html')
             <!-- Форма -->
             @@include('blocks/reserve.html')
          </article>

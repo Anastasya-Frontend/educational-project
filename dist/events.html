@@ -13,7 +13,7 @@
 </head>
 
 <body class="body">
-  <!-- Header -->
+  <!-- Шапка сайта -->
   <header class="page-header">
     <div class="page-header__container">
       <a href="index.html" class="page-header__logo">
@@ -26,18 +26,26 @@
         <a href="#" class="page-header__nav-link">Блог</a>
         <a href="#" class="page-header__nav-link">О нас</a>
         <a href="#" class="page-header__nav-link">Контакты</a>
+        <div class="page-header__nav-user">
+          <a href="#" class="page-header__nav-user-link">
+            Александр С.
+          </a>
+          <a href="#" class="page-header__nav-logout">
+            <svg class="page-header__nav-logout-icon" width="24" height="24">
+              <use xlink:href="assets/icons/symbols.svg#log-in"></use>
+            </svg>
+          </a>
+        </div>
       </nav>
-      <div class="page-header__nav-user">
-        <a href="#" class="page-header__nav-user-link">Александр С.</a>
-        <a href="#" class="page-header__nav-logout">
-          <svg class="page-header__nav-logout__icon" width="24" height="24">
-            <use xlink:href="assets/icons/symbols.svg#log-in"></use>
+      <div class="page-header__right-block">
+        <a href="#" class="page-header__user-btn">
+          Войти
+          <svg class="page-header__user-icon" width="21" height="18">
+            <use xlink:href="assets/icons/symbols.svg#user"></use>
           </svg>
         </a>
+        <button type="button" class="page-header__nav-toggle"></button>
       </div>
-      <!-- <div class="page-header__right-block">
-            <a href="#" class="btn page-header__user-btn">Войти</a>
-         </div> -->
     </div>
   </header>
   <!-- Main -->
@@ -45,10 +53,12 @@
     <div class="main__container">
       <!-- Секция - Мероприятия -->
       <section class="listing">
-        <nav class="listing__nav">
-          <a href="#" class="listing__nav__link">Главная</a>
-          <a href="#" class="listing__nav__link">/ Мероприятия</a>
-        </nav>
+        <ul class="listing__nav">
+          <li>
+            <a href="#" class="listing__nav__li listing__nav__link">Главная</a>
+          </li>
+          <li class="listing__nav__li">Мероприятия</li>
+        </ul>
         <div class="listing__events">
           <h2 class="listing__title section-title">Мероприятия</h2>
           <div class="listing__events__box">
@@ -117,7 +127,7 @@
           <div class="listing__button">
             <a href="#" class="listing__button__link">
               <span class="listing__button__span">Показать еще</span>
-              <svg class="listing__button__icon" width="62" height="92">
+              <svg class="listing__button__icon" width="60" height="91">
                 <use xlink:href="assets/icons/symbols.svg#link-2"></use>
               </svg>
             </a>
@@ -129,7 +139,7 @@
       <!-- Секция - дополнительные услуги -->
       <section class="services">
         <div class="services__container">
-          <h2 class="services__title section-title">Дополнительные услуги</h2>
+          <h2 class="services__title">Дополнительные услуги</h2>
           <div class="services__content">
             <p class="services__text">
               Перед запуском проекта, мы подготавливаем подробную смету и согласуем ее с клиентом. Убедившись, что

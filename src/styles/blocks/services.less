@@ -1,9 +1,33 @@
 .services {
-   box-sizing: border-box;
+   .container ();
    display: flex;
    flex-direction: column;
-   width: 100%;
-   max-width: 1414px;
-   margin: 0 auto;
-   padding: 0 40px;
+
+   &__title {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;  
+      width: 100%;
+      max-width: 624px;
+      min-height: 62px;
+      margin: 0 auto 150px;
+      padding: 16px 50px;
+      background-color: @black;
+      color: @white;
+      font-family: @font2;
+      font-weight: @font_weight2;
+      font-size: @line_height8;
+      text-align: center;
+      text-transform: uppercase;
+   }
+   &__text {
+      max-width: 868px;
+      margin: 0;
+      color:  @black;
+      font-family: @font1;
+      font-weight: @font_weight2;
+      font-size: @font_size2;
+      line-height: @line_height5;
+   }
 }

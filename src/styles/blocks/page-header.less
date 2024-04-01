@@ -114,6 +114,9 @@
    }
    &__nav-user {
       display: none;
+      // display: flex;
+      align-items: center;
+      justify-content: space-between;
 
       @media @bw1020 {
          display: flex;
@@ -123,14 +126,22 @@
    }
    &__nav-user-link {
       margin-right: 25px;
+      font-family: @font1;
       font-weight: @font_weight2;
       font-size: @font_size2;
       line-height: @line_height5;
+      color: @black;
    }
    &__nav-logout {
       width: 24px;
       height: 24px;
       font-size: @font_size0;
+      
+   }
+   &__nav-logout-icon {
+      &:hover {
+         color: @red;
+      }
    }
    &__right-block {
       position: relative;

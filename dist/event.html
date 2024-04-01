@@ -29,19 +29,26 @@
         <a href="#" class="page-header__nav-link">Блог</a>
         <a href="#" class="page-header__nav-link">О нас</a>
         <a href="#" class="page-header__nav-link">Контакты</a>
+        <div class="page-header__nav-user">
+          <a href="#" class="page-header__nav-user-link">
+            Александр С.
+          </a>
+          <a href="#" class="page-header__nav-logout">
+            <svg class="page-header__nav-logout-icon" width="24" height="24">
+              <use xlink:href="assets/icons/symbols.svg#log-in"></use>
+            </svg>
+          </a>
+        </div>
       </nav>
-      <!-- Когда пользователь авторизован -->
-      <div class="page-header__nav-user">
-        <a href="#" class="page-header__nav-user-link">Александр С.</a>
-        <a href="#" class="page-header__nav-logout">
-          <svg class="page-header__nav-logout__icon" width="24" height="24">
-            <use xlink:href="assets/icons/symbols.svg#log-in"></use>
+      <div class="page-header__right-block">
+        <a href="#" class="page-header__user-btn">
+          Войти
+          <svg class="page-header__user-icon" width="21" height="18">
+            <use xlink:href="assets/icons/symbols.svg#user"></use>
           </svg>
         </a>
+        <button type="button" class="page-header__nav-toggle"></button>
       </div>
-      <!-- <div class="page-header__right-block">
-            <a href="#" class="btn page-header__user-btn">Войти</a>
-         </div> -->
     </div>
   </header>
   <!-- Основное содержимое страницы -->
@@ -49,11 +56,15 @@
     <div class="main__container">
       <article class="event">
         <!-- Навигация -->
-        <nav class="event__nav">
-          <a href="#" class="event__nav__link">Главная</a>
-          <a href="#" class="event__nav__link">/ Мероприятия</a>
-          <span class="event__nav__span">/ Вечер | The Best of Sade</span>
-        </nav>
+        <ul class="event__nav">
+          <li>
+            <a href="#" class="event__nav__li event__nav__link">Главная</a>
+          </li>
+          <li>
+            <a href="#" class="event__nav__li event__nav__link">Мероприятия</a>
+          </li>
+          <li class="event__nav__li">Вечер | The Best of Sade</li>
+        </ul>
         <!-- Картинка -->
         <h1 class="event__title"> Вечер | The Best of Sade</h1>
         <div class="event__box">
@@ -74,9 +85,9 @@
           </div>
         </div>
         <!-- Текст -->
-        <div class="event__text-box">
+        <div class="event__text-box event-content">
           <h4 class="event__text-box__title">Программа мероприятия:</h4>
-          <ul class="event__text-box__list">
+          <ul class="event__text-box__list event__text-box__ul">
             <li>20:15 — Приветствие гостей</li>
             <li>20:30 — Первая подача блюд | Салаты</li>
             <li>20:40 — Живой вокал | Композиции 1-3</li>
@@ -94,7 +105,7 @@
             Группа продемонстрировала необычайное долголетие и креативность своей творческой карьеры.
             <br>Она лидировала музыкальных чартах с 1994 по 1995 год, став четырехкратно платиновой в США и продав более 2 миллионов копий в Европе.
           </p>
-          <ol class="event__text-box__list">
+          <ol class="event__text-box__list event__text-box__ol">
             <li>Your Love Is King</li>
             <li>Hang On To Your Love</li>
             <li>Smooth Operator</li>

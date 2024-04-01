@@ -9,13 +9,15 @@
 .listing__button {
    display: flex;
    justify-content: center;
+   width: 128px;
+   height: 138px;
+   margin: 70px auto 0;
    &__link {
       box-sizing: border-box;
       display: inline-flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: 70px;
       padding: 1px 7px;
       grid-gap: 18px;
       color: @black;
@@ -24,37 +26,35 @@
       font-size: @font_size2;
       line-height: @line_height5;
       text-decoration: none;
+      transition: color 0.2s;
       &:hover {
          color: @red;
       }
    }
 }
-.listing__button
-.services {
+.listing__nav {
    box-sizing: border-box;
    display: flex;
-   flex-direction: column;
-   width: 100%;
-   max-width: 1414px;
-   margin: 0 auto;
-   padding-left: 40px;
-   padding-right: 40px;
-   &__text {
-      color:  @black;
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+   &__link {
+      display: inline-flex;
+      color: @black;
       font-family: @font1;
-      font-weight: @font_weight2;
       font-size: @font_size2;
+      font-weight: @font_weight2;
       line-height: @line_height5;
+      text-decoration: none;
+      transition: color 0.2s;
+      cursor: pointer;
+      &:hover {
+         color: @red;
+      }
    }
 }
-.listing__nav__link {
-   color: @black;
-   font-family: @font1;
-   font-weight: @font_weight2;
-   font-size: @font_size2;
-   text-decoration: none;
-   cursor: pointer;
-   &:hover {
-      color: @red;
-   }
+ul.listing__nav li+li::before{
+   padding: 5px;
+   color: black;
+   content: "/";
 }
