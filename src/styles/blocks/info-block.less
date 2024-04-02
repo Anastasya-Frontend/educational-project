@@ -1,4 +1,4 @@
-.event__box {
+.info-block {
    .container ();
    display: flex;
    justify-content: center;
@@ -31,6 +31,17 @@
       &:last-child::before {
          background-image: linear-gradient(90deg,@black1b 0%,@black00 82.86%);
       }
+      &__text1 {
+         padding-left: 5px;
+      }
+   }
+   &__date {
+      margin: 0;
+      color: @black;
+      font-family: @font3;
+      font-size: @font_size12;
+      text-transform: uppercase;
+      font-weight: @font_weight1;
    }
    &__time {
       margin: 0;
@@ -48,10 +59,15 @@
       font-size: @font_size2;
       font-weight: @font_weight5;
    }
-   &__cafe {
-      padding-left: 5px;
+   &__desc {
+      color: @black;
+      font-family: @font3;
+      text-transform: uppercase;
+      font-size: @font_size2;
+      font-weight: @font_weight5;
    }
-   &__picture__img{
+   &__pic__img{
+      display: block;
       max-width: 497px;
       max-height: 532px;
       margin: 0 60px;

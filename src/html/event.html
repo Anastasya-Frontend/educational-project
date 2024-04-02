@@ -11,19 +11,19 @@
       <div class="main__container">
          <article class="event">
             <!-- Навигация -->
-            <ul class="event__nav">
-               <li><a href="#" class="event__nav__li event__nav__link">Главная</a></li>
-               <li><a href="#" class="event__nav__li event__nav__link">Мероприятия</a></li>
-               <li class="event__nav__li">Вечер | The Best of Sade</li>
-            </ul>
-            <!-- Картинка -->
+            <nav class="event__nav">
+               <a href="#" class="event__nav__link">Главная</a>
+               <a href="#" class="event__nav__link">Мероприятия</a>
+               <a href="#" class="event__nav__link event__nav__no-click">Вечер | The Best of Sade</a>
+            </nav>
             <h1 class="event__title"> Вечер | The Best of Sade</h1>
-            @@include('blocks/event__box.html')
+            <!-- Картинка + доп.информация -->
+            @@include('blocks/info-block.html')
             <!-- Текст -->
-            @@include('blocks/event-content.html')
-            <!-- Форма -->
-            @@include('blocks/reserve.html')
+            @@include('blocks/content.html')
          </article>
+         <!-- Форма -->
+         @@include('blocks/reserve.html')
       </div>
    </main>
    <!-- Секция Футер -->

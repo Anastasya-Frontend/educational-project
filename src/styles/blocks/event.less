@@ -19,7 +19,7 @@
    list-style-type : none;
    padding: 0;
    &__link {
-      display: inline-flex;;
+      display: inline-flex;
       color: @black;
       font-family: @font1;
       font-size: @font_size2;
@@ -31,12 +31,16 @@
          color: @red;
       }
    }
+   &__no-click {
+      pointer-events: none;
+      cursor: default;
+   }
 }
-ul.event__nav li+li:before {
-   padding: 5px;
-   color: black;
-   content: "/";
-}
+   nav.event__nav a+a::before {
+      padding: 0 5px;
+      color: black;
+      content: "/";
+   }
 
 
 
