@@ -35,9 +35,8 @@
 .listing__nav {
    box-sizing: border-box;
    display: flex;
-   list-style-type: none;
+   list-style-type : none;
    padding: 0;
-   margin: 0;
    &__link {
       display: inline-flex;
       color: @black;
@@ -47,14 +46,17 @@
       line-height: @line_height5;
       text-decoration: none;
       transition: color 0.2s;
-      cursor: pointer;
       &:hover {
          color: @red;
       }
    }
+   &__no-click {
+      pointer-events: none;
+      cursor: default;
+   }
 }
-ul.listing__nav li+li::before{
-   padding: 5px;
-   color: black;
-   content: "/";
-}
+   nav.listing__nav a+a::before {
+      padding: 0 5px;
+      color: black;
+      content: "/";
+   }
