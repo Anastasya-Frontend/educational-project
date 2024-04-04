@@ -2309,6 +2309,7 @@ nav.event__nav a + a::before {
   margin-top: 60px;
 }
 .footer__vault__copy {
+  margin-bottom: 20px;
   font-family: "Open Sans", sans-serif;
   color: #1f1e1e;
   font-size: 16px;
@@ -2317,14 +2318,14 @@ nav.event__nav a + a::before {
 .footer__vault__copy__text {
   margin: 0;
 }
-.footer__vault__terms1 {
+.footer__vault__terms {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
-  grid-gap: 60px;
+          align-items: flex-end;
+  gap: 60px;
   font-family: "Open Sans", sans-serif;
   color: #1f1e1e;
   text-decoration: none;
@@ -2333,29 +2334,27 @@ nav.event__nav a + a::before {
   cursor: pointer;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
+  white-space: nowrap;
 }
-.footer__vault__terms1:hover {
+.footer__vault__terms:hover {
   color: #bc3324;
 }
-.footer__vault__terms2 {
+.footer__vault__link2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   grid-gap: 15px;
-  font-family: "Open Sans", sans-serif;
-  color: #1f1e1e;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
-  cursor: pointer;
-  -webkit-transition: color 0.2s;
-  transition: color 0.2s;
 }
-.footer__vault__terms2:hover {
-  color: #bc3324;
+.footer__vault__link2__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .footer__vault__icon {
   display: -webkit-box;
@@ -2375,7 +2374,6 @@ nav.event__nav a + a::before {
           align-items: center;
   background-color: #1f1e1e;
   border-radius: 50%;
-  color: #fff;
   text-decoration: none;
   width: 58px;
   height: 58px;
@@ -2384,25 +2382,28 @@ nav.event__nav a + a::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: grid;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   max-width: 100%;
   width: 1334px;
-  grid-template-columns: 1fr 1fr 1fr;
+  height: 58px;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-areas: 'copy icon ...' 'link1 icon link2';
 }
 .footer__vault__copy {
   grid-area: copy;
 }
-.footer__vault__terms1 {
+.footer__vault__terms {
   grid-area: link1;
 }
 .footer__vault__icon {
   grid-area: icon;
-  justify-self: center;
+  margin: 0 auto;
   align-self: end;
 }
-.footer__vault__terms2 {
+.footer__vault__link2 {
   grid-area: link2;
-  justify-self: end;
 }
 .show-event-popup body {
   overflow: hidden;
