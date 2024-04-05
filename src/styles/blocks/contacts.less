@@ -7,8 +7,8 @@
       justify-content: space-between;
       height: 493px;
       &__content {
-         margin-top: 15px;
-         height: 464px;
+         margin: 15px 0 14px;
+         max-height: 464px;
       }
       &__map {
          &__img {
@@ -25,9 +25,13 @@
    position: relative;
    display: flex;
    margin-bottom: 67px;
+   padding: 0;
    color: @black;
+   
    &__content {
-      margin: 12px 0 7px 54px;
+      max-width: 236px;
+      max-height: 86px;
+      margin: 12px 0 12px 54px;
    }
    &__link {
       display: block;
@@ -39,8 +43,12 @@
       font-weight: @font_weight2;
       text-decoration: none;
       cursor: pointer;
+      transition: color 0.2s;
       &:hover {
          color: @red;
+      }
+      &:last-child {
+         margin-bottom: 0;
       }
    }
    &__title {
@@ -58,6 +66,9 @@
       font-size: @font_size2;
       font-weight: @font_weight2;
       line-height: @line_height5;
+      &:last-child {
+         margin-bottom: 0;
+      }
    }
    &__svg {
       display: flex;
@@ -67,8 +78,4 @@
       width: 110px;
       height: 110px;
    }
-}
-.info-card:last-child {
-   margin-bottom: 0;
-   padding: 0;
 }

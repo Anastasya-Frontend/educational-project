@@ -96,6 +96,7 @@
       font-family: @font1;
       font-weight: @font_weight2;
       font-size: @font_size1;
+      border: none;
       cursor: pointer;
       transition: background-color 0.2s;
       &:hover {
@@ -184,31 +185,50 @@
          margin: 0;
       }
    }
-   &__terms {
+   &__terms1 {
       display: flex;
       align-items: flex-end;
       gap: 60px;
-      font-family: @font1;
-      color: @black;
-      text-decoration: none;
-      font-weight: @font_weight4;
-      font-size: @font_size2;
-      cursor: pointer;
-      transition: color 0.2s;
-      white-space: nowrap;
-      &:hover {
-         color: @red;
+      &__link {
+         font-family: @font1;
+         color: @black;
+         text-decoration: none;
+         font-weight: @font_weight4;
+         font-size: @font_size2;
+         cursor: pointer;
+         transition: color 0.2s;
+         white-space: nowrap;
+         transition: color 0.2s;
+         &:hover {
+            color: @red;
+         }
       }
    }
-   &__link2{
+   &__terms2 {
       display: flex;
       justify-content: flex-end;
       grid-gap: 15px;
+      &__link {
+         font-family: @font1;
+         color: @black;
+         text-decoration: none;
+         font-weight: @font_weight4;
+         font-size: @font_size2;
+         cursor: pointer;
+         transition: color 0.2s;
+         white-space: nowrap;
+         transition: color 0.2s;
+         &:hover {
+            color: @red;
+         }
+         
+      }
       &__logo {
          display: flex;
          align-items: flex-end;
       }
    }
+
    &__icon {
       display: flex;
       grid-gap: 44px;
@@ -239,7 +259,7 @@
 .footer__vault__copy {
    grid-area: copy;
 }
-.footer__vault__terms {
+.footer__vault__terms1 {
    grid-area: link1;
 }
 .footer__vault__icon {
@@ -247,6 +267,6 @@
    margin: 0 auto;
    align-self: end;
 }
-.footer__vault__link2{
+.footer__vault__terms2 {
    grid-area: link2;
 }

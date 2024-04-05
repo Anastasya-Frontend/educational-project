@@ -1,45 +1,44 @@
-.section-poster__container {
+.section-poster {
    box-sizing: border-box;
    display: flex;
    flex-direction: column;
    width: 100%;
    margin: 0 auto;
-   padding-top: 60px;
-}
-.section-poster__title,
-.section-poster__description {
-   margin: 0;
-   font-family: @font2;
-   font-weight: @font_weight2;
-   font-size: @font_size9;
-   line-height: @line_height8;
-   text-transform: uppercase;
-   text-align: center;
-}
-.section-poster__description {
-padding-bottom: 50px;
-}
-.section-poster__svg {
-   width: 100%;
-   overflow: hidden;
-   margin: 70px 0;
-   
-   &__box {
-      position: relative;
+   padding: 60px 0 50px;
+
+   &__title,
+   &__description {
+      margin: 0;
+      font-family: @font2;
+      font-weight: @font_weight2;
+      font-size: @font_size9;
+      line-height: @line_height8;
+      text-transform: uppercase;
+      text-align: center;
+   }
+   &__svg {
       width: 100%;
-      &::before {
-         content: '';
-         display: block;
+      overflow: hidden;
+      margin: 65px 0;
+   
+      &__box {
+         position: relative;
          width: 100%;
-         padding-bottom: 16.927%;
+         &::before {
+            content: '';
+            display: block;
+            width: 100%;
+            padding-bottom: 16.927%;
+         }
+      }
+      &__icon {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
       }
    }
-   &__icon {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-   }
 }
+
 
