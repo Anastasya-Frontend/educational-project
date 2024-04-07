@@ -1,8 +1,17 @@
 .event__reserve {
-   .container ();
-   display: flex;
-   flex-direction: column;
-   margin-top: 80px;
+   box-sizing: border-box;
+   width: 100%;
+   max-width: 1414px;
+   margin: 0 auto;
+   padding: 80px 40px 10px;
+}
+.title {
+   margin: 0 0 20px;
+   color: @black;
+   font-weight: @font_weight5;
+   font-size: @font_size3;
+   font-family: @font1;
+   line-height: @line_height6;
 }
 .reserve {
    display: grid;
@@ -12,97 +21,40 @@
    "checks scheme"
    "order legend"; 
    width: 100%;
-}
-.reserve__checks {
+
+   &__checks {
    grid-area: checks;
    display: flex;
    flex-direction: column;
-}
-.reserve__order {
-   grid-area: order;
-}
-.reserve__scheme {
+   }
+   &__order {
+      grid-area: order;
+   }
+   &__scheme {
    grid-area: scheme;
-}
-.reserve__legend {
-   grid-area: legend;
-   justify-self: end;
-}
-.check {
-   &--red {
-      color: @red;
-      .check__mark {
-         border-color: @red;
-      }
-      .check__input {
-         &:checked {
-         & ~ .check__mark {
-            background-color: @red;
-            }
-         }
-      }
    }
-   &--disabled {
-      pointer-events: none;
-      opacity: 0.5;
+   &__legend {
+      grid-area: legend;
+      justify-self: end;
    }
-}
-.check__input {
-   .is-hidden ();
-   &:checked {
-      & ~ .check__mark {
-         background-color: @black;
-         &::after {
-            content: "";
-            display: block;
-            position: absolute;
-            left: 7px;
-            top: 2px;
-            width: 6px;
-            height: 12px;
-            border-bottom: 2px solid @white;
-            border-right: 2px solid @white;
-            transform: rotate(45deg);
-         }
-      }
-   }
-}
-.title {
-   margin: 0;
-   color: @black;
-   font-weight: @font_weight5;
-   font-size: @font_size3;
-   font-family: @font1;
-   line-height: @line_height6;
-}
 
-
-.reserve {
-   &__checks__title {
-      margin-bottom: 5px;
-   }
-   &__order__title {
-      margin-bottom: 20px;
-   }
-   &__legend__title {
-      margin-bottom: 20px;
-   }
-   &__scheme-div {
+   &__scheme__title {
+      box-sizing: border-box;
       display: flex;
       justify-content: center;
-      align-items: baseline;
-      background-color: @black;
+      align-items: center;  
+      width: 100%;
+      max-width: 162px;
+      min-height: 27px;
       margin: 0 auto 40px;
-      width: 162px;
-      &__title {
-         margin: 0;
-         padding: 6px 0;
-         color: @white;
-         font-weight: @font_weight5;
-         font-size: @font_size3;
-         font-family: @font1;
-         line-height: @line_height6;
-      }
+      padding: 6px 56px;
+      background-color: @black;
+      color: @white;
+      font-family: @font1;
+      font-weight: @font_weight5;
+      font-size: @font_size3;
+      line-height: @line_height6;
+      text-align: center;
    }
    &__scheme-wrapper {
       position: relative;
@@ -280,6 +232,85 @@
    }
 }
 
+.check {
+   box-sizing: border-box;
+   position: relative;
+   display: inline-flex;
+   flex-direction: column;
+   align-items: flex-start;
+   min-height: 24px;
+   margin-top: 10px;
+   padding-left: 24px;
+   color: @black;
+   cursor: pointer;
+   
+   &--black {
+      color: @black;
+      .check__mark {
+         border-color: @black;
+      }
+      .check__input {
+         .is-hidden ();
+         &:checked {
+         & ~ .check__mark {
+            background-color: @black
+            }
+            &::after {
+               content: "";
+               display: block;
+               position: absolute;
+               left: 7px;
+               top: 2px;
+               width: 6px;
+               height: 12px;
+               border-bottom: 2px solid @white;
+               border-right: 2px solid @white;
+               transform: rotate(45deg);
+            }
+         }
+      }
+   }
+   &--red {
+      color: @red;
+      .check__mark {
+         border-color: @red;
+      }
+      .check__input {
+         .is-hidden ();
+         &:checked {
+         & ~ .check__mark {
+            background-color: @red;
+            }
+            &::after {
+               content: "";
+               display: block;
+               position: absolute;
+               left: 7px;
+               top: 2px;
+               width: 6px;
+               height: 12px;
+               border-bottom: 2px solid @white;
+               border-right: 2px solid @white;
+               transform: rotate(45deg);
+            }
+         }
+      }
+   }
+   &--disabled {
+      pointer-events: none;
+      opacity: 0.5;
+   }
+   &__mark {
+      box-sizing: border-box;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 24px;
+      height: 24px;
+      border: 1px solid @black;
+   }
+}
 
 
 

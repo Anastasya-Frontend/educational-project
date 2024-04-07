@@ -380,16 +380,15 @@ textarea {
   width: 100%;
   max-width: 1414px;
   margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: 80px;
+  padding: 80px 40px 10px;
+}
+.title {
+  margin: 0 0 20px;
+  color: #1f1e1e;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.388;
 }
 .reserve {
   display: grid;
@@ -418,90 +417,30 @@ textarea {
   grid-area: legend;
   justify-self: end;
 }
-.check--red {
-  color: #bc3324;
-}
-.check--red .check__mark {
-  border-color: #bc3324;
-}
-.check--red .check__input:checked ~ .check__mark {
-  background-color: #bc3324;
-}
-.check--disabled {
-  pointer-events: none;
-  opacity: 0.5;
-}
-.check__input {
-  position: absolute !important;
-  width: 0 !important;
-  height: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  border: 0 !important;
-  clip: rect(0 0 0 0) !important;
-  -webkit-clip-path: inset(100%) !important;
-          clip-path: inset(100%) !important;
-  white-space: nowrap !important;
-  overflow: hidden !important;
-  visibility: hidden !important;
-  pointer-events: none !important;
-}
-.check__input:checked ~ .check__mark {
-  background-color: #1f1e1e;
-}
-.check__input:checked ~ .check__mark::after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 7px;
-  top: 2px;
-  width: 6px;
-  height: 12px;
-  border-bottom: 2px solid #ffffff;
-  border-right: 2px solid #ffffff;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-.title {
-  margin: 0;
-  color: #1f1e1e;
-  font-weight: 700;
-  font-size: 18px;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.388;
-}
-.reserve__checks__title {
-  margin-bottom: 5px;
-}
-.reserve__order__title {
-  margin-bottom: 20px;
-}
-.reserve__legend__title {
-  margin-bottom: 20px;
-}
-.reserve__scheme-div {
+.reserve__scheme__title {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  background-color: #1f1e1e;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 162px;
+  min-height: 27px;
   margin: 0 auto 40px;
-  width: 162px;
-}
-.reserve__scheme-div__title {
-  margin: 0;
-  padding: 6px 0;
+  padding: 6px 56px;
+  background-color: #1f1e1e;
   color: #ffffff;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  font-family: "Open Sans", sans-serif;
   line-height: 1.388;
+  text-align: center;
 }
 .reserve__scheme-wrapper {
   position: relative;
@@ -701,6 +640,117 @@ textarea {
   background-color: #bfbfbf;
   border-radius: 50%;
 }
+.check {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-height: 24px;
+  margin-top: 10px;
+  padding-left: 24px;
+  color: #1f1e1e;
+  cursor: pointer;
+}
+.check--black {
+  color: #1f1e1e;
+}
+.check--black .check__mark {
+  border-color: #1f1e1e;
+}
+.check--black .check__input {
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  -webkit-clip-path: inset(100%) !important;
+          clip-path: inset(100%) !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+.check--black .check__input:checked ~ .check__mark {
+  background-color: #1f1e1e;
+}
+.check--black .check__input:checked::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 7px;
+  top: 2px;
+  width: 6px;
+  height: 12px;
+  border-bottom: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.check--red {
+  color: #bc3324;
+}
+.check--red .check__mark {
+  border-color: #bc3324;
+}
+.check--red .check__input {
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  -webkit-clip-path: inset(100%) !important;
+          clip-path: inset(100%) !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+.check--red .check__input:checked ~ .check__mark {
+  background-color: #bc3324;
+}
+.check--red .check__input:checked::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 7px;
+  top: 2px;
+  width: 6px;
+  height: 12px;
+  border-bottom: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.check--disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+.check__mark {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #1f1e1e;
+}
 .info-block {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -835,7 +885,7 @@ ul > li {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 ul > li::before {
   content: "";
@@ -2237,7 +2287,7 @@ nav.event__nav a + a::before {
   visibility: hidden !important;
   pointer-events: none !important;
 }
-.check {
+.form__check {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
@@ -2258,7 +2308,7 @@ nav.event__nav a + a::before {
   color: #1f1e1e;
   cursor: pointer;
 }
-.check__input {
+.form__check__input {
   position: absolute !important;
   width: 0 !important;
   height: 0 !important;
@@ -2273,10 +2323,10 @@ nav.event__nav a + a::before {
   visibility: hidden !important;
   pointer-events: none !important;
 }
-.check__input:checked ~ .check__mark {
+.form__check__input:checked ~ .form__check__mark {
   background-color: #1f1e1e;
 }
-.check__input:checked ~ .check__mark::after {
+.form__check__input:checked ~ .form__check__mark::after {
   content: "";
   display: block;
   position: absolute;
@@ -2290,7 +2340,7 @@ nav.event__nav a + a::before {
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
-.check__mark {
+.form__check__mark {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: block;
@@ -2301,13 +2351,13 @@ nav.event__nav a + a::before {
   height: 24px;
   border: 1px solid #1f1e1e;
 }
-.check__label {
+.form__check__label {
   margin-left: 15px;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.375;
 }
-.check__label--s {
+.form__check__label--s {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 1.357;
@@ -2497,7 +2547,6 @@ nav.event__nav a + a::before {
   font-size: 22px;
   line-height: 1.36;
   color: #ffffff;
-  letter-spacing: 0.02em;
   z-index: 1;
 }
 .pp__sticky-close {
@@ -2599,22 +2648,7 @@ nav.event__nav a + a::before {
 .form__close-btn:hover {
   color: #bc3324;
 }
-.is-hidden {
-  position: absolute !important;
-  width: 0 !important;
-  height: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  border: 0 !important;
-  clip: rect(0 0 0 0) !important;
-  -webkit-clip-path: inset(100%) !important;
-          clip-path: inset(100%) !important;
-  white-space: nowrap !important;
-  overflow: hidden !important;
-  visibility: hidden !important;
-  pointer-events: none !important;
-}
-input,
+.is-hidden input,
 textarea,
 button,
 select {
@@ -2936,10 +2970,6 @@ textarea:focus::placeholder {
   }
 }
 @media (max-width: 1339px) {
-  .event__reserve {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
   .info-block {
     padding-left: 30px;
     padding-right: 30px;
@@ -3124,10 +3154,6 @@ textarea:focus::placeholder {
   }
   .doit__row3 {
     left: -15vw;
-  }
-  .event__reserve {
-    padding-left: 20px;
-    padding-right: 20px;
   }
   .info-block {
     padding-left: 20px;
