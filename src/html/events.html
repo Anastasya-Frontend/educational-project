@@ -6,9 +6,9 @@
    @@include('blocks/page-header.html')
    <!-- Main -->
    <main class="main">
-      <div class="main__container">
+      <div class="main__container events">
          <!-- Секция - Мероприятия -->
-         <section class="listing">
+         <section class="listing events">
             <nav class="listing__nav">
                <a href="#" class="listing__nav__link">Главная</a>
                <a href="#" class="listing__nav__link listing__nav__no-click">Мероприятия</a>
@@ -74,11 +74,12 @@
                      }
                   ])
                </div>
-               <div class="listing__button">
-                  <a href="#" class="listing__button__link">
-                     <span class="listing__button__span">Показать еще</span>
-                     <svg class="listing__button__icon" width="60" height="91">
-                        <use xlink:href="assets/icons/symbols.svg#link-2"></use>
+
+               <div class="more-btn listing__more-btn">
+                  <a href="#" class="more-btn__link">
+                     Показать еще
+                     <svg class="more-btn__link__arrow" width="62" height="92">
+                        <use xlink:href="assets/icons/symbols.svg#arrow_3"></use>
                      </svg>
                   </a>
                </div>

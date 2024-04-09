@@ -8,23 +8,26 @@
       flex-direction: column;
       width: 100%;
       color: @black;
+      font-family: @font1;
       text-decoration: none;
-      cursor: pointer;
       transition: color 0.2s, text-decoration-color 0.2s;
+      cursor: pointer;
       &:hover {
          color: @red;
          text-decoration-color: @red;
       }
    }
    &__title {
-      margin: 0 0 15px;
       min-height: 66px;
+      margin: 0 0 15px;
       color: @black;
-      font-weight: @font_weight4;
+      font-family: @font1;
       font-size: @font_size6;
+      font-weight: @font_weight4;
       line-height: @line_height5;
       text-decoration: underline transparent;
       transition: color 0.2s, text-decoration-color 0.2s;
+      cursor: pointer;
       &:hover {
          color: @red;
          text-decoration-color: @red;
@@ -46,90 +49,37 @@
       }
    }
    &__img {
-      display: block;
       position: absolute;
       top: 0;
       left: 0;
+      display: block;
       width: 100%;
       height: 100%;
       object-fit: cover;
    }
    &__description {
       margin: 0 0 auto;
+      color: @black;
+      font-family: @font1;
       font-size: @font_size2;
       font-weight: @font_weight2;
       line-height: @line_height3;
    }
    &__time {
       margin: 15px 0 0;
-      font-weight: @font_weight1;
+      color: @black;
+      font-family: @font1;
       font-size: @font_size1;
+      font-weight: @font_weight1;
       line-height: @line_height5;
-   }
-   &__btn {
-      display: flex;
-      justify-content: space-between;
-      align-self: center;
-      width: 525px;
-      max-width: 100%;
-      margin: 70px 0 0;
-      &__slider {
-         &__icon {
-            cursor: pointer;
-            transition: color 0.2s;
-            &:hover {
-               color: @red;
-            }
-         }
-      }
-   }
-   &__button {
-      width: 15px;
-      height: 2px;
-      border-radius: 2px;
-      border: none;
-      padding: 0;
-      background-color: @gray_dis;
-      transition: background-color 0.2s;
-      &:active {
-         background-color: @black;
-      }
-   }
-   &__button__block {
-      box-sizing: border-box;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      grid-gap: 6px;
    }
 }
 .listing__event-card {
    margin-right: 60px;
    width: calc(33.3333% - 60px);
    margin: 0 30px 120px;
-}
-.listing__event-card:nth-child(3n) {
-   margin-right: 0;
-}
-.section-events__button {
-   display: flex;
-   justify-content: flex-end;
-   margin-left: auto;
-   width: 149px;
-   height: 52px;
-   &__link {
-      display: inline-block;
-      padding: 15px 0 15px 40px;
-      color: @black;
-      font-family: @font1;
-      font-weight: @font_weight4;
-      font-size: @font_size2;
-      text-decoration: none;
-      line-height: @line_height5;
-      cursor: pointer;
-      transition: color 0.2s;
-      &:hover {
-         color: @red;
-      }
+   &:nth-child(3n) {
+      margin-right: 0;
    }
 }
+

@@ -2,12 +2,12 @@
    position: fixed;
    top: 0;
    left: 0;
-   width: 100%;
-   height: 147px;
+   z-index: 100;
    display: flex;
    align-items: center;
    justify-content: space-between;
-   z-index: 100;
+   width: 100%;
+   height: 147px;
 
    @media @bw1660 {
       height: 111px;
@@ -19,10 +19,10 @@
 
    &::before {
       content: "";
-      display: block;
       position: absolute;
       top: 0;
       left: 0;
+      display: block;
       width: 100%;
       height: 100%;
       background-color: fade(@gray, 98%);
@@ -36,18 +36,19 @@
    &__container {
       .container ();
       position: relative;
+      z-index: 1;
       display: flex;
       align-items: center;
-      z-index: 1;
    }
    &__logo {
-      position: relative;
       flex-shrink: 0;
+      position: relative;
+      z-index: 1;
       width: 202px;
       height: 147px;
       font-size: 0;
       text-decoration: none;
-      z-index: 1;
+      
       @media @bw1660 {
          width: 152px;
          height: 111px;
@@ -100,8 +101,8 @@
    }
    &__nav-link {
       margin: 0 25px;
-      font-weight: @font_weight4;
       font-size: @font_size3;
+      font-weight: @font_weight4;
       line-height: @line_height6;
       text-decoration: none;
       transition: color 0.2s;
@@ -126,11 +127,11 @@
    }
    &__nav-user-link {
       margin-right: 25px;
-      font-family: @font1;
-      font-weight: @font_weight2;
-      font-size: @font_size2;
-      line-height: @line_height5;
       color: @black;
+      font-family: @font1;
+      font-size: @font_size2;
+      font-weight: @font_weight2;
+      line-height: @line_height5;
    }
    &__nav-logout {
       width: 24px;
@@ -144,11 +145,11 @@
    }
    &__right-block {
       position: relative;
+      z-index: 1;
       display: flex;
       justify-content: flex-end;
       align-items: center;
       width: 202px;
-      z-index: 1;
 
       @media @bw1660 {
          width: 152px;
@@ -159,23 +160,23 @@
       }
    }
    &__user-btn {
-      max-width: 100%;
-      display: inline-block;
       box-sizing: border-box;
+      display: inline-block;
+      max-width: 100%;
       padding: 15px 40px;
       border: 1px solid @black;
       background-color: transparent;
       outline: none;
       color: @black;
-      font-weight: @font_weight4;
+      font-family: @font1;
       font-size: @font_size2;
+      font-weight: @font_weight4;
       line-height: @line_height9;
       text-align: center;
       text-decoration: none;
       transition: color 0.2s, background-color 0.2s;
-      overflow: hidden;
       cursor: pointer;
-
+      overflow: hidden;
       @media @bw1020 {
          display: flex;
          width: 40px;
@@ -208,12 +209,12 @@
       display: none;
 
       @media @bw1020 {
-         display: block;
          position: relative;
          right: -11px;
-         margin-left: 18px;
+         display: block;
          width: 40px;
          height: 40px;
+         margin-left: 18px;
          border: none;
          background: none;
          cursor: pointer;
@@ -224,10 +225,10 @@
       &::before,
       &::after {
          content: "";
-         display: block;
          position: absolute;
          top: 19px;
          left: 11px;
+         display: block;
          width: 18px;
          height: 2px;
          border-radius: 2px;
