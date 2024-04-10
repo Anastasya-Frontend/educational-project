@@ -293,8 +293,8 @@ textarea {
 .table__th {
   height: 85px;
   font-family: "Open Sans", sans-serif;
-  font-weight: 600;
   font-size: 18px;
+  font-weight: 600;
   line-height: 1.388;
 }
 .table__footer-th {
@@ -325,10 +325,10 @@ textarea {
   padding: 13px 12px 12px 0;
   border-top: 1px solid #bfbfbf;
   border-bottom: 1px solid #bfbfbf;
-  font-family: "Open Sans", sans-serif;
   color: #1f1e1e;
-  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
+  font-weight: 400;
   line-height: 1.388;
   text-align: left;
 }
@@ -338,8 +338,10 @@ textarea {
   height: 50px;
   padding: 12px;
   border: 1px solid #bfbfbf;
-  font-weight: 600;
+  color: #1f1e1e;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
+  font-weight: 600;
   line-height: 1.375;
 }
 .table__td:last-child {
@@ -347,8 +349,8 @@ textarea {
   padding-right: 0;
 }
 .ok {
-  display: block;
   position: relative;
+  display: block;
   width: 26px;
   height: 26px;
   margin: auto;
@@ -357,12 +359,12 @@ textarea {
 }
 .ok::after {
   content: "";
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: block;
   position: absolute;
   top: 4px;
   left: 9px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
   width: 8px;
   height: 14px;
   border-right: 2px solid #ffffff;
@@ -523,8 +525,8 @@ textarea {
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;
-  -webkit-transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
   cursor: pointer;
 }
 .reserve__submit:hover {
@@ -542,7 +544,7 @@ textarea {
           flex-direction: column;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
 }
 .reserve__tickets-box2 {
   -webkit-box-sizing: border-box;
@@ -556,7 +558,7 @@ textarea {
           flex-direction: column;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
   margin-top: 37px;
 }
 .reserve__qty2 {
@@ -956,12 +958,14 @@ ol > li:last-child {
 }
 .section-poster__svg {
   width: 100%;
+  height: 325px;
   margin: 65px 0;
   overflow: hidden;
 }
 .section-poster__svg__box {
   position: relative;
   width: 100%;
+  color: #1f1e1e;
 }
 .section-poster__svg__box::before {
   content: '';
@@ -975,7 +979,6 @@ ol > li:last-child {
   left: 0;
   width: 100%;
   height: 100%;
-  color: #1f1e1e;
 }
 .contact {
   -webkit-box-sizing: border-box;
@@ -2003,11 +2006,29 @@ nav.event__nav a + a::before {
   max-height: 464px;
   margin: 15px 0 14px;
 }
-.contacts__wrapper__map__img {
+.contacts__wrapper__picture {
+  display: block;
+  position: relative;
   width: 100%;
-  max-width: 752px;
-  min-width: 280px;
-  height: auto;
+  margin: 0 0 0 178px;
+  font-size: 0;
+  overflow: hidden;
+}
+.contacts__wrapper__picture::after {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-top: 65.5585%;
+}
+.contacts__wrapper__picture__img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .info-card {
   -webkit-box-sizing: border-box;
@@ -2613,6 +2634,11 @@ nav.event__nav a + a::before {
   border-radius: 50%;
   background-color: #1f1e1e;
   text-decoration: none;
+}
+.footer__vault__icon__svg {
+  width: 24px;
+  height: 24px;
+  color: #ffffff;
 }
 .footer__vault {
   -webkit-box-sizing: border-box;
