@@ -36,27 +36,23 @@ ol {
    position: relative;
    padding: 0;
    list-style: none;
-   color: @black;
    font-family: @font1;
-   font-size: @font_size2;
-   font-weight: @font_weight2;
-   line-height: @line_height11;
 }
 ul > li {
    box-sizing: border-box;
    position: relative;
    padding-left: 20px;
-&::before {
-   content: "";
-   display: block;
-   position: absolute;
-   top: 8px;
-   left: 0;
-   width: 6px;
-   height: 6px;
-   border-radius: 50%;
-   background-color: @red;
-   pointer-events: none;
+   &::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 0;
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: @red;
+      pointer-events: none;
    }
 }
 

@@ -67,10 +67,27 @@
       font-weight: @font_weight5;
       text-transform: uppercase;
    }
-   &__pic__img{
+   &__pic {
+      position: relative;
       display: block;
-      max-width: 497px;
-      max-height: 532px;
+      width: 497px;
       margin: 0 60px;
+      font-size: 0;
+      overflow: hidden;
+      &::after {
+         content: "";
+         display: block;
+         width: 100%;
+         padding-top: 107.042%;
+      }
+      &__img {
+         position: absolute;
+         top: 0;
+         left: 0;
+         display: block;
+         width: 497px;
+         height: 532px;
+         object-fit: cover;
+      }
    }
 }

@@ -30,6 +30,7 @@
    &__block2 {
       display: grid;
       margin-top: 100px;
+      grid-gap: 0 60px;
       grid-template-columns: 1fr 1fr 404px;
       grid-template-areas: 
          'picture1 picture1 picture2'
@@ -38,11 +39,45 @@
 
          &__picture1 {
             grid-area: picture1;
+            position: relative;
+            display: block;
+            &::before {
+               content: "";
+               display: block;
+               width: 100%;
+               padding-top: 66.322%;
+            }
+            &__img {
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+               object-fit: contain;
+            }
          }
+
          &__picture2 {
+            position: relative;
+            display: block;
             grid-area: picture2;
-            align-self: end;
+            align-self: flex-end;
             margin-bottom: 16px;
+         
+            &::before {
+               content: "";
+               display: block;
+               width: 100%;
+               padding-top: 122.029%;
+            }
+            &__img {
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+               object-fit: contain;
+            }
          }
          &__title {
             grid-area: title;
@@ -54,13 +89,19 @@
    }
 
    &__block3 {
-      position: relative;
       display: flex;
       justify-content: space-between;
-      max-height: 380px;
       margin: 110px 0 0;
+      gap: 60px;
 
       &__picture {
+         position: relative;
+         box-sizing: border-box;
+         display: block;
+         max-width: 930px;
+         width: 100%;
+         font-size: 0;
+         overflow: hidden;
          &::before {
             content: "";
             position: absolute;
@@ -71,12 +112,20 @@
             width: 930px;
             background-color: @red;
          }
-         &__img {
+         &::after {
+            content: "";
             display: block;
+            width: 100%;
+            padding-top: 41.399%;
+         }
+         
+         &__img {
             position: absolute;
             top: 19px;
+            display: block;
             left: 49px;
             width: 872px;
+            height: 361px;
             z-index: 1;
             object-fit: contain;
          }
@@ -102,6 +151,7 @@
          box-sizing: border-box;
          display: flex;
          margin-top: 90px;
+
          &__link {
             box-sizing: border-box;
             display: inline-flex;
