@@ -12,7 +12,7 @@
       margin: 0;
       color: @black;
       font-family: @font1;
-      font-size: @font_size8;
+      font-size: @font_size11;
       font-weight: @font_weight5;
       line-height: @line_height4;
    }
@@ -22,7 +22,7 @@
       margin: 50px 0 0 auto;
       color: @black;
       font-family: @font1;
-      font-size: @font_size3;
+      font-size: @font_size4;
       font-weight: @font_weight2;
       line-height: @line_height6;
    }
@@ -100,7 +100,7 @@
          display: block;
          max-width: 930px;
          width: 100%;
-         font-size: 0;
+         font-size: @font_size0;
          overflow: hidden;
          &::before {
             content: "";
@@ -122,11 +122,11 @@
          &__img {
             position: absolute;
             top: 19px;
+            z-index: 1;
             display: block;
             left: 49px;
             width: 872px;
             height: 361px;
-            z-index: 1;
             object-fit: contain;
          }
       }
@@ -143,27 +143,30 @@
          margin: 0;
          color: @black;
          font-family: @font1;
-         font-size: @font_size3;
+         font-size: @font_size4;
          font-weight: @font_weight2;
          line-height: @line_height6;
       }
       &__button {
          box-sizing: border-box;
          display: flex;
+         justify-content: space-between;
+         align-items: center;
          margin-top: 90px;
-
+         width: 344px;
+         height: 60px;
+         white-space: nowrap;
          &__link {
             box-sizing: border-box;
             display: inline-flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 344px;
-            height: 60px;
+            width: 125px;
+            height: 22px;
             color: @black;
             font-family: @font1;
-            font-size: @font_size2;
+            font-size: @font_size3;
             font-weight: @font_weight4;
             line-height: @line_height5;
+            text-align: left;
             text-decoration: none;
             transition: color 0.2s;
             cursor: pointer;
@@ -171,10 +174,31 @@
                color: @red;
             }
          }
-         &__arrow {
-            width: 91px;
+         &__link-icon {
+            flex-shrink: 0;
+            position: relative;
+            display: inline-block;
+            width: 92px;
             height: 60px;
-         }
+            padding: 0;
+            border: none;
+            background: none;
+            color: @black;
+            font-size: 0;
+            text-decoration: none;
+            transition: color 0.2s;
+            @media @bw1340 {
+                  width: 67px;
+                  height: 40px;
+            }
+            &:hover {
+               color: @red;
+            }
+            &__arrow {
+               width: 100%;
+               height: 100%;
+            }
+         }  
       }
    }
 }

@@ -38,7 +38,7 @@
         </div>
       </nav>
       <div class="page-header__right-block">
-        <a href="#" class="page-header__user-btn">
+        <a href="#" class="page-header__user-btn" id="myButton">
           Войти
           <svg class="page-header__user-icon" width="21" height="18">
             <use xlink:href="assets/icons/symbols.svg#user"></use>
@@ -455,10 +455,10 @@
             <textarea class="field__textarea" name="Пожелания"></textarea>
           </label>
           <div class="form__check-list">
-            <label class="form__check check">
-              <input id="check" type="checkbox" name="agree" class="check__input" required checked />
-              <span class="check__mark"></span>
-              <span class="check__label check__label--s">
+            <label class="form__check">
+              <input id="form__check" type="checkbox" name="agree" class="form__check__input" required checked />
+              <span class="form__check__mark"></span>
+              <span class="form__check__label form__check__label--s">
                 Я соглашаюсь с пользовательским соглашением и с политикой
                 использования персональных данных
               </span>
@@ -476,6 +476,22 @@
       </div>
     </div>
   </div>
+  <script>
+      let myButton = document.querySelector("#myButton");
+      myButton.addEventListener("click", doSom, false);
+      let counter = 0;
+      function doSom (e) {
+         counter++;
+         console.log("button cliked" + counter + "times!");
+         if (counter == 3) {
+            showMore();
+         }
+      }
+      function showMore() {
+         console.warn ("warning!");
+         console.error ("error!");
+      }
+   </script>
 </body>
 
 </html>

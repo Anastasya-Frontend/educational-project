@@ -9,7 +9,7 @@
    margin: 0 0 20px;
    color: @black;
    font-family: @font1;
-   font-size: @font_size3;
+   font-size: @font_size4;
    font-weight: @font_weight5;
    line-height: @line_height6;
 }
@@ -51,7 +51,7 @@
       background-color: @black;
       color: @white;
       font-family: @font1;
-      font-size: @font_size3;
+      font-size: @font_size4;
       font-weight: @font_weight5;
       line-height: @line_height6;
       text-align: center;
@@ -82,7 +82,7 @@
       margin-bottom: 15px;
       color: @black;
       font-family: @font1;
-      font-size: @font_size2;
+      font-size: @font_size3;
       font-weight: @font_weight2;
       &::after {
          content: " " attr(data-caption)  " | " attr(data-price);
@@ -92,7 +92,7 @@
       padding-right: 15px;
       color: @black;
       font-family: @font1;
-      font-size: @font_size3;
+      font-size: @font_size4;
       font-weight: @font_weight4;
       &::after {
          content: attr(data-currency);
@@ -106,7 +106,7 @@
       margin-top: 10px;
       color: @black;
       font-family: @font1;
-      font-size: @font_size4;
+      font-size: @font_size5;
       font-weight: @font_weight4;
       &::before {
          content: attr(data-caption);
@@ -127,7 +127,7 @@
       background-color: @red;
       color: @white;
       font-family: @font1;
-      font-size: @font_size2;
+      font-size: @font_size3;
       font-weight: @font_weight4;
       text-decoration: none;
       transition: background-color 0.2s;
@@ -156,7 +156,7 @@
       margin-bottom: 15px;
       color: @black;
       font-family: @font1;
-      font-size: @font_size1;
+      font-size: @font_size2;
       font-weight: @font_weight2;
       text-align: right;
       &::before {
@@ -187,7 +187,7 @@
       width: 175px;
       color: @black;
       font-family: @font1;
-      font-size: @font_size1;
+      font-size: @font_size2;
       font-weight: @font_weight2;
       text-align: right;
       &::after,
@@ -213,7 +213,7 @@
       margin-top: 15px;
       color: @black;
       font-family: @font1;
-      font-size: @font_size1;
+      font-size: @font_size2;
       font-weight: @font_weight2;
       text-align: right;
       &::after,
@@ -231,73 +231,99 @@
       }
    }
 }
-.check {
-   box-sizing: border-box;
+.reserve__check {
    position: relative;
+   box-sizing: border-box;
    display: inline-flex;
    flex-direction: column;
    align-items: flex-start;
    min-height: 24px;
    margin-top: 10px;
+   padding-top: 2px;
    padding-left: 24px;
    color: @black;
    cursor: pointer;
-   
-   &--black {
-      color: @black;
-      .check__mark {
-         border-color: @black;
-      }
-      .check__input {
-         .is-hidden ();
-         &:checked {
-         & ~ .check__mark {
-            background-color: @black
-            }
-            &::after {
-               content: "";
-               position: absolute;
-               left: 7px;
-               top: 2px;
-               display: block;
-               width: 6px;
-               height: 12px;
-               border-bottom: 2px solid @white;
-               border-right: 2px solid @white;
-               transform: rotate(45deg);
-            }
-         }
-      }
-   }
+
    &--red {
       color: @red;
-      .check__mark {
+      .reserve__check__mark {
          border-color: @red;
       }
-      .check__input {
-         .is-hidden ();
+      .reserve__check__input {
+         .is-hidden();
          &:checked {
-         & ~ .check__mark {
-            background-color: @red;
-            }
-            &::after {
-               content: "";
-               position: absolute;
-               left: 7px;
-               top: 2px;
-               display: block;
-               width: 6px;
-               height: 12px;
-               border-bottom: 2px solid @white;
-               border-right: 2px solid @white;
-               transform: rotate(45deg);
+            & ~ .reserve__check__mark {
+               background-color: @red;
+               &::after {
+                  content: "";
+                  position: absolute;
+                  left: 7px;
+                  top: 2px;
+                  display: block;
+                  width: 6px;
+                  height: 12px;
+                  border-bottom: 2px solid @white;
+                  border-right: 2px solid @white;
+                  transform: rotate(45deg);
+               }
             }
          }
       }
    }
+   &--black {
+      color: @black;
+      .reserve__check__mark {
+         border-color: @black;
+      }
+      .reserve__check__input {
+         .is-hidden();
+         &:checked {
+            & ~ .reserve__check__mark {
+               background-color: @black;
+               &::after {
+                  content: "";
+                  position: absolute;
+                  left: 7px;
+                  top: 2px;
+                  display: block;
+                  width: 6px;
+                  height: 12px;
+                  border-bottom: 2px solid @white;
+                  border-right: 2px solid @white;
+                  transform: rotate(45deg);
+               }
+            }
+         }
+      }
+   }
+
    &--disabled {
       pointer-events: none;
       opacity: 0.5;
+      color: @black;
+      .reserve__check__mark {
+         border-color: @black;
+      }
+      .reserve__check__input {
+         .is-hidden();
+         &:checked {
+            & ~ .reserve__check__mark {
+               background-color: @black;
+               &::after {
+                  content: "";
+                  position: absolute;
+                  left: 7px;
+                  top: 2px;
+                  display: block;
+                  width: 6px;
+                  height: 12px;
+                  border-bottom: 2px solid @white;
+                  border-right: 2px solid @white;
+                  transform: rotate(45deg);
+               }
+            }
+         }
+      }
    }
    &__mark {
       position: absolute;
@@ -309,16 +335,11 @@
       height: 24px;
       border: 1px solid @black;
    }
+   &__label {
+      margin-left: 15px;
+      font-family: @font1;
+      font-size: @font_size3;
+      font-weight: @font_weight2;
+      line-height: @line_height5;
+   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
