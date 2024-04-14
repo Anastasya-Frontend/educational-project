@@ -476,22 +476,6 @@
       </div>
     </div>
   </div>
-  <script>
-      let myButton = document.querySelector("#myButton");
-      myButton.addEventListener("click", doSom, false);
-      let counter = 0;
-      function doSom (e) {
-         counter++;
-         console.log("button cliked" + counter + "times!");
-         if (counter == 3) {
-            showMore();
-         }
-      }
-      function showMore() {
-         console.warn ("warning!");
-         console.error ("error!");
-      }
-   </script>
 </body>
 
 </html>
