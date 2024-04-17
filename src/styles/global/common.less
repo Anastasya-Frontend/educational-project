@@ -11,7 +11,7 @@ body {
    min-height: 100vh;
    padding-top: 147px;
    background-color: @gray;
-   background-image: url(../assets/images/фон_1920.png);
+   background-image: url(../assets/images/bg/фон-1920.jpg);
    background-position: 0 0, 0 0;
    background-size: cover;
    background-repeat: no-repeat;
@@ -25,9 +25,14 @@ body {
    
    @media @bw1660 {
       padding-top: 111px;
+      background-image: url(../assets/images/bg/фон-1340.jpg);
+   }
+   @media @bw1020 {
+      background-image: url(../assets/images/bg/фон-768.jpg);
    }
    @media @bw768 {
       padding-top: 70px;
+      background-image: url(../assets/images/bg/фон-320.jpg);
    }
 }
 
