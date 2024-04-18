@@ -1,11 +1,22 @@
 .blog {
-   box-sizing: border-box;
+   .container ();
    display: flex;
    flex-direction: column;
-   width: 100%;
-   max-width: 1414px;
-   margin: 0 auto;
-   padding: 64px 40px 78px;
+   padding-top: 64px;
+   padding-bottom: 78px;
+
+   @media @bw1660 {
+      padding-top: 71px;
+      padding-bottom: 90px;
+   }
+   @media @bw1020 {
+      padding-top: 35px;
+      padding-bottom: 58px;
+   }
+   @media @bw768 {
+      padding-top: 41px;
+      padding-bottom: 60px;
+   }
 }
 .section-blog__btn-right {
    box-sizing: border-box;
@@ -14,6 +25,18 @@
    height: 52px;
    margin-top: 70px;
    margin-left: auto;
+
+   @media @bw1660 {
+      margin-top: 58px;
+   }
+   @media @bw1020 {
+      margin-top: 40px;
+   }
+   @media @bw768 {
+      margin-top: 30px;
+      width: 116px;
+      height: 49px;
+   }
    &__link {
       box-sizing: border-box;
       display: inline-flex;
@@ -26,6 +49,12 @@
       text-decoration: none;
       transition: color 0.2s;
       cursor: pointer;
+
+      @media @bw768 {
+         padding: 15px 0 15px 20px;
+         font-size: @font_size2;
+         line-height: @line_height3;
+      }
       &:hover {
          color: @red;
       }

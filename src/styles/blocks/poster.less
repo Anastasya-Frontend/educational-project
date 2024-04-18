@@ -5,6 +5,9 @@
    width: 100%;
    margin: 0 auto;
    padding: 60px 0 50px;
+
+   @media @bw1660 {
+   }
    @media @bw1020 {
       padding: 40px 0 23px;
    }
@@ -52,13 +55,13 @@
       &__box {
          position: relative;
          width: 100%;
-         color: @black;
          &::before {
             content: '';
             display: block;
             width: 100%;
             padding-bottom: 16.927%;
          }
+         
       }
       &__icon {
          position: absolute;
@@ -69,5 +72,3 @@
       }
    }
 }
-
-
