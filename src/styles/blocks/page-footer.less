@@ -2,7 +2,14 @@
    .container ();
    &__line {
       display: flex;
-      padding-top: 140px;
+      padding-top: 65px;
+
+      @media @bw1020 {
+         padding-top: 100px;
+      }
+      @media @bw768 {
+         padding-top: 100px;
+      }
    }
 }
 .page-footer__line::before,
