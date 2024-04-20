@@ -3,18 +3,24 @@
    width: 100%;
    height: 308px;
    margin-top: 150px;
+   padding-top: 85px;
    overflow: hidden;
-   @media @bw1920 {
-      height: 308px;
-   }
+
+   
    @media @bw1660 {
       height: 216px;
+      margin-top: 130px;
+      padding-top: 0;
    }
    @media @bw1020 {
       height: 321px;
+      margin-top: 100px;
+      padding-top: 0;
    }
    @media @bw768 {
       height: 162px;
+      margin-top: 100px;
+      padding-top: 0;
    }
 
    &__text {
@@ -27,9 +33,6 @@
       font-weight: @font_weight5;
       line-height: @line_height7;
       
-      @media @bw1920 {
-         font-size: @font_size15;
-      }
       @media @bw1660 {
          font-size: @font_size15;
       }
@@ -45,9 +48,7 @@
 .doit__row1 {
    position: relative;
    display: block;
-   @media @bw1920 {
-      left: 0;
-   }
+   
    @media @bw1660 {
       left: -3.5vw;
    }
@@ -64,10 +65,7 @@
    top: -8vw;
    left: 61vw;
    display: block;
-   @media @bw1920 {
-      top: -8.2vw;
-      left: 60.5vw;
-   }
+   
    @media @bw1660 {
       top: -7.5vw;
       left: 60.5vw;
@@ -86,11 +84,7 @@
    right: -9.2vw;
    left: 40vw;
    display: block;
-   @media @bw1920 {
-      top: -8vw;
-      right: -9.2vw;
-      left: 38.5vw;
-   }
+   
    @media @bw1660 {
       top: -8vw;
       right: -9.2vw;
