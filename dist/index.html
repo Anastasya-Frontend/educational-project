@@ -158,15 +158,23 @@
         </div>
       </section>
       <!-- Мероприятия  -->
-      <section class="section-events">
-        <div class="section-events__wrapper ">
-          <div class="section-events__container listing">
-            <h2 class="section-events__title section-title">Мероприятия</h2>
-            <div class="section-events__list">
+      <section class="section-slider">
+        <div class="section-slider__wrapper">
+          <div class="section-slider__container listing">
+            <h2 class="section-slider__title section-title">Мероприятия</h2>
+            <div class="section-slider__list">
               <!-- prettier-ignore -->
               <article class="event-card listing__event-card">
                 <a href="#" class="event-card__link">
                   <picture class="event-card__picture">
+
+                    <source media="(max-width: 450px)" type="image/webp" srcset="assets/images/events/nirvana-1920.webp">
+                    <source media="(max-width: 450px)" srcset="assets/images/events/nirvana-1920.jpg">
+
+                    <source media="(max-width: 1169px)" type="image/webp" srcset="assets/images/events/nirvana-1920.jpg_tablet_webp">
+                    <source media="(max-width: 1169px)" srcset="assets/images/events/nirvana-1920.jpg_tablet">
+
+                    <source type="image/webp" srcset="assets/images/events/nirvana-1920.webp">
                     <img src="assets/images/events/nirvana-1920.jpg" alt="nirvana" class="event-card__img" />
                   </picture>
                   <h4 class="event-card__title">Собираемся и слушаем альбом Nirvana</h4>
@@ -177,6 +185,14 @@
               <article class="event-card listing__event-card">
                 <a href="#" class="event-card__link">
                   <picture class="event-card__picture">
+
+                    <source media="(max-width: 450px)" type="image/webp" srcset="assets/images/events/HowStuffWorks-1920.webp">
+                    <source media="(max-width: 450px)" srcset="assets/images/events/HowStuffWorks-1920.jpg">
+
+                    <source media="(max-width: 1169px)" type="image/webp" srcset="assets/images/events/HowStuffWorks-1920.jpg_tablet_webp">
+                    <source media="(max-width: 1169px)" srcset="assets/images/events/HowStuffWorks-1920.jpg_tablet">
+
+                    <source type="image/webp" srcset="assets/images/events/HowStuffWorks-1920.webp">
                     <img src="assets/images/events/HowStuffWorks-1920.jpg" alt="stuff" class="event-card__img" />
                   </picture>
                   <h4 class="event-card__title">Есть тема, нужно обсудить с HowStuffWorks</h4>
@@ -187,6 +203,14 @@
               <article class="event-card listing__event-card">
                 <a href="#" class="event-card__link">
                   <picture class="event-card__picture">
+
+                    <source media="(max-width: 450px)" type="image/webp" srcset="assets/images/events/the_best_of_sade-1920.webp">
+                    <source media="(max-width: 450px)" srcset="assets/images/events/the_best_of_sade-1920.jpg">
+
+                    <source media="(max-width: 1169px)" type="image/webp" srcset="assets/images/events/the_best_of_sade-1920.jpg_tablet_webp">
+                    <source media="(max-width: 1169px)" srcset="assets/images/events/the_best_of_sade-1920.jpg_tablet">
+
+                    <source type="image/webp" srcset="assets/images/events/the_best_of_sade-1920.webp">
                     <img src="assets/images/events/the_best_of_sade-1920.jpg" alt="the_best_of_sade" class="event-card__img" />
                   </picture>
                   <h4 class="event-card__title">Вечер | The Best of Sade</h4>
@@ -243,28 +267,28 @@
 
             <!-- Кнопки слайдера, скорее всего надо будет переделать данный блок  -->
 
-            <div class="section-events__btn">
-              <button class="section-events__btn__arrow">
-                <svg class="section-events__btn__arrow__icon" width="92" height="62">
+            <div class="section-slider__btn">
+              <button class="section-slider__btn__arrow">
+                <svg class="section-slider__btn__arrow__icon" width="92" height="62">
                   <use xlink:href="assets/icons/symbols.svg#arrow_2"></use>
                 </svg>
               </button>
-              <div class="section-events__btns">
-                <button class="section-events__btns__el"></button>
-                <button class="section-events__btns__el"></button>
-                <button class="section-events__btns__el"></button>
-                <button class="section-events__btns__el"></button>
-                <button class="section-events__btns__el"></button>
+              <div class="section-slider__btns">
+                <button class="section-slider__btns__el"></button>
+                <button class="section-slider__btns__el"></button>
+                <button class="section-slider__btns__el"></button>
+                <button class="section-slider__btns__el"></button>
+                <button class="section-slider__btns__el"></button>
               </div>
-              <button class="section-events__btn__arrow">
-                <svg class="section-events__btn__arrow__icon" width="92" height="62">
+              <button class="section-slider__btn__arrow">
+                <svg class="section-slider__btn__arrow__icon" width="92" height="62">
                   <use xlink:href="assets/icons/symbols.svg#arrow"></use>
                 </svg>
               </button>
             </div>
 
-            <div class="section-events__button">
-              <a href="#" class="section-events__button__link">Смотреть все</a>
+            <div class="section-slider__button">
+              <a href="#" class="section-slider__button__link">Смотреть все</a>
             </div>
           </div>
         </div>

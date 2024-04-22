@@ -49,6 +49,7 @@
 .page-footer__line::after {
    margin-left: 50px;
    background: linear-gradient(to right, @black 0%, @black00 82.86% );
+
    @media @bw1020 {
       margin-left: 26px;
    }
@@ -66,6 +67,7 @@
    @media @bw768 {
       padding: 60px 0 50px;
    }
+
    &__main {
       box-sizing: border-box;
       display: flex;
@@ -168,11 +170,13 @@
       padding-left: 0;
       overflow: hidden;
    }
+
    &__input {
       box-sizing: border-box;
-      padding: 0 0 0 28px;
       width: 410px;
       height: 49px;
+      padding: 0 0 0 28px;
+      border: none;
 
       @media @bw1660 {
          width: 387px;
@@ -197,10 +201,11 @@
       position: absolute;
       right: 0;
       top: 0;
+      z-index: 1;
       display: block;
       padding: 15px 23px;
       width: 135px;
-      height: 52px;
+      height: 49px;
       border: none;
       background-color: @black;
       color: @white;
@@ -215,7 +220,6 @@
 
       @media @bw768 {
          width: 116px;
-         height: 48px;
          padding: 15px 20px;
          font-size: @font_size19;
          line-height: @line_height15;
@@ -230,6 +234,7 @@
       padding-left: 20px;
       padding-right: 20px;
    }
+
    &__label {
       margin: 0;
       color: @black;
@@ -331,13 +336,46 @@
 }
 
 .footer__vault {
+   box-sizing: border-box;
+   display: grid;
+   justify-content: space-between;
+   max-width: 100%;
+   width: 1334px;
    margin-top: 60px;
+   grid-gap: 0 203px;
+   grid-template-columns: 1fr 160px 1fr;
+   grid-template-areas: 
+   'copy icon ...'
+   'link1 icon link2';
 
+   @media @bw1660 {
+      grid-gap: 0 166px;
+   }
+
+   @media @bw1020 {
+      width: 708px;
+      grid-gap: 0;
+      grid-template-areas: 
+         'icon icon ...'
+         'copy ...  ...'
+         'link1 link2 link2';
+   }
+   @media @bw768 {
+      grid-gap: 0;
+      grid-template-columns: 280px;
+      grid-template-areas: 
+         'icon'
+         'link1'
+         'copy'
+         'link2';
+   }
    @media @bw768 {
       padding-left: 20px;
       padding-right: 20px;
    }
+
    &__copy {
+      grid-area: copy;
       margin-bottom: 20px;
       color: @black;
       font-family: @font1;
@@ -359,10 +397,12 @@
          margin: 0;
       }
    }
+
    &__terms1 {
       display: flex;
       align-items: flex-end;
       grid-gap: 60px;
+      grid-area: link1;
 
       @media @bw1020 {
          grid-gap: 15px
@@ -400,6 +440,7 @@
       display: flex;
       justify-content: flex-end;
       grid-gap: 15px;
+      grid-area: link2;
 
       @media @bw768 {
          margin-top: 7px;
@@ -436,11 +477,21 @@
    
    &__icon {
       display: flex;
+      align-self: end;
       grid-gap: 44px;
-      
-      @media @bw768 {
-         grid-gap: 30px;
+      grid-area: icon;
+      margin: 0 auto;
+   
+      @media @bw1020 {
+         justify-content: flex-end;
+         margin: 0 19px 60px 0;
       }
+      @media @bw768 {
+         justify-content: center;
+         grid-gap: 30px;
+         margin: 0 0 60px 0;
+      }
+      
       &__link {
          box-sizing: border-box;
          display: inline-flex;
@@ -468,63 +519,4 @@
          }
       }
    }
-}
-.footer__vault {
-   box-sizing: border-box;
-   display: grid;
-   justify-content: space-between;
-   max-width: 100%;
-   width: 1334px;
-   grid-gap: 0 203px;
-   grid-template-columns: 1fr 160px 1fr;
-   grid-template-areas: 
-   'copy icon ...'
-   'link1 icon link2';
-
-   @media @bw1660 {
-      grid-gap: 0 166px;
-   }
-
-   @media @bw1020 {
-      width: 708px;
-      grid-gap: 0 ;
-
-      grid-template-areas: 
-         'icon icon ...'
-         'copy ...  ...'
-         'link1 link2 link2';
-   }
-
-   @media @bw768 {
-      grid-gap: 0;
-      grid-template-columns: 280px;
-      grid-template-areas: 
-         'icon'
-         'link1'
-         'copy'
-         'link2';
-   }
-}
-.footer__vault__copy {
-   grid-area: copy;
-}
-.footer__vault__terms1 {
-   grid-area: link1;
-}
-.footer__vault__icon {
-   grid-area: icon;
-   align-self: end;
-   margin: 0 auto;
-   
-   @media @bw1020 {
-      justify-content: flex-end;
-      margin: 0 19px 60px 0;
-   }
-   @media @bw768 {
-      justify-content: center;
-      margin: 0 0 60px 0;
-   }
-}
-.footer__vault__terms2 {
-   grid-area: link2;
 }
