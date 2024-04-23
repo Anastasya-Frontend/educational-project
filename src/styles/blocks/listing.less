@@ -1,14 +1,47 @@
 .listing {
-   .container ();
+   .container();
    display: flex;
    flex-direction: column;
-   padding: 138px 0 100px;
-}
-.events {
-   .container ();
-   display: flex;
-   flex-direction: column;
-   &__list {
+   padding-top: 138px;
+
+   @media @bw1020 {
+      padding-top: 90px;
+   }
+   @media @bw768{
+      padding-top: 40px;
+   }
+
+   &__event-card {
+      margin-right: 60px;
+      width: calc(33.3333% - 60px);
+      margin: 0 30px 120px;
+      &:nth-child(3n) {
+         margin-right: 0;
+      }
+      
+      @media @bw1660 {
+         width: calc(33.3333% - 40px);
+         margin: 0 20px 100px;
+      }
+      @media @bw1340 {
+         width: calc(33.3333% - 30px);
+         margin: 0 15px 100px;
+      }
+      @media @bw1020 {
+         width: calc(50% - 30px);
+         max-width: 405px;
+         margin: 0 15px 80px;
+      }
+      @media @bw768 {
+         margin: 0 10px 80px;
+      }
+      @media @bw650 {
+         width: 100%;
+         margin: 0 0 60px;
+      }
+   }
+
+   &__events-list {
       display: flex;
       flex-wrap: wrap;
       margin: 0 -30px -120px;
@@ -28,31 +61,78 @@
       }
       @media @bw650 {
          margin: 0 0 -60px;
-      }
+      }   
    }
-
+}
+.more-btn {
    box-sizing: border-box;
    display: flex;
-   padding: 0;
-   
+   justify-content: center;
+   margin-top: 70px;
+
+   @media @bw1660 {
+      margin-top: 60px;
+   }
+   @media @bw1020 {
+      margin-top: 60px;
+   }
+   @media @bw768 {
+      margin-top: 50px;
+   }
+
    &__link {
       box-sizing: border-box;
-      display: inline-flex;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 128px;
+      height: 132px;
+      padding: 1px 7px 0;
+      grid-gap: 18px;
       color: @black;
       font-family: @font1;
       font-size: @font_size3;
-      font-weight: @font_weight2;
+      font-weight: @font_weight4;
       line-height: @line_height5;
       text-decoration: none;
       transition: color 0.2s;
       cursor: pointer;
+      
       &:hover {
          color: @red;
       }
-   }
-   &__no-click {
-      pointer-events: none;
-      cursor: default;
-   }
+      &__arrow {
+         width: 60px;
+         height: 91px;
 
+         @media @bw1020 {
+            width: 40px;
+            height: 67px;
+         }
+         @media @bw768 {
+            width: 40px;
+            height: 67px;
+         }
+      }
+
+      @media @bw1020 {
+         grid-gap: 16px;
+         width: 99px;
+         height: 106px;
+         padding: 0;
+         font-size: @font_size2;
+         line-height: @line_height3;
+         white-space: nowrap;
+      }
+      @media @bw768 {
+         grid-gap: 16px;
+         width: 99px;
+         height: 106px;
+         padding: 0;
+         font-size: @font_size2;
+         line-height: @line_height3;
+         white-space: nowrap;
+      }
+   }
 }

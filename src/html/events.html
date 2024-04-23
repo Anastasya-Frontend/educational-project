@@ -6,24 +6,20 @@
    @@include('blocks/page-header.html')
    <!-- Main -->
    <main class="main">
-      <div class="main__container">
+      <div class="events">
+         <nav class="events__nav">
+            <a href="#" class="events__nav__link">Главная</a>
+            <a href="#" class="events__nav__no-click">Мероприятия</a>
+         </nav>
          <!-- Секция - Мероприятия -->
-         <section class="events">
-            <nav class="events__nav">
-               <a href="#" class="events__nav__link">Главная</a>
-               <a href="#" class="events__nav__link__no-click">Мероприятия</a>
-            </nav>
             @@include('blocks/listing.html')
-         </section>
-
-         
          <!-- Секция - дополнительные услуги -->
          <section class="services">
             <div class="services__container">
                <h2 class="services__title">Дополнительные услуги</h2>
                <div class="services__content">
                   <p class="services__text">
-                     Перед запуском проекта, мы подготавливаем подробную смету и согласуем ее с клиентом. Убедившись, что <br> все пожеланию учтены и мы можем приступать к реализациии проекта, начинается сложная, но интересная <br> работа, результатом которой будет проведение вашего мероприятия на высшем уровне.
+                     Перед запуском проекта, мы подготавливаем подробную смету и согласуем ее с клиентом. Убедившись, что все пожеланию учтены и мы можем приступать к реализациии проекта, начинается сложная, но интересная работа, результатом которой будет проведение вашего мероприятия на высшем уровне.
                   </p>
                   <!-- Таблица -->
                   @@include('blocks/table.html')
