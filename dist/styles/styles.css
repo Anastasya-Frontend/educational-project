@@ -280,6 +280,8 @@ textarea {
   display: block;
 }
 .table {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   margin-top: 60px;
   border-collapse: collapse;
@@ -1106,6 +1108,7 @@ ol > li:last-child {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   font-weight: 600;
+  line-height: 1.35;
 }
 .article-box__description {
   max-width: 400px;
@@ -1131,6 +1134,7 @@ ol > li:last-child {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.375;
+  text-decoration: none;
 }
 .article-box__link:hover {
   color: #bc3324;
@@ -3302,6 +3306,10 @@ textarea:focus::placeholder {
     right: -9.2vw;
     left: 38.5vw;
   }
+  .info-block {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   .section-poster__title,
   .section-poster__description {
     font-size: 35px;
@@ -3309,8 +3317,19 @@ textarea:focus::placeholder {
   .section-poster__svg {
     margin: 70px 0;
   }
+  .contact {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .contact__listing {
+    grid-gap: 29px;
+  }
   .about {
     padding: 200px 0 100px;
+  }
+  .about__container {
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .about__text {
     max-width: 827px;
@@ -3366,6 +3385,10 @@ textarea:focus::placeholder {
     width: 353px;
     margin-top: 88px;
   }
+  .listing {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   .listing__event-card {
     width: calc(33.3333% - 40px);
     margin: 0 20px 100px;
@@ -3375,6 +3398,10 @@ textarea:focus::placeholder {
   }
   .more-btn {
     margin-top: 60px;
+  }
+  .section-slider__container {
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .section-slider__wrapper {
     padding: 65px 0 42px;
@@ -3392,6 +3419,14 @@ textarea:focus::placeholder {
   .event-card__picture {
     width: 393px;
   }
+  .events__nav {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .services {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   .services__title {
     margin: 0 auto 130px;
     padding: 16px 75px;
@@ -3399,12 +3434,24 @@ textarea:focus::placeholder {
   .services__text {
     max-width: 829px;
   }
+  .event {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .blog {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   .blog {
     padding-top: 71px;
     padding-bottom: 90px;
   }
   .section-blog__btn-right {
     margin-top: 58px;
+  }
+  .contacts {
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .contacts__wrapper__content {
     margin: 30px 0 29px;
@@ -3424,6 +3471,10 @@ textarea:focus::placeholder {
   }
   .page-header {
     height: 111px;
+  }
+  .page-header__container {
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .page-header__logo {
     width: 152px;
@@ -3468,32 +3519,12 @@ textarea:focus::placeholder {
     padding: 11px 40px;
     font-size: 24px;
   }
-  .info-block {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .contact {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .about__container {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .listing {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
   .listing__event-card {
     width: calc(33.3333% - 30px);
     margin: 0 15px 100px;
   }
   .listing__events-list {
     margin: 0 -15px -100px;
-  }
-  .section-slider__container {
-    padding-left: 30px;
-    padding-right: 30px;
   }
   .section-slider__list {
     margin: 0 -15px -100px;
@@ -3506,30 +3537,6 @@ textarea:focus::placeholder {
     min-height: 54px;
     font-size: 20px;
     line-height: 1.35;
-  }
-  .events__nav {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .services {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .event {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .blog {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .contacts {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .page-header__container {
-    padding-left: 30px;
-    padding-right: 30px;
   }
   .page-footer {
     padding-left: 30px;
@@ -3569,6 +3576,27 @@ textarea:focus::placeholder {
     left: 1.5vw;
     white-space: nowrap;
   }
+  .table {
+    margin-top: 50px;
+  }
+  .table__th {
+    font-size: 14px;
+    line-height: 1.357;
+  }
+  .table__th:last-child,
+  .table__footer-th:last-child {
+    padding-right: 20px;
+  }
+  .table__th,
+  .table__footer-th {
+    padding: 12px 25px;
+    white-space: nowrap;
+  }
+  .table__body-th {
+    padding: 6px 78px 6px 0;
+    font-size: 14px;
+    line-height: 1.357;
+  }
   .section-poster {
     padding: 40px 0 23px;
   }
@@ -3578,6 +3606,27 @@ textarea:focus::placeholder {
   }
   .section-poster__svg {
     margin: 51px 0;
+  }
+  .contact__listing {
+    grid-gap: 50px 100px;
+    padding-bottom: 0;
+  }
+  .article-box {
+    min-width: 280px;
+  }
+  .article-box__title {
+    margin: 41px 0 16px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.388;
+  }
+  .article-box__description {
+    font-size: 14px;
+    line-height: 1.357;
+  }
+  .article-box__link {
+    font-size: 14px;
+    line-height: 1.357;
   }
   .about {
     padding: 130px 0 50px;
@@ -4049,6 +4098,19 @@ textarea:focus::placeholder {
   .doit__row3 {
     left: -15vw;
   }
+  .table {
+    margin-top: 30px;
+  }
+  .table__th {
+    font-size: 14px;
+    line-height: 1.357;
+  }
+  .table__body-th {
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.357;
+  }
   .info-block {
     padding-left: 20px;
     padding-right: 20px;
@@ -4066,6 +4128,39 @@ textarea:focus::placeholder {
   .contact {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .contact__listing {
+    grid-gap: 40px;
+    padding: 90px 0 0;
+  }
+  a[title] {
+    font-size: 13px;
+    line-height: 1.384;
+  }
+  .article-box {
+    min-width: 244px;
+  }
+  .article-box__svg {
+    width: 65px;
+    height: 65px;
+  }
+  .article-box__title {
+    margin: 30px 0 10px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.357;
+  }
+  .article-box__description {
+    font-size: 13px;
+    line-height: 1.384;
+  }
+  .article-box__link {
+    font-size: 13px;
+    line-height: 1.384;
+  }
+  .svg__icon {
+    width: 22px;
+    height: 22px;
   }
   .about {
     padding: 100px 0 60px;

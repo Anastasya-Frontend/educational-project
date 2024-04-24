@@ -10,6 +10,24 @@
       flex-wrap: wrap;
       grid-gap: 67px;
       padding: 100px 0 10px;
+
+      @media @bw1660 {
+         grid-gap: 29px;
+      }
+      @media @bw1020 {
+         grid-gap: 50px 100px;
+         padding-bottom: 0;
+      }
+      @media @bw768 {
+         grid-gap: 40px;
+         padding: 90px 0 0;
+      }
+   } 
+}
+a[title] {
+   @media @bw768 {
+      font-size: @font_size1;
+      line-height: @line_height14;
    }
 }
 .article-box {
@@ -20,6 +38,13 @@
    min-width: 300px;
    max-width: 400px;
    text-align: center;
+
+   @media @bw1020 {
+      min-width: 280px;
+   }
+   @media @bw768 {
+      min-width: 244px;
+   }
    &__svg {
       display: flex;
       justify-content: center;
@@ -27,6 +52,11 @@
       width: 110px;
       height: 110px;
       background-color: @black;
+
+      @media @bw768 {
+         width: 65px;
+         height: 65px;
+      }
    }
    &__title {
       min-height: 27px;
@@ -36,6 +66,20 @@
       font-family: @font1;
       font-size: @font_size5;
       font-weight: @font_weight4;
+      line-height: @line_height13;
+
+      @media @bw1020 {
+         margin: 41px 0 16px;
+         font-size: @font_size4;
+         font-weight: @font_weight5;
+         line-height: @line_height6;
+      }
+      @media @bw768 {
+         margin: 30px 0 10px;
+         font-size: @font_size2;
+         font-weight: @font_weight4;
+         line-height: @line_height3;
+      }
    }
    &__description {
       max-width: 400px;
@@ -45,6 +89,15 @@
       font-size: @font_size3;
       font-weight: @font_weight2;
       line-height: @line_height5;
+
+      @media @bw1020 {
+         font-size: @font_size2;
+         line-height: @line_height3;
+      }
+      @media @bw768 {
+         font-size: @font_size1;
+         line-height: @line_height14;
+      }
    }
    &__div {
       display: flex;
@@ -56,6 +109,17 @@
       font-size: @font_size3;
       font-weight: @font_weight2;
       line-height: @line_height5;
+      text-decoration: none;
+
+      @media @bw1020 {
+         font-size: @font_size2;
+         line-height: @line_height3;
+      }
+      @media @bw768 {
+         font-size: @font_size1;
+         line-height: @line_height14;
+      }
+
       &:hover {
          color: @red;
       }
@@ -66,5 +130,10 @@
    &__icon {
       width: 24px;
       height: 24px;
+
+      @media @bw768 {
+         width: 22px;
+         height: 22px;
+      }
    }
 }
