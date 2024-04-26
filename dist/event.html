@@ -61,16 +61,24 @@
         <h1 class="event__title"> Вечер | The Best of Sade</h1>
         <!-- Картинка + доп.информация -->
         <div class="event__info-block info-block">
-          <div class="info-block__item">
+          <div class="info-block__item info-block__text1">
             <time datetime="2022-12-16" class="info-block__date">
               16/12/2022
             </time>
             <p class="info-block__text info-block__item__text1">Кафе «Птичка»</p>
           </div>
           <picture class="info-block__pic">
+
+            <source media="(max-width: 1659px)" type="image/webp" srcset="assets/images/event/the_best_of_sade-1340.webp">
+            <source media="(max-width: 1659px)" srcset="assets/images/event/the_best_of_sade-1340.jpg">
+
+            <source media="(max-width: 1019px)" type="image/webp" srcset="assets/images/event/the_best_of_sade-320.webp">
+            <source media="(max-width: 1019px)" srcset="assets/images/event/the_best_of_sade-320.jpg">
+
+            <source type="image/webp" srcset="assets/images/event/the_best_of_sade-1920.jpg">
             <img src="assets/images/event/the_best_of_sade-1920.jpg" alt="Best" class="info-block__pic__img">
           </picture>
-          <div class="info-block__item">
+          <div class="info-block__item info-block__text2">
             <p class="info-block__time">
               20.00 <span class="info-block__desc"> начало</span>
             </p>

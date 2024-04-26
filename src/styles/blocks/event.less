@@ -10,6 +10,16 @@
       font-weight: @font_weight3;
       line-height: @line_height10;
       text-align: center;
+      @media @bw1020 {
+         margin: 40px 0 54px;
+         font-size: @font_size10;
+         line-height: @line_height17;
+      }
+      @media @bw768 {
+         margin: 40px 0 40px;
+         font-size: @font_size5;
+         line-height: @line_height18;
+      }
    }
 }
 .event__nav {
@@ -17,6 +27,9 @@
    display: flex;
    padding: 0;
    
+   @media @bw768 {
+      display: none;
+   }
    &__link {
       box-sizing: border-box;
       display: inline-flex;
@@ -30,6 +43,13 @@
       &:hover {
          color: @red;
       }
+      &:first-child {
+         padding-right: 5px;
+      }
+      @media @bw1020 {
+         font-size: @font_size2;
+         line-height: @line_height3;
+      }
    }
    &__no-click {
       pointer-events: none;
@@ -40,6 +60,10 @@
       content: "/";
       padding: 0 5px;
       color: black;
+
+      @media @bw1020 {
+         padding: 0 3px;
+      }
    }
 
 

@@ -34,7 +34,6 @@
          width: 100%;
       }
    }
-
    &__tr {
       @media @bw768 {
          display: flex;
@@ -70,11 +69,10 @@
    &__footer-th {
       height: 60px;
       font-size: @font_size0;
-
       @media @bw768 {
          color: @gray_plachol;
-         font-weight: @font_weight1;
          font-size: @font_size2;
+         font-weight: @font_weight1;
          line-height: @line_height3;
       }
    }
@@ -85,14 +83,6 @@
       padding: 10px;
       border-right: 1px solid @gray_dark;
       text-transform: uppercase;
-
-      // @media @bw1020 {
-      //    padding-top: 25px;
-      //    padding-bottom: 25px;
-      //    padding-left: 20px;
-      //    padding-right: 20px;
-      //    white-space: nowrap;
-      // }
       @media @bw768 {
          display: flex;
          align-items: center;
@@ -111,9 +101,6 @@
       &:last-child {
          border-right: none;
          padding-right: 0;
-         @media @bw768 {
-            
-         }
       }
       &:nth-child(2n-1) {
          @media @bw768 {
@@ -146,10 +133,35 @@
       }
 
       @media @bw1020 {
-         // padding: 0 72px 0 0;
+         padding: 5px 10px 5px 0;
          font-size: @font_size2;
          font-weight: @font_weight2;
          line-height: @line_height3;
+      }
+
+      &--cost {
+         @media @bw1020 {
+            margin: 0;
+            padding-right: 50px;
+            max-width: 80px;
+         }
+         @media @bw768 {
+            margin: 0;
+            padding-right: 0;
+            max-width: none;
+         }
+      }
+      &--cost2 {
+         @media @bw1020 {
+            margin: 0;
+            padding-right: 22px;
+            max-width: 120px;
+         }
+         @media @bw768 {
+            margin: 0;
+            padding-right: 0;
+            max-width: none;
+         }
       }
    }
    &__td {
@@ -161,9 +173,6 @@
       font-weight: @font_weight4;
       line-height: @line_height5;
 
-      // @media @bw1020 {
-      //    padding:  8px 20px;
-      // }
       @media @bw768 {
          display: flex;
          align-items: center;
@@ -175,7 +184,7 @@
          border: none;
          border-right: 1px solid @gray_dark;
       }
-
+      
       &:last-child {
          border-right: none;
          padding-right: 0;
