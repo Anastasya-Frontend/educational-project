@@ -7,6 +7,10 @@
    line-height: @line_height5;
    font-style: normal;
    word-wrap: break-word;
+   @media @bw768 {
+      font-size: @font_size2;
+      line-height: @line_height3;
+   }
 
    
    
@@ -16,6 +20,11 @@
       font-family: @font1;
       font-size: @font_size4;
       font-weight: @font_weight5;
+      line-height: @line_height6;
+      @media @bw768 {
+         font-size: @font_size3;
+         line-height: @line_height5;
+      }
    }
    p {
       width: 870px;
@@ -25,36 +34,66 @@
       font-size: @font_size3;
       font-weight: @font_weight2;
       line-height: @line_height5;
+      @media @bw1660 {
+         width: 830px;
+      }
+      @media @bw1020 {
+         width: 600px;
+         margin: 15px 0 40px;
+      }
+      @media @bw768 {
+         width: 270px;
+         margin: 15px 0 40px;
+         font-size: @font_size2;
+         line-height: @line_height3;
+      }
+   }
+
+   ul {
+      margin: 20px 0 75px;
+      @media @bw1020 {
+         margin: 20px 0 50px;
+      }
+      @media @bw768 {
+         margin: 20px 0 55px;
+      }
+   }
+   ol {
+      margin: 0;
    }
 }
-ul {
-   margin: 20px 0 75px;
-}
-ol {
-   margin: 0;
-}
+
 ul,
 ol {
    position: relative;
    padding: 0;
    list-style: none;
    font-family: @font1;
+
 }
 ul > li {
    box-sizing: border-box;
    position: relative;
-   padding-left: 20px;
+   padding-left: 10px;
+
+   @media @bw768 {
+      padding-left: 6px;
+   }
    &::before {
       content: "";
       position: absolute;
       top: 8px;
       left: 0;
       display: block;
-      width: 6px;
-      height: 6px;
+      width: 4px;
+      height: 4px;
       border-radius: 50%;
       background-color: @red;
       pointer-events: none;
+      @media @bw768 {
+         width: 3px;
+         height: 3px;
+      }
    }
 }
 
@@ -80,6 +119,9 @@ ul > li,
 ol > li {
    margin: 0 0 15px;
    cursor: default;
+   @media @bw768 {
+      margin: 0 0 10px;
+   }
 
    &:last-child {
       margin-bottom: 0;
