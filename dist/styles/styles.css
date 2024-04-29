@@ -996,7 +996,7 @@ ol > li::before {
           box-sizing: border-box;
   display: inline-block;
   min-width: 20px;
-  color: #bc3324;
+  color: #1f1e1e;
   white-space: pre;
 }
 ul > li,
@@ -2839,8 +2839,6 @@ a[href="mailto:hi@tagree.ru"] {
   max-width: 1210px;
   margin: auto;
   background-color: #dedede;
-  background-position: 0 0;
-  background-size: auto;
 }
 .pp__container {
   -webkit-box-sizing: border-box;
@@ -3330,6 +3328,9 @@ textarea:focus::placeholder {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .event__reserve {
+    padding: 80px 40px 50px;
+  }
   .info-block {
     padding-left: 30px;
     padding-right: 30px;
@@ -3636,7 +3637,7 @@ textarea:focus::placeholder {
     max-width: 120px;
   }
   .event__reserve {
-    padding: 55px 30px 10px;
+    padding: 55px 30px 0;
   }
   .title {
     margin: 0;
@@ -3734,6 +3735,9 @@ textarea:focus::placeholder {
   }
   .content ul {
     margin: 20px 0 50px;
+  }
+  ul > li {
+    padding-left: 14px;
   }
   .section-poster {
     padding: 40px 0 23px;
@@ -4190,11 +4194,18 @@ textarea:focus::placeholder {
             justify-content: flex-end;
     margin: 0 19px 60px 0;
   }
+  .pp {
+    padding: 90px 40px 50px;
+  }
 }
 @media (max-width: 767px) {
   body {
     padding-top: 70px;
     background-image: url(../assets/images/bg/фон-320.jpg);
+  }
+  .x-btn {
+    width: 36px;
+    height: 36px;
   }
   .want-btns {
     width: 100%;
@@ -4361,7 +4372,7 @@ textarea:focus::placeholder {
     width: 100%;
   }
   .event__reserve {
-    padding: 40px 20px 10px;
+    padding: 40px 20px 0;
   }
   .reserve {
     gap: 60px;
@@ -4969,6 +4980,26 @@ textarea:focus::placeholder {
   .footer__vault__icon__svg {
     width: 20px;
     height: 20px;
+  }
+  .pp {
+    padding: 90px 20px 50px;
+  }
+  .pp__wrapper {
+    max-width: 280px;
+  }
+  .pp__container {
+    padding: 0 20px 40px;
+  }
+  .pp__title {
+    width: 225px;
+    font-size: 14px;
+    line-height: 1.357;
+    margin: -30px 0 40px -15px;
+    padding: 10px 20px;
+  }
+  .pp__x-btn {
+    top: -18px;
+    right: -18px;
   }
 }
 @media (max-width: 659px) {

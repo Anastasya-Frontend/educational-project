@@ -17,6 +17,15 @@
    display: none;
    padding: 90px 95px 50px;
    overflow-y: auto;
+   @media @bw1660 {
+
+   }
+   @media @bw1020 {
+      padding: 90px 40px 50px;
+   }
+   @media @bw768 {
+      padding: 90px 20px 50px;
+   }
 
    &__wrapper {
       position: relative;
@@ -27,8 +36,10 @@
       max-width: 1210px;
       margin: auto;
       background-color: @gray;
-      background-position: 0 0;
-      background-size: auto;
+
+      @media @bw768 {
+         max-width: 280px;
+      }
    }
 
    &__container {
@@ -37,6 +48,9 @@
       max-width: 950px;
       margin: 0 auto;
       padding: 0 40px 40px;
+      @media @bw768 {
+         padding: 0 20px 40px;
+      }
    }
 
    &__title {
@@ -55,6 +69,13 @@
       font-weight: @font_weight2;
       line-height: @line_height8;
       text-transform: uppercase;
+      @media @bw768 {
+         width: 225px;
+         font-size: @font_size2;
+         line-height: @line_height3;
+         margin: -30px 0 40px -15px;
+         padding: 10px 20px;
+      }
    }
 
    &__sticky-close {
@@ -69,6 +90,10 @@
       position: absolute;
       top: -30px;
       right: -30px;
+      @media @bw768 {
+         top: -18px;
+         right: -18px;
+      }
    }
 }
 @supports (backdrop-filter: blur(50px)) {
@@ -304,6 +329,9 @@ textarea:focus {
       font-size: @font_size4;
       font-weight: @font_weight5;
       line-height: @line_height6;
+      @media @bw768 {
+         
+      }
    }
    &__label {
       display: block;
