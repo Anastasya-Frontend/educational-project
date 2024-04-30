@@ -18,13 +18,13 @@
    padding: 90px 95px 50px;
    overflow-y: auto;
    @media @bw1660 {
-
+      
    }
    @media @bw1020 {
       padding: 90px 40px 50px;
    }
    @media @bw768 {
-      padding: 90px 20px 50px;
+      padding: 80px 20px 50px;
    }
 
    &__wrapper {
@@ -36,7 +36,12 @@
       max-width: 1210px;
       margin: auto;
       background-color: @gray;
-
+      @media @bw1660 {
+         max-width: 1144px;
+      }
+      @media @bw1020 {
+         max-width: 688px;
+      }
       @media @bw768 {
          max-width: 280px;
       }
@@ -48,8 +53,17 @@
       max-width: 950px;
       margin: 0 auto;
       padding: 0 40px 40px;
+      @media @bw1660 {
+         max-width: 974px;
+         padding: 0 50px 40px;
+      }
+      @media @bw1020 {
+         max-width: 668px;
+         padding: 0 30px 40px;
+      }
       @media @bw768 {
-         padding: 0 20px 40px;
+         max-width: 252px;
+         padding: 0 6px 40px;
       }
    }
 
@@ -69,11 +83,19 @@
       font-weight: @font_weight2;
       line-height: @line_height8;
       text-transform: uppercase;
+      @media @bw1660 {
+         margin: -40px 0 70px -50px;
+      }
+      @media @bw1020 {
+         width: 465px;
+         padding: 10px 60px 10px 18px;
+         margin: -40px 0 70px -30px;
+      }
       @media @bw768 {
          width: 225px;
          font-size: @font_size2;
          line-height: @line_height3;
-         margin: -30px 0 40px -15px;
+         margin: -30px 0 40px -6px;
          padding: 10px 20px;
       }
    }
@@ -116,33 +138,38 @@
    visibility: hidden !important;
    pointer-events: none !important;
 }
+
 .form {
    &__list {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+
+      @media @bw768 {
+         flex-direction: column;
+      }
    }
    &__field,
    &__group {
       width: 100%;
       &--w50 {
          width: calc(50% - 30px);
+         @media @bw768 {
+            width: 100%;
+         }
       }
    }
    &__field {
       margin: 0 0 15px;
+      @media @bw768 {
+         margin: 0 0 30px;
+      }
    }
    &__check-list {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       margin: 0 0 40px;
-   }
-   &__check {
-      margin-bottom: 10px;
-      &:last-child {
-         margin-bottom: 0;
-      }
    }
    &__section {
       margin: 0 0 20px;
@@ -154,16 +181,31 @@
       font-size: @font_size4;
       font-weight: @font_weight5;
       line-height: @line_height6;
+      @media @bw768 {
+         font-size: @font_size3;
+         line-height: @line_height5;
+      }
    }
    &__btns {
       display: flex;
       align-items: center;
       margin: 0;
+      @media @bw768 {
+         flex-direction: column;
+         gap: 30px;
+      }
    }
    
    &__submit {
+      @media @bw768 {
+         font-size: @font_size2;
+         line-height: @line_height3;
+      }
       &--w50 {
          width: calc(50% - 30px);
+         @media @bw768 {
+            width: 100%;
+         }
       }
    }
    &__close-btn {
@@ -181,45 +223,21 @@
       &:hover {
          color: @red;
       }
+      @media @bw768 {
+         font-size: @font_size2;
+         line-height: @line_height3;
+      }
    }
-}
 
-input,
-textarea,
-button,
-select {
-   box-shadow: none;
-   outline: none;
-   color: @black;
-   font-family: @font1;
-}
-button {
-   cursor: pointer;
-}
-textarea {
-   resize: none;
-}
-input,
-textarea {
-   &::placeholder {
-      color: @gray_plachol;
-   }
-}
-input:focus,
-textarea:focus {
-   &::placeholder {
-      color: transparent
-   }
-}
-
-.form__checkbox {
-   position: relative;
+   &__check-pp {
+      position: relative;
    box-sizing: border-box;
    display: inline-flex;
    flex-direction: column;
    align-items: flex-start;
    min-height: 24px;
    padding: 2px 0 0 24px;
+   margin: 0;
    color: @black;
    cursor: pointer;
 
@@ -227,7 +245,7 @@ textarea:focus {
       .is-hidden ();
 
       &:checked {
-         & ~ .check__mark {
+         & ~ .form__check-pp__mark {
             background-color: @black;
             &::after {
                content: "";
@@ -264,8 +282,40 @@ textarea:focus {
          font-size: @font_size2;
          font-weight: @font_weight2;
          line-height: @line_height3;
-         
+         @media @bw768 {
+            font-size: @font_size2;
+            line-height: @line_height3;
+         }
       }
+   }
+   }
+}
+
+input,
+textarea,
+button,
+select {
+   box-shadow: none;
+   outline: none;
+   color: @black;
+   font-family: @font1;
+}
+button {
+   cursor: pointer;
+}
+textarea {
+   resize: none;
+}
+input,
+textarea {
+   &::placeholder {
+      color: @gray_plachol;
+   }
+}
+input:focus,
+textarea:focus {
+   &::placeholder {
+      color: transparent
    }
 }
 
@@ -318,6 +368,7 @@ textarea:focus {
       line-height: @line_height5;
    }
 }
+
 .field {
    display: flex;
    flex-direction: column;
@@ -330,7 +381,8 @@ textarea:focus {
       font-weight: @font_weight5;
       line-height: @line_height6;
       @media @bw768 {
-         
+         font-size: @font_size3;
+         line-height: @line_height5;
       }
    }
    &__label {
@@ -353,6 +405,7 @@ textarea:focus {
       background-color: @white;
       color: @gray_plachol;
       font-size: @font_size3;
+      font-weight: @font_weight2;
       line-height: @line_height5;
    }
    &__input,
@@ -363,12 +416,16 @@ textarea:focus {
    &__textarea {
       height: 150px;
       padding: 20px;
+      @media @bw768 {
+         height: 234px;
+         padding: 15px;
+      }
    }
    &__date-inputs {
       display: flex;
       width: 100%;
       max-width: 251px;
-      height: 55px
+      height: 55px;
    }
    &__date-input {
       box-sizing: border-box;
@@ -382,6 +439,7 @@ textarea:focus {
       background-color: @white;
       color: @gray_plachol;
       font-size: @font_size3;
+      font-weight: @font_weight2;
       line-height: @line_height5;
       text-align: center;
       &--year {
