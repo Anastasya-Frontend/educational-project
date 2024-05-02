@@ -17,14 +17,11 @@
    display: none;
    padding: 90px 95px 50px;
    overflow-y: auto;
-   @media @bw1660 {
-      
-   }
    @media @bw1020 {
       padding: 90px 40px 50px;
    }
    @media @bw768 {
-      padding: 80px 20px 50px;
+      padding: 80px 20px 40px;
    }
 
    &__wrapper {
@@ -144,7 +141,6 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-
       @media @bw768 {
          flex-direction: column;
       }
@@ -160,10 +156,7 @@
       }
    }
    &__field {
-      margin: 0 0 15px;
-      @media @bw768 {
-         margin: 0 0 30px;
-      }
+      margin: 0 0 30px;
    }
    &__check-list {
       display: flex;
@@ -231,21 +224,21 @@
 
    &__check-pp {
       position: relative;
-   box-sizing: border-box;
-   display: inline-flex;
-   flex-direction: column;
-   align-items: flex-start;
-   min-height: 24px;
-   padding: 2px 0 0 24px;
-   margin: 0;
-   color: @black;
-   cursor: pointer;
+      box-sizing: border-box;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      min-height: 24px;
+      padding: 2px 0 0 24px;
+      margin: 0;
+      color: @black;
+      cursor: pointer;
 
-   &__input {
-      .is-hidden ();
+      &__input {
+         .is-hidden ();
 
-      &:checked {
-         & ~ .form__check-pp__mark {
+         &:checked {
+            & ~ .form__check-pp__mark {
             background-color: @black;
             &::after {
                content: "";
@@ -259,35 +252,35 @@
                border-right: 2px solid @white;
                transform: rotate(45deg);
             }
+            }
          }
       }
-   }
-   &__mark {
-      position: absolute;
-      left: 0;
-      top: 0;
-      box-sizing: border-box;
-      display: block;
-      width: 24px;
-      height: 24px;
-      border: 1px solid @black;
-   }
-   &__label {
-      margin-left: 15px;
-      font-size: @font_size3;
-      font-weight: @font_weight1;
-      line-height: @line_height5;
-      &--s {
-         font-family: @font1;
-         font-size: @font_size2;
-         font-weight: @font_weight2;
-         line-height: @line_height3;
-         @media @bw768 {
+      &__mark {
+         position: absolute;
+         left: 0;
+         top: 0;
+         box-sizing: border-box;
+         display: block;
+         width: 24px;
+         height: 24px;
+         border: 1px solid @black;
+      }
+      &__label {
+         margin-left: 15px;
+         font-size: @font_size3;
+         font-weight: @font_weight1;
+         line-height: @line_height5;
+         &--s {
+            font-family: @font1;
             font-size: @font_size2;
+            font-weight: @font_weight2;
             line-height: @line_height3;
+            @media @bw768 {
+               font-size: @font_size2;
+               line-height: @line_height3;
+            }
          }
       }
-   }
    }
 }
 
@@ -418,6 +411,7 @@ textarea:focus {
       padding: 20px;
       @media @bw768 {
          height: 234px;
+         margin-top: 10px;
          padding: 15px;
       }
    }

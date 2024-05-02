@@ -2924,7 +2924,7 @@ a[href="mailto:hi@tagree.ru"] {
   width: calc(50% - 30px);
 }
 .form__field {
-  margin: 0 0 15px;
+  margin: 0 0 30px;
 }
 .form__check-list {
   display: -webkit-box;
@@ -4226,6 +4226,10 @@ textarea:focus::placeholder {
     width: 36px;
     height: 36px;
   }
+  .x-btn__icon {
+    width: 10.8px;
+    height: 10.8px;
+  }
   .want-btns {
     width: 100%;
     max-width: 280px;
@@ -5001,7 +5005,7 @@ textarea:focus::placeholder {
     height: 20px;
   }
   .pp {
-    padding: 80px 20px 50px;
+    padding: 80px 20px 40px;
   }
   .pp__wrapper {
     max-width: 280px;
@@ -5030,9 +5034,6 @@ textarea:focus::placeholder {
   .form__field--w50,
   .form__group--w50 {
     width: 100%;
-  }
-  .form__field {
-    margin: 0 0 30px;
   }
   .form__section-title {
     font-size: 16px;
@@ -5066,6 +5067,7 @@ textarea:focus::placeholder {
   }
   .field__textarea {
     height: 234px;
+    margin-top: 10px;
     padding: 15px;
   }
 }
