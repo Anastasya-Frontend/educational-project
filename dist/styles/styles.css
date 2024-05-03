@@ -3448,6 +3448,7 @@ textarea:focus::placeholder {
   }
   .event-card__picture {
     width: 393px;
+    margin: 0 0 20px;
   }
   .events__nav {
     padding-left: 30px;
@@ -3921,6 +3922,7 @@ textarea:focus::placeholder {
   }
   .event-card__picture {
     width: 339px;
+    margin: 0 0 15px;
   }
   .event-card__description {
     font-size: 14px;
@@ -4697,6 +4699,7 @@ textarea:focus::placeholder {
   }
   .event-card__picture {
     width: 280px;
+    margin: 0 0 25px;
   }
   .article-card {
     -webkit-box-orient: vertical;
