@@ -4,42 +4,50 @@
          <h2 class="section-slider__title section-title">Мероприятия</h2>
          <div class="section-slider__list">
             <!-- prettier-ignore -->
-            @@include('event-card.html', {
+            @@loop('event-card.html', [
+            {
                "class": "listing__event-card",
                "img": "assets/images/events/pic1-1920.jpg",
                "img_webp": "assets/images/events/pic1-1920.webp",
                "img_tablet": "assets/images/events/pic1-768.jpg",
-               "img_tablet_webp": "assets/images/events/pic1-320.webp",
+               "img_tablet_webp": "assets/images/events/pic1-768.webp",
+               "img_mobile": "assets/images/events/pic1-320.jpg",
+               "img_mobile_webp": "assets/images/events/pic1-320.webp",
                "alt": "nirvana",
                "title": "Собираемся и слушаем альбом Nirvana",
                "descr": "Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.",
                "time": "07.12.2022 | начало 18.00",
                "datetime": "2022-12-07T18:00"
-            })
-            @@include('event-card.html', {
+            },
+            {
                "class": "listing__event-card",
-               "img": "assets/images/events/HowStuffWorks-1920.jpg",
-               "img_webp": "assets/images/events/HowStuffWorks-1920.webp",
-               "img_tablet": "assets/images/events/HowStuffWorks-768-320.jpg",
-               "img_tablet_webp": "assets/images/events/HowStuffWorks-768-320.webp",
+               "img": "assets/images/events/pic2-1920.jpg",
+               "img_webp": "assets/images/events/pic2-1920.webp",
+               "img_tablet": "assets/images/events/pic2-768.jpg",
+               "img_tablet_webp": "assets/images/events/pic2-768.webp",
+               "img_mobile": "assets/images/events/pic2-320.jpg",
+               "img_mobile_webp": "assets/images/events/pic2-320.webp",
                "alt": "stuff",
                "title": "Есть тема, нужно обсудить с HowStuffWorks",
                "descr": "Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.",
                "time": "14.12.2022 | начало 18.30",
                "datetime": "2022-12-14T18:30"
-            })
-            @@include('event-card.html', {
+            },
+            {
                "class": "listing__event-card",
-               "img": "assets/images/events/the_best_of_sade-1920.jpg",
-               "img_webp": "assets/images/events/the_best_of_sade-1920.webp",
-               "img_tablet": "assets/images/events/the_best_of_sade-768-320.jpg",
-               "img_tablet_webp": "assets/images/events/the_best_of_sade-768-320.webp",
+               "img": "assets/images/events/pic3-1920.jpg",
+               "img_webp": "assets/images/events/pic3-1920.webp",
+               "img_tablet": "assets/images/events/pic3-768.jpg",
+               "img_tablet_webp": "assets/images/events/pic3-768.webp",
+               "img_mobile": "assets/images/events/pic3-320.jpg",
+               "img_mobile_webp": "assets/images/events/pic3-320.webp",
                "alt": "the_best_of_sade",
                "title": "Вечер | The Best of Sade",
                "descr": "Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка.",
                "time": "16.12.2022 | начало 20.00",
                "datetime": "2022-12-16T20:00"
-            })
+            }
+         ])
 
             <!-- Остальные карточки будут добавлены, когда будет слайдер, а пока закомментированы -->
 
