@@ -3,6 +3,13 @@
    width: 100%;
    padding: 34.5px 0 40px;
    overflow: hidden;
+
+   @media @bw1020 {
+      padding: 18px 0 40px;
+   }
+   @media @bw768 {
+      padding: 14px 0 40px;
+   }
    &::before,
    &::after {
       content: "";
@@ -12,10 +19,19 @@
       width: 0;
       height: 0;
       border-bottom: 35px solid @gray_99;
+      @media @bw1020 {
+         border-bottom: 18px solid @gray_99;
+      }
+      @media @bw768 {
+         border-bottom: 14px solid @gray_99;
+      }
    }
    &::before {
       left: 0;
       border-right: 34vw solid transparent;
+      @media @bw768 {
+         border-right: 44vw solid transparent;
+      }
    }
    &::after {
       right: 0;
@@ -38,26 +54,29 @@
          padding: 65px 0 42px;
       }
       @media @bw1020 {
-         padding: 45px 0 43px;
+         padding: 60px 0 25px;
+      }
+      @media @bw768 {
+         padding: 25px 0 25px;
       }
       &::before,
       &::after {
          content: "";
          position: absolute;
-         bottom: -34.5px;
+         bottom: -14px;
          display: block;
          width: 0;
          height: 0;
-         border-top: 35px solid @gray_99;
+         border-top: 14px solid @gray_99;
 
       }
       &::before {
          left: 0;
-         border-right: 66vw solid transparent;
+         border-right: 60vw solid transparent;
       }
       &::after {
          right: 0;
-         border-left: 34vw solid transparent;
+         border-left: 40vw solid transparent;
       }
    }
 
@@ -79,9 +98,47 @@
          color: @red;
       }
       @media @bw768 {
+         margin-top: 18px;;
          padding: 15px 0 15px 20px;
          font-size: @font_size2;
          line-height: @line_height3;
       }
    }
 }
+.arrow {
+   padding: 0;
+   border: none;
+   background: none;
+   color: @black;
+   font-size: @font_size0;
+   text-decoration: none;
+   transition: color 0.2s;
+
+   &:hover {
+      color: @red;
+   }
+   &__icon {
+      width: 92px;
+      height: 60px;
+      @media @bw1020 {
+         width: 67px;
+         height: 40px;
+      }
+      @media @bw768 {
+         width: 67px;
+         height: 40px;
+      }
+   }
+}
+.arrow--left {
+   transform: rotate(180deg);
+}
+// h4[alt="sliderTitle"]  {
+//    @media @bw1020 {
+//       margin: 0 0 5px 0;
+//       height: 50px;
+//       font-size: @font_size3;
+//       line-height: @line_height5;
+//       color: red;
+//    }
+// }

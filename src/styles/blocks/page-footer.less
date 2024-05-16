@@ -75,7 +75,7 @@
 
       @media @bw768 {
          flex-direction: column;
-         gap: 60px;
+         gap: 62px;
       }
 
       &__box {
@@ -105,6 +105,9 @@
             display: flex;
             flex-direction: column;
             margin-left: 22px;
+            @media @bw768 {
+               margin-left: 25px;
+            }
          }
          &__link {
             margin-bottom: 22px;
@@ -186,10 +189,15 @@
       }
       @media @bw768 {
          width: 100%;
+         height: 46px;
+         padding: 2px 0 0 20px;
       }
       
       &::placeholder {
          color: @gray_plachol;
+         @media @bw768 {
+            font-size: @font_size19;
+         }
       }
       &:focus {
          &::placeholder {
@@ -220,6 +228,7 @@
 
       @media @bw768 {
          width: 116px;
+         height: 46px;
          padding: 15px 20px;
          font-size: @font_size19;
          line-height: @line_height15;

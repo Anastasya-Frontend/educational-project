@@ -34,56 +34,56 @@
          }
       }
 
-      &__picture {
-         position: relative;
-         display: block;
-         width: 100%;
-         margin: 0 0 0 178px;
-         font-size: @font_size0;
-         overflow: hidden;
+      // &__picture {
+      //    position: relative;
+      //    display: block;
+      //    width: 100%;
+      //    margin: 0 0 0 178px;
+      //    font-size: @font_size0;
+      //    overflow: hidden;
 
-         @media @bw1660 {
-            width: 752px;
-            margin: 0 0 0 132px;
-         }
-         @media @bw1020 {
-            width: 708px;
-            order: -1;
-            margin: 0 0 100px 0;
-         }
-         @media @bw768 {
-            width: 280px;
-            order: -1;
-            margin: 0 0 59px 0;
-         }
+      //    @media @bw1660 {
+      //       width: 752px;
+      //       margin: 0 0 0 132px;
+      //    }
+      //    @media @bw1020 {
+      //       width: 708px;
+      //       order: -1;
+      //       margin: 0 0 100px 0;
+      //    }
+      //    @media @bw768 {
+      //       width: 280px;
+      //       order: -1;
+      //       margin: 0 0 59px 0;
+      //    }
 
-         &::after {
-            content: "";
-            display: block;
-            width: 100%;
-            padding-top: 65.5585%;
+      //    &::after {
+      //       content: "";
+      //       display: block;
+      //       width: 100%;
+      //       padding-top: 65.5585%;
 
-            @media @bw1660 {
-               padding-top: 65.5585%;
-            }
-            @media @bw1020 { 
-               padding-top: 65.5367%;
-            }
-            @media @bw768 {
-               padding-top: 66.4285%;
-            }
-         }
+      //       @media @bw1660 {
+      //          padding-top: 65.5585%;
+      //       }
+      //       @media @bw1020 { 
+      //          padding-top: 65.5367%;
+      //       }
+      //       @media @bw768 {
+      //          padding-top: 66.4285%;
+      //       }
+      //    }
 
-         &__img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-         }
-      }
+      //    &__img {
+      //       position: absolute;
+      //       top: 0;
+      //       left: 0;
+      //       display: block;
+      //       width: 100%;
+      //       height: 100%;
+      //       object-fit: cover;
+      //    }
+      // }
    }
 }
 .info-card {
@@ -188,6 +188,7 @@
 
       @media @bw768 {
          font-size: @font_size2;
+         font-weight: @font_weight4;
          line-height: @line_height3;
       }
    }
@@ -225,4 +226,19 @@
 }
 a[href="mailto:hi@tagree.ru"] {
    font-size: @font_size3;
+}
+#js-contactsMap {
+   width: 750px;
+   @media @bw1020 {
+      width: 708px;
+      height: 463px;
+      margin-bottom: 100px;
+      order: -1;
+   }
+   @media @bw768 {
+      width: 280px;
+      height: 186px;
+      margin-bottom: 59px;
+      order: -1;
+   }
 }
