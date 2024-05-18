@@ -129,6 +129,7 @@
 }
 
 .form {
+
    &__list {
       display: flex;
       flex-wrap: wrap;
@@ -357,6 +358,13 @@ textarea:focus {
 .field {
    display: flex;
    flex-direction: column;
+
+   label.error,
+   span.error {
+      display: block;
+      margin: 5px 0 0;
+      color: @red;
+   }
    &__title {
       display: block;
       margin: 0 0 10px;
@@ -407,11 +415,21 @@ textarea:focus {
          padding: 15px;
       }
    }
+   &__date {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 250px;
+   }
    &__date-inputs {
+      position: absolute;
+      top: 0;
+      left: 0;
       display: flex;
       width: 100%;
-      max-width: 251px;
       height: 55px;
+      pointer-events: none;
    }
    &__date-input {
       box-sizing: border-box;
@@ -419,18 +437,31 @@ textarea:focus {
       width: 55px;
       height: 55px;
       margin-right: 15px;
-      padding: 0 5px;
       border: none;
       border-radius: 5px;
       background-color: @white;
-      color: @gray_plachol;
-      font-size: @font_size3;
-      font-weight: @font_weight2;
-      line-height: @line_height5;
+      padding: 0 5px;
+      font-size: 16px;
+      line-height: 1.375;
       text-align: center;
+      pointer-events: none;
+      @media @bw400 {
+         font-size: 14px;
+      }
       &--year {
          flex-grow: 1;
          margin-right: 0;
       }
+   }
+   &__date-picker {
+      box-sizing: border-box;
+      position: relative;
+      width: 100%;
+      max-width: 250px;
+      height: 55px;
+      border: none;
+      border-radius: 5px;
+      opacity: 0;
+      cursor: pointer; 
    }
 }

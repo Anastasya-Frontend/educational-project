@@ -250,7 +250,7 @@
                 </div>
               </div>
               <footer class="swiper-footer">
-                <button type="button" class="swiper-arrow-prev arrow arrow--left ">
+                <button type="button" class="swiper-arrow-prev arrow arrow--left">
                   <svg class="arrow__icon" width="92" height="62">
                     <use xlink:href="assets/icons/symbols.svg#arrow"></use>
                   </svg>
@@ -287,7 +287,7 @@
                 </picture>
               </a>
               <div class="article-card__info">
-                <time datetime="2022-12-26" class="article-card__time">26.11.2022</time>
+                <time datetime="2022-11-26" class="article-card__time">26.11.2022</time>
                 <a href="#" class="article-card__title-link">
                   <h4 class="article-card__title">Фотосессия в стенах Театра драмы</h4>
                   <div class="article-card__arrow">
@@ -314,7 +314,7 @@
                 </picture>
               </a>
               <div class="article-card__info">
-                <time datetime="2022-11-01" class="article-card__time">01.11.2022</time>
+                <time datetime="2022-11-05" class="article-card__time">05.11.2022</time>
                 <a href="#" class="article-card__title-link">
                   <h4 class="article-card__title">Выставка VR в Томске</h4>
                   <div class="article-card__arrow">
@@ -341,7 +341,7 @@
                 </picture>
               </a>
               <div class="article-card__info">
-                <time datetime="2021-12-05" class="article-card__time">05.12.2021</time>
+                <time datetime="2022-11-01" class="article-card__time">01.11.2022</time>
                 <a href="#" class="article-card__title-link">
                   <h4 class="article-card__title">Rocking radio в заброшенном ангаре</h4>
                   <div class="article-card__arrow">
@@ -495,7 +495,7 @@
         <h2 class="pp__title">Заполните форму
           <br />и мы подберем площадку
         </h2>
-        <form class="pp__form form">
+        <form class="pp__form form" id="js-eventForm">
 
           <div class="form__list">
             <!-- Формат мероприятия блок -->
@@ -526,7 +526,9 @@
             </div>
             <!-- Блок количество -->
             <div class="form__group form__group--w50">
-              <div class="form__field field">
+
+              <!-- не понятно как оформить?????????? -->
+              <div class="form__field field ">
                 <h6 class="field__title">Планируемое количество посетителей:</h6>
                 <select class="field__select" name="amount">
                   <option value="20">до 20 человек</option>
@@ -535,12 +537,16 @@
                   <option value="1000">более 500 человек</option>
                 </select>
               </div>
-              <div class="form__field field">
+
+              <div class="form__field field js-dateField">
                 <h6 class="field__title">Дата проведения:</h6>
-                <div class="field__date-inputs">
-                  <input class="field__date-input" type="text" placeholder="ДД" required />
-                  <input class="field__date-input" type="text" placeholder="ММ" required />
-                  <input class="field__date-input field__date-input--year" type="text" placeholder="ГГГГ" required />
+                <div class="field__date">
+                  <div class="field__date-inputs">
+                    <input class="field__date-input js-dateDay" type="text" placeholder="ДД" readonly />
+                    <input class="field__date-input js-dateMonth" type="text" placeholder="ММ" readonly />
+                    <input class="field__date-input field__date-input--year js-dateYear" type="text" placeholder="ГГГГ" readonly />
+                  </div>
+                  <input class="field__date-picker js-dateInput" type="text" name="date" readonly required />
                 </div>
               </div>
             </div>
@@ -559,7 +565,7 @@
               </label>
               <label class="field form__field form__field--w50">
                 <span class="field__label">Телефон*</span>
-                <input class="field__input" type="tel" placeholder="+7 (___) ___ __ __" name="phone" required />
+                <input class="field__input js-mobileMask" type="tel" placeholder="Телефон" name="phone" required />
               </label>
               <label class="field form__field form__field--w50">
                 <span class="field__label">Email *</span>
@@ -597,8 +603,14 @@
     </div>
   </div>
 
-  <script src="https://maps.googleapis.com/maps/api/js?key="></script>
+  <script src="scripts/jquery-3.7.1.min.js"></script>
+  <script src="scripts/jquery.selectric.min.js"></script>
+  <script src="scripts/jquery.mask.min.js"></script>
+  <script src="scripts/air-datepicker.js"></script>
+  <script src="scripts/jquery.validate.js"></script>
+  <script src="scripts/jquery.validate-init.js"></script>
   <script src="scripts/swiper-bundle.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key="></script>
   <script src="scripts/main.js"></script>
 </body>
 
