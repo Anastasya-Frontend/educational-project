@@ -36,7 +36,7 @@
          transform: rotate(-45deg);
       }
    }
-   &.selectric-items {
+   & .selectric-items {
       display: block;
       margin-top: 5px;
       width: 100% !important;
@@ -47,10 +47,10 @@
    border-radius: 5px;
    border: none;
    background-color: @white;
-   &.button {
+   & .button {
       display: none;
    }
-   &.label {
+   & .label {
       display: flex;
       align-items: center;
       box-sizing: border-box;
@@ -70,13 +70,16 @@
    background-color: @white;
    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
    overflow: hidden;
-   &.selectric-scroll {
+   & .selectric-scroll {
       overflow-x: hidden;
       overflow-y: auto;
    }
-   &li {
+   & li {
       padding: 10px 23px;
       font-size: 16px;
+      &::before {
+         background-color: transparent;
+      }
       @media @bw400 {
          font-size: 14px;
       }

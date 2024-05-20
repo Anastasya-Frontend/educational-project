@@ -227,6 +227,16 @@
       color: @black;
       cursor: pointer;
 
+      label.error,
+      span.error {
+         position: absolute;
+         top: 20px;
+         display: block;
+         margin-left: 15px;
+         color: @red;
+      }
+
+
       &__input {
          .is-hidden ();
 
