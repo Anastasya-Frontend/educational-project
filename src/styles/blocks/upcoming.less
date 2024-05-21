@@ -4,6 +4,9 @@
    padding: 34.5px 0 40px;
    overflow: hidden;
 
+   @media @bw1660 {
+      padding: 25px 0 40px;
+   }
    @media @bw1020 {
       padding: 18px 0 40px;
    }
@@ -19,6 +22,9 @@
       width: 0;
       height: 0;
       border-bottom: 35px solid @gray_99;
+      @media @bw1660 {
+         border-bottom: 25px solid @gray_99;
+      }
       @media @bw1020 {
          border-bottom: 18px solid @gray_99;
       }
@@ -29,6 +35,9 @@
    &::before {
       left: 0;
       border-right: 34vw solid transparent;
+      @media @bw1660 {
+         border-right: 32vw solid transparent;
+      }
       @media @bw768 {
          border-right: 44vw solid transparent;
       }
@@ -36,6 +45,9 @@
    &::after {
       right: 0;
       border-left: 66vw solid transparent;
+      @media @bw1660 {
+         border-left: 68vw solid transparent;
+      }
    }
 
 
@@ -47,11 +59,11 @@
    &__wrapper {
       position: relative;
       width: 100%;
-      padding: 85px 0 50px;
+      padding: 90px 0 50px;
       background-color: @gray_99;
 
       @media @bw1660 {
-         padding: 65px 0 42px;
+         padding: 75px 0 37px;
       }
       @media @bw1020 {
          padding: 60px 0 24px;
@@ -81,6 +93,9 @@
       &::before {
          left: 0;
          border-right: 60vw solid transparent;
+         @media @bw1660 {
+            border-right: 68vw solid transparent;
+         }
          @media @bw1020 {
             border-right: 65vw solid transparent;
          }
@@ -88,6 +103,9 @@
       &::after {
          right: 0;
          border-left: 40vw solid transparent;
+         @media @bw1660 {
+            border-left: 32vw solid transparent;
+         }
          @media @bw1020 {
             border-left: 35vw solid transparent;
          }
@@ -112,7 +130,7 @@
          color: @red;
       }
       @media @bw768 {
-         margin-top: 18px;;
+         margin-top: 18px;
          padding: 15px 0 15px 20px;
          font-size: @font_size2;
          line-height: @line_height3;
