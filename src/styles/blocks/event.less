@@ -2,21 +2,33 @@
    .container ();
    display: flex;
    flex-direction: column;
+   @media @bw1660 {
+      padding-top: 35px;
+   }
+   @media @bw1020 {
+      padding-top: 0;
+   }
+   @media @bw768 {
+      padding-top: 0;
+   }
    &__title {
-      margin: 38px 0 80px;
+      margin: 38px 0 80px 15px;
       color: @black;
       font-family: @font2;
       font-size: @font_size13;
       font-weight: @font_weight3;
       line-height: @line_height10;
       text-align: center;
+      @media @bw1660 {
+         margin: 40px 0 80px 30px;
+      }
       @media @bw1020 {
-         margin: 40px 0 54px;
+         margin: 40px 0 65px 8px;
          font-size: @font_size10;
          line-height: @line_height17;
       }
       @media @bw768 {
-         margin: 40px 0 40px;
+         margin: 40px 10px 40px 0;
          font-size: @font_size5;
          line-height: @line_height18;
       }

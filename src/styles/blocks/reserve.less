@@ -3,12 +3,12 @@
    width: 100%;
    max-width: 1414px;
    margin: 0 auto;
-   padding: 80px 40px 10px;
+   padding: 80px 40px 90px;
    @media @bw1660 {
       padding: 80px 40px 50px;
    }
    @media @bw1020 {
-      padding: 55px 30px 0;
+      padding: 52px 30px 0;
    }
    @media @bw768 {
       padding: 40px 20px 0;
@@ -35,7 +35,10 @@
    "checks scheme"
    "order legend"; 
    width: 100%;
-
+   @media @bw1660 {
+      grid-gap: 65px 6%;
+      grid-template-columns: 405px calc(94% - 405px);
+   }
    @media @bw1340 {
       gap: 65px 6.5%;
       grid-template-columns: 340px calc(93.5% - 340px);
@@ -62,6 +65,12 @@
    grid-area: checks;
    display: flex;
    flex-direction: column;
+
+   &__title {
+      @media @bw768 {
+         width: 180px;
+      }
+   }
    }
    &__order {
       grid-area: order;
@@ -78,10 +87,10 @@
 
       &__title {
          @media @bw1020 {
-            margin-bottom: 20px;
+            margin: 10px 0 20px 0;
          }
          @media @bw768 {
-            margin-bottom: 20px;
+            margin: 0 0 20px;
          }
       }
       &__title2 {
@@ -188,6 +197,9 @@
          margin-left: 4px;
          font-size: 0.95em;
       }
+      @media @bw1660 {
+         padding-right: 5px;
+      }
       @media @bw1020 {
          padding-right: 0;
          font-size: @font_size3;
@@ -207,17 +219,25 @@
       font-family: @font1;
       font-size: @font_size5;
       font-weight: @font_weight4;
+      @media @bw1660 {
+         margin-top: 13px;
+         padding-right: 10px;
+      }
       @media @bw1020 {
          margin-top: 8px;
       }
       @media @bw768 {
          margin-top: 13px;
+         padding-right: 0;
          font-size: @font_size4;
          line-height: @line_height6;
       }
       &::before {
          content: attr(data-caption);
          margin-right: 30px;
+         @media @bw768 {
+            margin-right: 70px;
+         }
       }
       &::after {
          content: attr(data-currency);
@@ -259,6 +279,9 @@
       display: flex;
       flex-direction: column;
       align-items: flex-end;
+      @media @bw768 {
+         align-items: flex-start;
+      }
    }
    &__tickets-box2 {
       box-sizing: border-box;
@@ -267,7 +290,8 @@
       align-items: flex-end;
       margin-top: 37px;
       @media @bw768 {
-         margin-top: 30px;
+         margin-top: 28px;
+         align-items: flex-start;
       }
       &--text {
          margin: 0;
@@ -290,7 +314,7 @@
       font-weight: @font_weight2;
       text-align: right;
       @media @bw768 {
-         margin-bottom: 11px;
+         margin-bottom: 9px;
       }
       &::before {
          content: '';
@@ -349,6 +373,9 @@
          left: 12px;
          border-color: @red;
       }
+      @media @bw1660 {
+         margin-top: 5px;
+      }
    }
    &__text-descr2 {
       position: relative;
@@ -373,6 +400,7 @@
          border-radius: 50%;
       }
    }
+   
 }
 .reserve__check {
    position: relative;
@@ -387,8 +415,16 @@
    color: @black;
    cursor: pointer;
 
+   @media @bw1020 {
+      margin-top: 15px;
+      &:nth-child(2) {
+         margin-top: 0;
+      }
+   }
+   
    &--red {
       color: @red;
+      
       .reserve__check__mark {
          border-color: @red;
       }

@@ -47,16 +47,22 @@
    }
 
    ul {
-      margin: 20px 0 75px;
-      @media @bw1020 {
+      margin: 25px 0 80px;
+      @media @bw1660 {
          margin: 20px 0 50px;
       }
+      @media @bw1020 {
+         margin: 25px 0 62px;
+      }
       @media @bw768 {
-         margin: 20px 0 55px;
+         margin: 20px 0 57px;
       }
    }
    ol {
       margin: 0;
+      @media @bw1660 {
+         margin-left: 5px;
+      }
    }
 }
 
@@ -71,12 +77,12 @@ ol {
 ul > li {
    box-sizing: border-box;
    position: relative;
-   padding-left: 10px;
+   padding-left: 15px;
    @media @bw1020 {
       padding-left: 14px;
    }
    @media @bw768 {
-      padding-left: 6px;
+      padding-left: 8px;
    }
    &::before {
       content: "";
@@ -116,13 +122,21 @@ ol > li {
 
 ul > li,
 ol > li {
-   margin: 0 0 15px;
+   margin: 0 0 10px;
    cursor: default;
-   @media @bw768 {
-      margin: 0 0 10px;
-   }
 
    &:last-child {
       margin-bottom: 0;
+   }
+}
+ol > li {
+   margin: 0 0 10px;
+   cursor: default;
+
+   &:last-child {
+      margin-bottom: 0;
+   }
+   @media @bw768 {
+      margin: 0 0 5px;
    }
 }
