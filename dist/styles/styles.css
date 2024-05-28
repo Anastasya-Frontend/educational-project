@@ -2595,6 +2595,10 @@ textarea {
   font-weight: 400;
   line-height: 1.375;
 }
+.scene__table--selected {
+  fill: blue;
+  /* Цвет, который применится к столу при выборе чекбокса */
+}
 .info-block {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
