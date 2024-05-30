@@ -2305,7 +2305,7 @@ textarea {
 }
 .reserve__total::after {
   content: attr(data-currency);
-  margin-left: 4px;
+  margin: 2px 0 0 4px;
   font-size: 0.95em;
 }
 .reserve__submit {
@@ -2356,7 +2356,10 @@ textarea {
           align-items: flex-end;
   margin-top: 37px;
 }
-.reserve__tickets-box2--text {
+.reserve__tickets-box2--text1 {
+  margin: 0;
+}
+.reserve__tickets-box2--text2 {
   margin: 0;
 }
 .reserve__qty2 {
@@ -2420,7 +2423,7 @@ textarea {
 .reserve__text-descr2 {
   position: relative;
   width: 175px;
-  margin-top: 15px;
+  margin-top: 20px;
   color: #1f1e1e;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -2595,9 +2598,11 @@ textarea {
   font-weight: 400;
   line-height: 1.375;
 }
-.scene__table--selected {
-  fill: blue;
-  /* Цвет, который применится к столу при выборе чекбокса */
+.scene__table-group5 {
+  fill: #bfbfbf;
+}
+.scene__table-num1 {
+  fill: #ffffff;
 }
 .info-block {
   -webkit-box-sizing: border-box;
@@ -2614,7 +2619,7 @@ textarea {
   width: 100%;
   max-width: 1414px;
   margin: 0 auto;
-  padding: 0 40px 80px 60px;
+  padding: 0 40px 80px 65px;
 }
 .info-block__text1 {
   grid-area: text1;
@@ -2632,7 +2637,7 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 10px 0;
+  padding: 8px 0 10px;
 }
 .info-block__item::after,
 .info-block__item::before {
@@ -2661,6 +2666,7 @@ textarea {
 }
 .info-block__date {
   margin: 0;
+  padding-top: 5px;
   color: #1f1e1e;
   font-family: "mak", serif;
   font-size: 30px;
@@ -5151,6 +5157,9 @@ textarea:focus::placeholder {
   .info-block {
     padding: 0 40px 80px 100px;
   }
+  .info-block__date {
+    padding-top: 0;
+  }
   .info-block__text {
     margin: 5px 0 0;
   }
@@ -5162,7 +5171,7 @@ textarea:focus::placeholder {
     width: 830px;
   }
   .content ul {
-    margin: 20px 0 50px;
+    margin: 22px 0 80px;
   }
   .content ol {
     margin-left: 5px;
@@ -5521,9 +5530,12 @@ textarea:focus::placeholder {
     line-height: 1.357;
   }
   .reserve {
-    gap: 60px 130px;
+    gap: 60px 0;
     grid-template-columns: auto 390px;
     grid-template-areas: "scheme scheme" "checks legend" "checks order";
+  }
+  .reserve__order__title {
+    margin-top: 5px;
   }
   .reserve__scheme {
     margin: 0 auto;
@@ -5541,7 +5553,7 @@ textarea:focus::placeholder {
     line-height: 1.363;
   }
   .reserve__scheme-wrapper {
-    width: 628px;
+    width: 630px;
   }
   .reserve__scheme-wrapper::after {
     padding-top: 51.2738%;
@@ -5558,8 +5570,17 @@ textarea:focus::placeholder {
     width: 388px;
     margin-top: 45px;
   }
-  .reserve__tickets-box2--text {
+  .reserve__tickets-box2 {
+    margin-top: 35px;
+  }
+  .reserve__tickets-box2--text1 {
     margin-top: 8px;
+  }
+  .reserve__tickets-box2--text2 {
+    margin-top: 8px;
+  }
+  .reserve__text-descr2 {
+    margin-top: 10px;
   }
   .reserve__check {
     margin-top: 15px;
@@ -5589,6 +5610,7 @@ textarea:focus::placeholder {
     background-image: linear-gradient(90deg, #1c1b1b 0%, #ffffff00 62.86%);
   }
   .info-block__date {
+    padding-top: 0;
     font-size: 18px;
     font-weight: 300;
     line-height: 1.2;
@@ -6326,6 +6348,9 @@ textarea:focus::placeholder {
   .reserve__checks__title {
     width: 180px;
   }
+  .reserve__order__title {
+    margin-top: 0;
+  }
   .reserve__legend__title {
     margin: 0 0 20px;
   }
@@ -6381,8 +6406,13 @@ textarea:focus::placeholder {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .reserve__tickets-box2--text {
+  .reserve__tickets-box2--text1 {
     margin-top: 0;
+    padding: 2px 3px 0 0;
+  }
+  .reserve__tickets-box2--text2 {
+    margin-top: 0;
+    padding: 2px 10px 0 0;
   }
   .reserve__qty2 {
     margin-bottom: 9px;
@@ -6393,6 +6423,17 @@ textarea:focus::placeholder {
   }
   .reserve__qty2::after {
     top: 0;
+  }
+  .reserve__text-descr1 {
+    top: -4px;
+    width: 165px;
+  }
+  .reserve__text-descr2::after,
+  .reserve__text-descr2::before {
+    left: 0;
+  }
+  .reserve__text-descr2 {
+    width: 165px;
   }
   .reserve__check__label {
     font-size: 14px;
@@ -6409,6 +6450,9 @@ textarea:focus::placeholder {
   .info-block__item {
     margin-top: 0;
     white-space: nowrap;
+  }
+  .info-block__date {
+    padding-top: 0;
   }
   .info-block__text {
     font-size: 12px;

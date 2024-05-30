@@ -6,7 +6,7 @@
    width: 100%;
    max-width: 1414px;
    margin: 0 auto;
-   padding: 0 40px 80px 60px;
+   padding: 0 40px 80px 65px;
    @media @bw1660 {
       padding: 0 40px 80px 100px;
    }
@@ -37,7 +37,7 @@
       position: relative;
       display: flex;
       flex-direction: column;
-      padding: 10px 0;
+      padding: 8px 0 10px;
       @media @bw1020 {
          padding: 9px 0 6px;
          margin-top: 35px;
@@ -79,22 +79,29 @@
             background-image: linear-gradient(90deg,@black1b 0%,@black00 62.86%);
          }
       }
-      
    }
    &__date {
       margin: 0;
+      padding-top: 5px;
       color: @black;
       font-family: @font3;
       font-size: @font_size8;
       font-weight: @font_weight1;
       text-transform: uppercase;
+      @media @bw1660 {
+         padding-top: 0;
+      }
       @media @bw1020 {
+         padding-top: 0;
          font-size: @font_size4;
          font-weight: @font_weight1;
          line-height: @line_height7;
          text-align: right;
       }
-      
+      @media @bw768 {
+         padding-top: 0;
+      }
+
    }
    &__time {
       margin: 0;

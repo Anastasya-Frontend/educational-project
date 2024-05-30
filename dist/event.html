@@ -91,10 +91,6 @@
             <p class="info-block__text info-block__item__text1">Кафе «Птичка»</p>
           </div>
           <picture class="info-block__pic">
-
-            <source media="(max-width: 1659px)" type="image/webp" srcset="assets/images/event/the_best_of_sade-1340.webp">
-            <source media="(max-width: 1659px)" srcset="assets/images/event/the_best_of_sade-1340.jpg">
-
             <source media="(max-width: 1019px)" type="image/webp" srcset="assets/images/event/the_best_of_sade-320.webp">
             <source media="(max-width: 1019px)" srcset="assets/images/event/the_best_of_sade-320.jpg">
 
@@ -143,7 +139,7 @@
         </div>
       </article>
       <!-- Форма -->
-      <form class="reserve event__reserve" id="js-reserve">
+      <form action="https://jsonplaceholder.typicode.com/posts" class="reserve event__reserve" id="js-reserve">
         <div class="reserve__checks checks">
           <h4 class="title reserve__checks__title">Забронировать столик</h4>
           <label class="reserve__check reserve__check--red">
@@ -266,7 +262,7 @@
                   <rect x="507" y="155" width="111" height="83" fill="transparent" />
                 </g>
                 <g class="scene__table" id="#table5">
-                  <g class="scene__table-group" stroke="#1F1E1E">
+                  <g class="scene__table-group scene__table-group5" stroke="#bfbfbf">
                     <rect x="494.5" y="278.5" width="40" height="93" />
                     <circle cx="479" cy="290" r="11.5" />
                     <circle cx="550" cy="291" r="11.5" />
@@ -276,11 +272,11 @@
                     <circle cx="550" cy="357" r="11.5" />
                     <circle cx="515" cy="387" r="11.5" />
                   </g>
-                  <path class="scene__table-num" d="M515.484 322.645C516.305 322.645 517.044 322.837 517.701 323.221C518.365 323.598 518.88 324.135 519.244 324.832C519.615 325.529 519.801 326.333 519.801 327.244C519.801 328.839 519.319 330.063 518.355 330.916C517.398 331.769 515.947 332.195 514 332.195C512.333 332.195 510.973 331.938 509.918 331.424V328.26C510.484 328.52 511.122 328.735 511.832 328.904C512.548 329.074 513.163 329.158 513.678 329.158C514.394 329.158 514.944 329.008 515.328 328.709C515.712 328.403 515.904 327.954 515.904 327.361C515.904 326.814 515.709 326.388 515.318 326.082C514.928 325.776 514.335 325.623 513.541 325.623C512.936 325.623 512.281 325.737 511.578 325.965L510.162 325.262L510.699 317.723H518.844V320.936H513.98L513.805 322.82C514.312 322.723 514.674 322.671 514.889 322.664C515.104 322.651 515.302 322.645 515.484 322.645Z" fill="#1F1E1E" />
+                  <path class="scene__table-num scene__table-num5" d="M515.484 322.645C516.305 322.645 517.044 322.837 517.701 323.221C518.365 323.598 518.88 324.135 519.244 324.832C519.615 325.529 519.801 326.333 519.801 327.244C519.801 328.839 519.319 330.063 518.355 330.916C517.398 331.769 515.947 332.195 514 332.195C512.333 332.195 510.973 331.938 509.918 331.424V328.26C510.484 328.52 511.122 328.735 511.832 328.904C512.548 329.074 513.163 329.158 513.678 329.158C514.394 329.158 514.944 329.008 515.328 328.709C515.712 328.403 515.904 327.954 515.904 327.361C515.904 326.814 515.709 326.388 515.318 326.082C514.928 325.776 514.335 325.623 513.541 325.623C512.936 325.623 512.281 325.737 511.578 325.965L510.162 325.262L510.699 317.723H518.844V320.936H513.98L513.805 322.82C514.312 322.723 514.674 322.671 514.889 322.664C515.104 322.651 515.302 322.645 515.484 322.645Z" fill="#1F1E1E" />
                   <rect x="467" y="278" width="95" height="121" fill="transparent" />
                 </g>
                 <g class="scene__table" id="#table6">
-                  <g class="scene__table-group" stroke="#1F1E1E">
+                  <g class="scene__table-group scene__table-group6" stroke="#1F1E1E">
                     <rect x="273.5" y="278.5" width="40" height="93" />
                     <circle cx="258" cy="290" r="11.5" />
                     <circle cx="329" cy="291" r="11.5" />
@@ -357,12 +353,12 @@
           <h4 class="title reserve__order__title">Ваши пригласительные билеты</h4>
           <div class="reserve__tickets-list">
             <div class="reserve__tickets">
-              <div class="reserve__qty" data-caption="шт." data-price="1400"></div>
-              <div class="reserve__sum" data-currency="₽"></div>
+              <div class="reserve__qty " data-caption="шт." data-price="1400">0</div>
+              <div class="reserve__sum" data-currency="₽">0</div>
             </div>
             <div class="reserve__tickets">
-              <div class="reserve__qty" data-caption="шт." data-price="1250"></div>
-              <div class="reserve__sum" data-currency="₽"></div>
+              <div class="reserve__qty" data-caption="шт." data-price="1250">0</div>
+              <div class="reserve__sum" data-currency="₽">0</div>
             </div>
           </div>
           <div class="reserve__total" data-caption="Сумма" data-currency="₽" id="total">0</div>
@@ -380,10 +376,10 @@
           <div class="reserve__tickets-box2">
             <h4 class="title reserve__legend__title2">Примечание</h4>
             <div class="text reserve__text-descr1">
-              <p class="reserve__tickets-box2--text">доступные места</p>
+              <p class="reserve__tickets-box2--text1">доступные места</p>
             </div>
             <div class="text1 reserve__text-descr2">
-              <p class="reserve__tickets-box2--text">забронировано</p>
+              <p class="reserve__tickets-box2--text2">забронировано</p>
             </div>
           </div>
         </div>
@@ -455,6 +451,7 @@
   <script src="scripts/jquery-3.7.1.min.js"></script>
   <script src="scripts/jquery.validate.js"></script>
   <script src="scripts/jquery.validate-init.js"></script>
+  <script src="scripts/jquery.ajax_event.js"></script>
   <script src="scripts/main_event.js"></script>
   <script src="scripts/reserveForm.js"></script>
   <script src="scripts/main.js"></script>

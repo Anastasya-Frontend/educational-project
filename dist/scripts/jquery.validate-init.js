@@ -5,7 +5,7 @@
    $.extend($.validator.messages, {
       required: "Это поле обязательно",
       remote: "Пожалуйста, введите правильное значение.",
-      email: "Пожалуйста, введите корректный e-mail",
+      email: "Введите корректный e-mail",
       url: "Пожалуйста, введите корректный URL.",
       date: "Пожалуйста, введите корректную дату.",
       dateISO: "Пожалуйста, введите корректную дату в формате ISO.",
@@ -49,7 +49,7 @@
       });
    }
    
-   //AJAX-запрос
+   //AJAX-запрос 
    const subscribeForm = $("#js-subscribeForm");
       if (subscribeForm.length) {
          const subscribeAction = subscribeForm.attr("action");
@@ -79,8 +79,4 @@
       });
    }
 
-
-   
-
-   
 })();
