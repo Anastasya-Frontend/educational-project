@@ -3,7 +3,8 @@
    width: 405px;
    max-width: 100%;
    min-width: 280px;
-
+   
+   
    &__link {
       display: flex;
       flex-direction: column;
@@ -62,17 +63,24 @@
       font-size: @font_size0;
       text-decoration: none;
       overflow: hidden;
+
       &::after {
          content: "";
          display: block;
          width: 100%;
          padding-top: 107.16%;
       }
+
       @media @bw1660 {
-         margin: 0 0 22px;
+         margin: 0 0 20px;
+         height: 433px;
       }
       @media @bw1020 {
+         height: 364px;
          margin: 0 0 22px;
+      }
+      @media @bw768 {
+         height: 300px;
       }
    }
    &__img {
@@ -97,8 +105,9 @@
          line-height: @line_height3;
       }
       @media @bw768 {
-         margin-top: 7px;
+         margin: 5px 0 0;
          font-size: @font_size2;
+         line-height: @line_height3;
       }
    }
    &__time {

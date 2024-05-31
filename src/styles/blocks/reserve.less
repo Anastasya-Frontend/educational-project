@@ -5,7 +5,7 @@
    margin: 0 auto;
    padding: 80px 40px 90px;
    @media @bw1660 {
-      padding: 80px 40px 50px;
+      padding: 82px 40px 50px;
    }
    @media @bw1020 {
       padding: 52px 30px 0;
@@ -24,7 +24,7 @@
    @media @bw1020 {
       margin: 0;
       font-size: @font_size3;
-      line-height: @line_height3;
+      line-height: @line_height5;
    }
 }
 .reserve {
@@ -66,6 +66,9 @@
    display: flex;
    flex-direction: column;
       &__title {
+         @media @bw1020 {
+            width: 180px;
+         }
          @media @bw768 {
             width: 180px;
          }
@@ -257,25 +260,33 @@
       width: 405px;
       height: 52px;
       margin-top: 53px;
-      padding: 15px 131px;
+      padding: 15px 141px;
       border: none;
       background-color: @red;
       color: @white;
       font-family: @font1;
       font-size: @font_size3;
       font-weight: @font_weight4;
+      line-height: @line_height5;
       text-decoration: none;
       transition: background-color 0.2s;
       cursor: pointer;
+      white-space: nowrap;
       &:hover {
          background-color: @red_dark;
+      }
+      @media @bw1660 {
+         width: 400px;
+         padding: 15px 139px;
       }
       @media @bw1020 {
          width: 388px;
          margin-top: 45px;
+         padding: 15px 132px;
       }
       @media @bw768 {
          width: 280px;
+         height: 49px;
          margin-top: 40px;
          padding: 15px 86px;
          font-size: @font_size2;
@@ -426,7 +437,6 @@
          border-radius: 50%;
          @media @bw768 {
             left: 0;
-            
          }
       }
       @media @bw1020 {
@@ -460,7 +470,6 @@
    
    &--red {
       color: @red;
-      
       .reserve__check__mark {
          border-color: @red;
       }

@@ -32,6 +32,7 @@
          let index = currentSet.check.indexOf(e.target.id);
          currentSet.check.splice(index, 1);
       }
+      
       updatePrice();
       table1Up ();
       table2Up ();
@@ -44,6 +45,9 @@
       table10Up (); 
       table11Up (); 
    }
+
+   
+   
    function table1Up () {
       if(check[0].checked ) {
          tables[0].style.fill = "#a51505";

@@ -1947,7 +1947,7 @@ textarea {
           justify-content: space-between;
 }
 .want-btns__title {
-  margin: 0 auto 46px;
+  margin: 0 auto 48px;
   padding-left: 18px;
   color: #1f1e1e;
   font-family: "Lora", serif;
@@ -2068,7 +2068,7 @@ textarea {
           box-sizing: border-box;
   width: 100%;
   max-width: 1414px;
-  margin: 0 auto ;
+  margin: 0 auto;
   padding: 0 40px 6px;
 }
 .table {
@@ -2111,6 +2111,7 @@ textarea {
 .table__body-th {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  width: 400px;
   height: 50px;
   padding: 10px 10px 10px 0;
   border-top: 1px solid #bfbfbf;
@@ -2312,17 +2313,19 @@ textarea {
   width: 405px;
   height: 52px;
   margin-top: 53px;
-  padding: 15px 131px;
+  padding: 15px 141px;
   border: none;
   background-color: #bc3324;
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 600;
+  line-height: 1.375;
   text-decoration: none;
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
   cursor: pointer;
+  white-space: nowrap;
 }
 .reserve__submit:hover {
   background-color: #a51505;
@@ -2639,6 +2642,9 @@ textarea {
           flex-direction: column;
   padding: 8px 0 10px;
 }
+.info-block__item__text1 {
+  padding-left: 8px;
+}
 .info-block__item::after,
 .info-block__item::before {
   content: "";
@@ -2822,7 +2828,7 @@ ol > li:last-child {
           flex-direction: column;
   width: 100%;
   margin: 0 auto;
-  padding: 60px 0 48px;
+  padding: 60px 0 47px;
 }
 .section-poster__title,
 .section-poster__description {
@@ -5137,8 +5143,21 @@ textarea:focus::placeholder {
     padding-left: 40px;
     padding-right: 40px;
   }
+  .table__td:nth-child(2) {
+    width: 280px;
+  }
+  .table__td:nth-child(3) {
+    width: 295px;
+  }
+  .table__td:nth-child(4) {
+    padding: 10px 0 10px 45px;
+  }
+  .table__td:nth-child(4) {
+    padding: 10px 0 10px 10px;
+    width: 187px;
+  }
   .event__reserve {
-    padding: 80px 40px 50px;
+    padding: 82px 40px 50px;
   }
   .reserve {
     grid-gap: 65px 6%;
@@ -5151,11 +5170,18 @@ textarea:focus::placeholder {
     margin-top: 13px;
     padding-right: 10px;
   }
+  .reserve__submit {
+    width: 400px;
+    padding: 15px 139px;
+  }
   .reserve__text-descr1 {
     margin-top: 5px;
   }
   .info-block {
     padding: 0 40px 80px 100px;
+  }
+  .info-block__item {
+    padding: 10px 0;
   }
   .info-block__date {
     padding-top: 0;
@@ -5175,6 +5201,9 @@ textarea:focus::placeholder {
   }
   .content ol {
     margin-left: 5px;
+  }
+  .section-poster {
+    padding: 60px 0 60px;
   }
   .section-poster__title,
   .section-poster__description {
@@ -5282,7 +5311,8 @@ textarea:focus::placeholder {
     margin: 0 0 10px;
   }
   .event-card__picture {
-    margin: 0 0 22px;
+    margin: 0 0 20px;
+    height: 433px;
   }
   .event-card__time {
     margin: 7px 0 0;
@@ -5307,7 +5337,7 @@ textarea:focus::placeholder {
     margin: 40px 0 80px 30px;
   }
   .blog {
-    padding-top: 71px;
+    padding-top: 75px;
     padding-bottom: 90px;
   }
   .section-blog__btn-right {
@@ -5506,6 +5536,7 @@ textarea:focus::placeholder {
     line-height: 1.357;
   }
   .table__body-th {
+    width: 200px;
     padding: 5px 10px 5px 0;
     font-size: 14px;
     font-weight: 400;
@@ -5513,7 +5544,6 @@ textarea:focus::placeholder {
   }
   .table__body-th--cost {
     margin: 0;
-    padding-right: 50px;
     max-width: 80px;
   }
   .table__body-th--cost2 {
@@ -5521,18 +5551,27 @@ textarea:focus::placeholder {
     padding-right: 22px;
     max-width: 120px;
   }
+  .table__td:nth-child(2) {
+    width: 180px;
+  }
+  .table__td:nth-child(3) {
+    width: 175px;
+  }
   .event__reserve {
     padding: 52px 30px 0;
   }
   .title {
     margin: 0;
     font-size: 16px;
-    line-height: 1.357;
+    line-height: 1.375;
   }
   .reserve {
     gap: 60px 0;
     grid-template-columns: auto 390px;
     grid-template-areas: "scheme scheme" "checks legend" "checks order";
+  }
+  .reserve__checks__title {
+    width: 180px;
   }
   .reserve__order__title {
     margin-top: 5px;
@@ -5569,6 +5608,7 @@ textarea:focus::placeholder {
   .reserve__submit {
     width: 388px;
     margin-top: 45px;
+    padding: 15px 132px;
   }
   .reserve__tickets-box2 {
     margin-top: 35px;
@@ -5648,7 +5688,7 @@ textarea:focus::placeholder {
     padding-left: 14px;
   }
   .section-poster {
-    padding: 40px 0 23px;
+    padding: 40px 0 33px;
   }
   .section-poster__title,
   .section-poster__description {
@@ -5839,6 +5879,7 @@ textarea:focus::placeholder {
     line-height: 1.375;
   }
   .event-card__picture {
+    height: 364px;
     margin: 0 0 22px;
   }
   .event-card__description {
@@ -6390,6 +6431,7 @@ textarea:focus::placeholder {
   }
   .reserve__submit {
     width: 280px;
+    height: 49px;
     margin-top: 40px;
     padding: 15px 86px;
     font-size: 14px;
@@ -6465,7 +6507,7 @@ textarea:focus::placeholder {
   }
   .info-block__pic {
     max-width: 245px;
-    margin: 0;
+    margin: 0 0 0 5px;
   }
   .info-block__pic::before {
     padding-top: 106.938%;
@@ -6701,9 +6743,13 @@ textarea:focus::placeholder {
     font-size: 16px;
     line-height: 1.375;
   }
+  .event-card__picture {
+    height: 300px;
+  }
   .event-card__description {
-    margin-top: 7px;
+    margin: 5px 0 0;
     font-size: 14px;
+    line-height: 1.357;
   }
   .event-card__time {
     margin: 10px 0 0;
@@ -7105,7 +7151,7 @@ textarea:focus::placeholder {
     padding: 15px;
   }
 }
-@media (max-width: 659px) {
+@media (max-width: 649px) {
   .listing__events-list {
     margin: 0 0 -60px;
   }
