@@ -52,7 +52,7 @@
       }
       @media @bw768 {
          max-width: 252px;
-         padding: 0 6px 40px;
+         padding: 0 6px 30px;
       }
    }
 
@@ -82,10 +82,11 @@
       }
       @media @bw768 {
          width: 225px;
+         min-height: 77px;
          font-size: @font_size2;
          line-height: @line_height3;
          margin: -30px 0 40px -6px;
-         padding: 10px 20px;
+         padding: 9px 20px 11px;
       }
    }
 
@@ -127,9 +128,10 @@
    visibility: hidden !important;
    pointer-events: none !important;
 }
-
+#field1 {
+   margin-bottom: 53px;
+}
 .form {
-
    &__list {
       display: flex;
       flex-wrap: wrap;
@@ -143,6 +145,9 @@
       width: 100%;
       &--w50 {
          width: calc(50% - 30px);
+         @media @bw1020 {
+            width: calc(50% - 16px);
+         }
          @media @bw768 {
             width: 100%;
          }
@@ -178,17 +183,21 @@
       margin: 0;
       @media @bw768 {
          flex-direction: column;
-         gap: 30px;
+         margin-top: 40px;
+         gap: 20px;
       }
    }
-   
    &__submit {
+      
       @media @bw768 {
          font-size: @font_size2;
          line-height: @line_height3;
       }
       &--w50 {
          width: calc(50% - 30px);
+         @media @bw1020 {
+            width: 290px;
+         }
          @media @bw768 {
             width: 100%;
          }
@@ -209,7 +218,11 @@
       &:hover {
          color: @red;
       }
+      @media @bw1020 {
+         margin: 0 auto 0 75px;
+      }
       @media @bw768 {
+         margin: 0 auto;
          font-size: @font_size2;
          line-height: @line_height3;
       }
@@ -333,6 +346,9 @@ textarea:focus {
       &:last-child {
          margin-bottom: 0;
       }
+      @media @bw1660 {
+         margin-left: 5px;
+      }
    }
    &__input {
       .is-hidden ();
@@ -362,9 +378,16 @@ textarea:focus {
       font-size: @font_size3;
       font-weight: @font_weight2;
       line-height: @line_height5;
+      @media @bw1660 {
+         margin-left: 22px;
+      }
    }
 }
-
+#title-format {
+   font-size: @font_size4;
+      font-weight: @font_weight5;
+      line-height: @line_height6;
+}
 .field {
    display: flex;
    flex-direction: column;

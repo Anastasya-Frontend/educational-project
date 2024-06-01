@@ -4645,6 +4645,9 @@ a[href="mailto:hi@tagree.ru"] {
   visibility: hidden !important;
   pointer-events: none !important;
 }
+#field1 {
+  margin-bottom: 53px;
+}
 .form__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4927,6 +4930,11 @@ textarea:focus::placeholder {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.375;
+}
+#title-format {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.388;
 }
 .field {
   display: -webkit-box;
@@ -5393,6 +5401,12 @@ textarea:focus::placeholder {
   }
   .pp__title {
     margin: -40px 0 70px -50px;
+  }
+  .radio__item {
+    margin-left: 5px;
+  }
+  .radio__label {
+    margin-left: 22px;
   }
   .width_624 {
     max-width: 604px;
@@ -6176,6 +6190,16 @@ textarea:focus::placeholder {
     width: 465px;
     padding: 10px 60px 10px 18px;
     margin: -40px 0 70px -30px;
+  }
+  .form__field--w50,
+  .form__group--w50 {
+    width: calc(50% - 16px);
+  }
+  .form__submit--w50 {
+    width: 290px;
+  }
+  .form__close-btn {
+    margin: 0 auto 0 75px;
   }
   .show-nav body {
     overflow: hidden;
@@ -7092,14 +7116,15 @@ textarea:focus::placeholder {
   }
   .pp__container {
     max-width: 252px;
-    padding: 0 6px 40px;
+    padding: 0 6px 30px;
   }
   .pp__title {
     width: 225px;
+    min-height: 77px;
     font-size: 14px;
     line-height: 1.357;
     margin: -30px 0 40px -6px;
-    padding: 10px 20px;
+    padding: 9px 20px 11px;
   }
   .pp__x-btn {
     top: -18px;
@@ -7124,7 +7149,8 @@ textarea:focus::placeholder {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 30px;
+    margin-top: 40px;
+    gap: 20px;
   }
   .form__submit {
     font-size: 14px;
@@ -7134,6 +7160,7 @@ textarea:focus::placeholder {
     width: 100%;
   }
   .form__close-btn {
+    margin: 0 auto;
     font-size: 14px;
     line-height: 1.357;
   }
