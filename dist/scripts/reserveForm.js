@@ -27,7 +27,6 @@
       e.stopPropagation();
       if (e.target.checked) {
          currentSet.check.push(e.target.id);
-         
       } else {
          let index = currentSet.check.indexOf(e.target.id);
          currentSet.check.splice(index, 1);
@@ -45,9 +44,6 @@
       table10Up (); 
       table11Up (); 
    }
-
-   
-   
    function table1Up () {
       if(check[0].checked ) {
          tables[0].style.fill = "#a51505";
@@ -142,8 +138,8 @@
    function updatePrice() {
       let checkPrice = currentSet.getCheckPrice();
       let totalPrice = checkPrice;
-      total.value = totalPrice;
-      total.textContent = ` ${total.value}`;
+      total.value = parseInt(totalPrice);
+      total.textContent = ` ${total.value.toLocaleString()}`;
    }
    
    const priceInfo = {
