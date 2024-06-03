@@ -2082,7 +2082,7 @@ textarea {
   background-color: rgba(31, 30, 30, 0.03);
 }
 .table__th {
-  height: 85px;
+  min-height: 85px;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.388;
@@ -2111,7 +2111,7 @@ textarea {
 .table__body-th {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 400px;
+  width: 30%;
   height: 50px;
   padding: 10px 10px 10px 0;
   border-top: 1px solid #bfbfbf;
@@ -2140,6 +2140,15 @@ textarea {
 .table__td:last-child {
   border-right: none;
   padding-right: 0;
+}
+.table__td:nth-child(2) {
+  width: 21.73%;
+}
+.table__td:nth-child(3) {
+  width: 22.94%;
+}
+.table__td:nth-child(4) {
+  width: 25.49%;
 }
 .ok {
   position: relative;
@@ -2893,7 +2902,7 @@ ol > li:last-child {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   grid-gap: 67px;
-  padding: 102px 0 90px;
+  padding: 100px 0 90px;
 }
 .article-box {
   display: -webkit-box;
@@ -3682,7 +3691,7 @@ nav.events__nav a + a::before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 100px;
+  padding-top: 192px;
 }
 .services__title {
   -webkit-box-sizing: border-box;
@@ -5151,18 +5160,18 @@ textarea:focus::placeholder {
     padding-left: 40px;
     padding-right: 40px;
   }
+  .table__th:nth-child(4) {
+    padding: 10px 0 10px 30px;
+  }
   .table__td:nth-child(2) {
-    width: 280px;
+    width: 20.99%;
   }
   .table__td:nth-child(3) {
-    width: 295px;
+    width: 22.19%;
   }
   .table__td:nth-child(4) {
-    padding: 10px 0 10px 45px;
-  }
-  .table__td:nth-child(4) {
-    padding: 10px 0 10px 10px;
-    width: 187px;
+    width: 20.99%;
+    padding: 10px 0 10px 40px;
   }
   .event__reserve {
     padding: 82px 40px 50px;
@@ -5549,8 +5558,11 @@ textarea:focus::placeholder {
     font-size: 14px;
     line-height: 1.357;
   }
+  .table__th:nth-child(4) {
+    padding: 10px 0 10px 10px;
+  }
   .table__body-th {
-    width: 200px;
+    width: 26.83%;
     padding: 5px 10px 5px 0;
     font-size: 14px;
     font-weight: 400;
@@ -5566,10 +5578,17 @@ textarea:focus::placeholder {
     max-width: 120px;
   }
   .table__td:nth-child(2) {
-    width: 180px;
+    width: 22.6%;
   }
   .table__td:nth-child(3) {
-    width: 175px;
+    width: 24.44%;
+  }
+  .table__td:nth-child(4) {
+    width: 26.41%;
+    padding: 10px 0 10px 13px;
+  }
+  .table__td {
+    padding: 10px 10px 10px 5px;
   }
   .event__reserve {
     padding: 52px 30px 0;
@@ -6321,6 +6340,9 @@ textarea:focus::placeholder {
     font-size: 14px;
     line-height: 1.357;
   }
+  .table__th:nth-child(4) {
+    padding: 12px 25px 10px 13px;
+  }
   .table__footer-tr {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6329,9 +6351,9 @@ textarea:focus::placeholder {
   }
   .table__footer-th {
     color: #6C6C6C;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
-    line-height: 1.357;
+    line-height: 1.375;
   }
   .table__th:first-child,
   .table__footer-th:first-child {
@@ -6340,6 +6362,20 @@ textarea:focus::placeholder {
   .table__th:nth-child(2n-1),
   .table__footer-th:nth-child(2n-1) {
     background-color: rgba(31, 30, 30, 0.03);
+  }
+  .table__th:nth-child(2),
+  .table__footer-th:nth-child(2) {
+    width: 30.32%;
+    padding: 10px 10px 10px 30px;
+  }
+  .table__th:nth-child(3),
+  .table__footer-th:nth-child(3) {
+    width: 29.06%;
+  }
+  .table__th:nth-child(4),
+  .table__footer-th:nth-child(4) {
+    width: 40.62%;
+    padding-right: 20px;
   }
   .table__th,
   .table__footer-th {
@@ -6353,7 +6389,6 @@ textarea:focus::placeholder {
         -ms-flex-pack: center;
             justify-content: center;
     height: auto;
-    width: 33.3333%;
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -6376,11 +6411,22 @@ textarea:focus::placeholder {
   }
   .table__body-th--cost2 {
     margin: 0;
-    padding-right: 0;
+    padding: 0;
     max-width: none;
   }
   .table__td:nth-child(2n-1) {
     background-color: rgba(31, 30, 30, 0.03);
+  }
+  .table__td:nth-child(2) {
+    width: 30.32%;
+    padding: 10px 10px 10px 30px;
+  }
+  .table__td:nth-child(3) {
+    width: 29.06%;
+  }
+  .table__td:nth-child(4) {
+    width: 40.62%;
+    padding: 10px 35px 10px 18px;
   }
   .table__td {
     display: -webkit-box;
@@ -6392,7 +6438,6 @@ textarea:focus::placeholder {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 33.3333%;
     height: auto;
     min-height: 50px;
     padding: 10px;
@@ -6846,6 +6891,9 @@ textarea:focus::placeholder {
   .services__container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .services__container {
+    padding-top: 145px;
   }
   .services__title {
     max-width: 280px;

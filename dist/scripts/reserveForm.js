@@ -6,6 +6,7 @@
    const tables = Array.from(document.querySelectorAll(".scene__table-group"));
    const numbers = Array.from($('.scene__table-num'));
    
+   
    let currentSet = {
       check: [],
       getCheckPrice() {
