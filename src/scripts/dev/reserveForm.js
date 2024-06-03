@@ -6,7 +6,6 @@
    const tables = Array.from(document.querySelectorAll(".scene__table-group"));
    const numbers = Array.from($('.scene__table-num'));
    
-   
    let currentSet = {
       check: [],
       getCheckPrice() {
@@ -139,7 +138,7 @@
    function updatePrice() {
       let checkPrice = currentSet.getCheckPrice();
       let totalPrice = checkPrice;
-      total.value = parseInt(totalPrice);
+      total.value = totalPrice;
       total.textContent = ` ${total.value.toLocaleString()}`;
    }
    

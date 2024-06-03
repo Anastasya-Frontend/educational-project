@@ -3691,7 +3691,7 @@ nav.events__nav a + a::before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 192px;
+  padding-top: 100px;
 }
 .services__title {
   -webkit-box-sizing: border-box;
@@ -6891,9 +6891,6 @@ textarea:focus::placeholder {
   .services__container {
     padding-left: 20px;
     padding-right: 20px;
-  }
-  .services__container {
-    padding-top: 145px;
   }
   .services__title {
     max-width: 280px;
