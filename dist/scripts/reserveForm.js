@@ -1,6 +1,7 @@
 
 (function () {
    "use strict";
+   //данный блок вызвал затруднение в выполнении
    const reserve = $("#js-reserve");
    const check = Array.from(document.querySelectorAll('input[type="checkbox"]'));
    const total = document.querySelector(".reserve__total");

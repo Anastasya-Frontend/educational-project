@@ -94,22 +94,8 @@
       text-decoration: none;
       transition: color 0.2s;
       cursor: pointer;
-      
       &:hover {
          color: @red;
-      }
-      &__arrow {
-         width: 60px;
-         height: 91px;
-
-         @media @bw1020 {
-            width: 40px;
-            height: 67px;
-         }
-         @media @bw768 {
-            width: 40px;
-            height: 67px;
-         }
       }
 
       @media @bw1020 {
@@ -129,6 +115,19 @@
          font-size: @font_size2;
          line-height: @line_height3;
          white-space: nowrap;
+      }
+   }
+   &__link-arrow {
+      width: 60px;
+      height: 91px;
+
+      @media @bw1020 {
+         width: 40px;
+         height: 67px;
+      }
+      @media @bw768 {
+         width: 40px;
+         height: 67px;
       }
    }
 }

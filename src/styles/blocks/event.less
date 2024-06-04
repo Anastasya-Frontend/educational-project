@@ -33,16 +33,8 @@
          line-height: @line_height18;
       }
    }
-}
-.event__nav {
-   box-sizing: border-box;
-   display: flex;
-   padding: 0;
-   
-   @media @bw768 {
-      display: none;
-   }
-   &__link {
+
+   &__nav-link {
       box-sizing: border-box;
       display: inline-flex;
       color: @black;
@@ -58,14 +50,23 @@
       &:first-child {
          padding-right: 5px;
       }
+      &:last-child {
+         pointer-events: none;
+         cursor: default;
+      }
       @media @bw1020 {
          font-size: @font_size2;
          line-height: @line_height3;
       }
    }
-   &__no-click {
-      pointer-events: none;
-      cursor: default;
+}
+.event__nav {
+   box-sizing: border-box;
+   display: flex;
+   padding: 0;
+   
+   @media @bw768 {
+      display: none;
    }
 }
    nav.event__nav a+a::before {

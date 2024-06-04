@@ -461,14 +461,16 @@
       }
    }
    &__terms2 {
+      box-sizing: border-box;
       display: flex;
       justify-content: flex-end;
-      grid-gap: 15px;
       grid-area: link2;
       @media @bw768 {
          margin-top: 7px;
       }
       &__link {
+         box-sizing: border-box;
+         display: flex;
          color: @black;
          font-family: @font1;
          font-size: @font_size3;
@@ -491,10 +493,12 @@
             line-height: @line_height3;
          }
       }
-      &__logo {
-         box-sizing: border-box;
-         display: flex;
-         align-items: flex-end;
+      &__svg {
+         margin-left: 12px;
+         @media @bw768 {
+            align-self: flex-end;
+            margin-left: 15px;
+         }
       }
    }
    

@@ -3277,7 +3277,7 @@ ol > li:last-child {
 .more-btn__link:hover {
   color: #bc3324;
 }
-.more-btn__link__arrow {
+.more-btn__link-arrow {
   width: 60px;
   height: 91px;
 }
@@ -3637,7 +3637,7 @@ ol > li:last-child {
   display: -ms-flexbox;
   display: flex;
 }
-.events__nav__link {
+.events__nav-link {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-inline-box;
@@ -3653,10 +3653,10 @@ ol > li:last-child {
   transition: color 0.2s;
   cursor: pointer;
 }
-.events__nav__link:hover {
+.events__nav-link:hover {
   color: #bc3324;
 }
-.events__nav__no-click {
+.events__nav-noclick {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-inline-box;
@@ -3752,15 +3752,7 @@ nav.events__nav a + a::before {
   line-height: 1.285;
   text-align: center;
 }
-.event__nav {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0;
-}
-.event__nav__link {
+.event__nav-link {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-inline-box;
@@ -3775,15 +3767,23 @@ nav.events__nav a + a::before {
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
-.event__nav__link:hover {
+.event__nav-link:hover {
   color: #bc3324;
 }
-.event__nav__link:first-child {
+.event__nav-link:first-child {
   padding-right: 5px;
 }
-.event__nav__no-click {
+.event__nav-link:last-child {
   pointer-events: none;
   cursor: default;
+}
+.event__nav {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
 }
 nav.event__nav a + a::before {
   content: "/";
@@ -4494,16 +4494,22 @@ a[href="mailto:hi@tagree.ru"] {
   color: #bc3324;
 }
 .footer__vault__terms2 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  grid-gap: 15px;
   grid-area: link2;
 }
 .footer__vault__terms2__link {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #1f1e1e;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -4518,15 +4524,8 @@ a[href="mailto:hi@tagree.ru"] {
 .footer__vault__terms2__link:hover {
   color: #bc3324;
 }
-.footer__vault__terms2__logo {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+.footer__vault__terms2__svg {
+  margin-left: 12px;
 }
 .footer__vault__icon {
   display: -webkit-box;
@@ -5115,7 +5114,6 @@ textarea:focus::placeholder {
   }
   .swiper-footer {
     width: 475px;
-    margin: 50px auto 0;
   }
   .want-btns {
     max-width: 604px;
@@ -5316,7 +5314,7 @@ textarea:focus::placeholder {
     border-left: 68vw solid transparent;
   }
   .upcoming__wrapper {
-    padding: 75px 0 37px;
+    padding: 70px 0 37px;
   }
   .upcoming__wrapper::before {
     border-right: 68vw solid transparent;
@@ -5329,7 +5327,6 @@ textarea:focus::placeholder {
   }
   .event-card__picture {
     margin: 0 0 20px;
-    height: 433px;
   }
   .event-card__time {
     margin: 7px 0 0;
@@ -5354,7 +5351,7 @@ textarea:focus::placeholder {
     margin: 40px 0 80px 30px;
   }
   .blog {
-    padding-top: 75px;
+    padding-top: 70px;
     padding-bottom: 90px;
   }
   .section-blog__btn-right {
@@ -5422,16 +5419,10 @@ textarea:focus::placeholder {
   }
 }
 @media (max-width: 1339px) {
-  .swiper--3s .swiper-slide {
-    width: calc(33.3333% + 10px);
-    min-width: 310px;
-    padding-right: 30px;
-  }
   .swiper--3s .swiper-slide:last-child {
     width: calc(33.3333% - 20px);
   }
   .swiper-footer {
-    margin: 70px auto 0;
     width: 300px;
   }
   .want-btns {
@@ -5517,6 +5508,11 @@ textarea:focus::placeholder {
 @media (max-width: 1019px) {
   body {
     background-image: url(../assets/images/bg/фон-768.jpg);
+  }
+  .swiper--3s .swiper-slide {
+    width: calc(33.3333% + 10px);
+    min-width: 310px;
+    padding-right: 30px;
   }
   .swiper-pagination-bullet {
     width: 10px;
@@ -5867,10 +5863,6 @@ textarea:focus::placeholder {
   .more-btn {
     margin-top: 60px;
   }
-  .more-btn__link__arrow {
-    width: 40px;
-    height: 67px;
-  }
   .more-btn__link {
     grid-gap: 16px;
     width: 99px;
@@ -5879,6 +5871,10 @@ textarea:focus::placeholder {
     font-size: 14px;
     line-height: 1.357;
     white-space: nowrap;
+  }
+  .more-btn__link-arrow {
+    width: 40px;
+    height: 67px;
   }
   .upcoming {
     padding: 18px 0 40px;
@@ -5912,7 +5908,6 @@ textarea:focus::placeholder {
     line-height: 1.375;
   }
   .event-card__picture {
-    height: 364px;
     margin: 0 0 22px;
   }
   .event-card__description {
@@ -5972,11 +5967,11 @@ textarea:focus::placeholder {
     width: 67px;
     height: 40px;
   }
-  .events__nav__link {
+  .events__nav-link {
     font-size: 14px;
     line-height: 1.357;
   }
-  .events__nav__no-click {
+  .events__nav-noclick {
     font-size: 14px;
     line-height: 1.357;
   }
@@ -5997,7 +5992,7 @@ textarea:focus::placeholder {
     font-size: 40px;
     line-height: 1.275;
   }
-  .event__nav__link {
+  .event__nav-link {
     font-size: 14px;
     line-height: 1.357;
   }
@@ -6006,7 +6001,7 @@ textarea:focus::placeholder {
   }
   .blog {
     padding-top: 15px;
-    padding-bottom: 58px;
+    padding-bottom: 55px;
   }
   .section-blog__btn-right {
     margin-top: 40px;
@@ -6765,10 +6760,6 @@ textarea:focus::placeholder {
   .more-btn {
     margin-top: 50px;
   }
-  .more-btn__link__arrow {
-    width: 40px;
-    height: 67px;
-  }
   .more-btn__link {
     grid-gap: 16px;
     width: 99px;
@@ -6777,6 +6768,10 @@ textarea:focus::placeholder {
     font-size: 14px;
     line-height: 1.357;
     white-space: nowrap;
+  }
+  .more-btn__link-arrow {
+    width: 40px;
+    height: 67px;
   }
   .upcoming {
     padding: 14px 0 40px;
@@ -6814,9 +6809,6 @@ textarea:focus::placeholder {
     min-height: 44px;
     font-size: 16px;
     line-height: 1.375;
-  }
-  .event-card__picture {
-    height: 300px;
   }
   .event-card__description {
     margin: 5px 0 0;
@@ -7140,6 +7132,11 @@ textarea:focus::placeholder {
   .footer__vault__terms2__link {
     font-size: 14px;
     line-height: 1.357;
+  }
+  .footer__vault__terms2__svg {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-left: 15px;
   }
   .footer__vault__icon {
     -webkit-box-pack: center;
