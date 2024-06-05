@@ -4525,6 +4525,8 @@ a[href="mailto:hi@tagree.ru"] {
   color: #bc3324;
 }
 .footer__vault__terms2__svg {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   margin-left: 12px;
 }
 .footer__vault__icon {
@@ -5305,7 +5307,7 @@ textarea:focus::placeholder {
   }
   .upcoming::before,
   .upcoming::after {
-    border-bottom: 25px solid #ffffff99;
+    border-bottom: 26px solid #ffffff99;
   }
   .upcoming::before {
     border-right: 32vw solid transparent;
@@ -5314,7 +5316,7 @@ textarea:focus::placeholder {
     border-left: 68vw solid transparent;
   }
   .upcoming__wrapper {
-    padding: 70px 0 37px;
+    padding: 70px 0 38px;
   }
   .upcoming__wrapper::before {
     border-right: 68vw solid transparent;
@@ -5881,15 +5883,15 @@ textarea:focus::placeholder {
   }
   .upcoming::before,
   .upcoming::after {
-    border-bottom: 18px solid #ffffff99;
+    border-bottom: 19px solid #ffffff99;
   }
   .upcoming__wrapper {
     padding: 60px 0 24px;
   }
   .upcoming__wrapper::before,
   .upcoming__wrapper::after {
-    bottom: -18px;
-    border-top: 18px solid #ffffff99;
+    bottom: -19px;
+    border-top: 19.5px solid #ffffff99;
   }
   .upcoming__wrapper::before {
     border-right: 65vw solid transparent;
@@ -6778,7 +6780,7 @@ textarea:focus::placeholder {
   }
   .upcoming::before,
   .upcoming::after {
-    border-bottom: 14px solid #ffffff99;
+    border-bottom: 15px solid #ffffff99;
   }
   .upcoming::before {
     border-right: 44vw solid transparent;
@@ -6792,8 +6794,8 @@ textarea:focus::placeholder {
   }
   .upcoming__wrapper::before,
   .upcoming__wrapper::after {
-    bottom: -14px;
-    border-top: 14px solid #ffffff99;
+    bottom: -16px;
+    border-top: 16px solid #ffffff99;
   }
   .upcoming__link {
     margin-top: 18px;
@@ -7134,8 +7136,6 @@ textarea:focus::placeholder {
     line-height: 1.357;
   }
   .footer__vault__terms2__svg {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
     margin-left: 15px;
   }
   .footer__vault__icon {
