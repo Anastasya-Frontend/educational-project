@@ -61,18 +61,18 @@
          "order"; 
    }
 
-   &__checks {
-   grid-area: checks;
-   display: flex;
-   flex-direction: column;
-      &__title {
-         @media @bw1020 {
-            width: 180px;
-         }
-         @media @bw768 {
-            width: 180px;
-         }
+   &__checks-title {
+      @media @bw1020 {
+         width: 180px;
       }
+      @media @bw768 {
+         width: 180px;
+      }
+   }
+   &__checks {
+      grid-area: checks;
+      display: flex;
+      flex-direction: column;
    }
    &__order {
       grid-area: order;

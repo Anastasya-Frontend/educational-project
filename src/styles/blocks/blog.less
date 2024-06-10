@@ -18,26 +18,28 @@
       padding-bottom: 60px;
    }
 }
-.section-blog__btn-right {
-   box-sizing: border-box;
-   display: flex;
-   width: 149px;
-   height: 52px;
-   margin-top: 70px;
-   margin-left: auto;
+.section-blog {
+   &__btn-right{
+      box-sizing: border-box;
+      display: flex;
+      width: 149px;
+      height: 52px;
+      margin-top: 70px;
+      margin-left: auto;
 
-   @media @bw1660 {
-      margin-top: 58px;
+      @media @bw1660 {
+         margin-top: 58px;
+      }
+      @media @bw1020 {
+         margin-top: 40px;
+      }
+      @media @bw768 {
+         margin-top: 30px;
+         width: 116px;
+         height: 49px;
+      }
    }
-   @media @bw1020 {
-      margin-top: 40px;
-   }
-   @media @bw768 {
-      margin-top: 30px;
-      width: 116px;
-      height: 49px;
-   }
-   &__link {
+   &__btn-right-link {
       box-sizing: border-box;
       display: inline-flex;
       padding: 15px 0 15px 40px;

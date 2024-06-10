@@ -63,24 +63,22 @@
          width: calc(100% + 120px);
          margin: 30px 0 28px -60px;
       }
-      
-      &__box {
-         position: relative;
+   }
+   &__svg-box {
+      position: relative;
+      width: 100%;
+      &::before {
+         content: '';
+         display: block;
          width: 100%;
-         &::before {
-            content: '';
-            display: block;
-            width: 100%;
-            padding-bottom: 16.927%;
-         }
-         
+         padding-bottom: 16.927%;
       }
-      &__icon {
-         position: absolute;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100%;
-      }
+   }
+   &__svg-icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
    }
 }
