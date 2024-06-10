@@ -5328,6 +5328,7 @@ textarea:focus::placeholder {
     margin: 0 0 10px;
   }
   .event-card__picture {
+    height: 434px;
     margin: 0 0 20px;
   }
   .event-card__time {
@@ -5910,6 +5911,7 @@ textarea:focus::placeholder {
     line-height: 1.375;
   }
   .event-card__picture {
+    height: 301px;
     margin: 0 0 22px;
   }
   .event-card__description {
