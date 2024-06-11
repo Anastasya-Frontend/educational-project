@@ -2218,7 +2218,7 @@ textarea {
   grid-area: legend;
   justify-self: end;
 }
-.reserve__scheme__title {
+.reserve__scheme-title {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -2479,10 +2479,10 @@ textarea {
 .reserve__check--red {
   color: #bc3324;
 }
-.reserve__check--red .reserve__check__mark {
+.reserve__check--red .reserve__check-mark {
   border-color: #bc3324;
 }
-.reserve__check--red .reserve__check__input {
+.reserve__check--red .reserve__check-input {
   position: absolute !important;
   width: 0 !important;
   height: 0 !important;
@@ -2497,10 +2497,10 @@ textarea {
   visibility: hidden !important;
   pointer-events: none !important;
 }
-.reserve__check--red .reserve__check__input:checked ~ .reserve__check__mark {
+.reserve__check--red .reserve__check-input:checked ~ .reserve__check-mark {
   background-color: #bc3324;
 }
-.reserve__check--red .reserve__check__input:checked ~ .reserve__check__mark::after {
+.reserve__check--red .reserve__check-input:checked ~ .reserve__check-mark::after {
   content: "";
   position: absolute;
   left: 7px;
@@ -2517,10 +2517,10 @@ textarea {
 .reserve__check--black {
   color: #1f1e1e;
 }
-.reserve__check--black .reserve__check__mark {
+.reserve__check--black .reserve__check-mark {
   border-color: #1f1e1e;
 }
-.reserve__check--black .reserve__check__input {
+.reserve__check--black .reserve__check-input {
   position: absolute !important;
   width: 0 !important;
   height: 0 !important;
@@ -2535,10 +2535,10 @@ textarea {
   visibility: hidden !important;
   pointer-events: none !important;
 }
-.reserve__check--black .reserve__check__input:checked ~ .reserve__check__mark {
+.reserve__check--black .reserve__check-input:checked ~ .reserve__check-mark {
   background-color: #1f1e1e;
 }
-.reserve__check--black .reserve__check__input:checked ~ .reserve__check__mark::after {
+.reserve__check--black .reserve__check-input:checked ~ .reserve__check-mark::after {
   content: "";
   position: absolute;
   left: 7px;
@@ -2557,10 +2557,10 @@ textarea {
   opacity: 0.5;
   color: #1f1e1e;
 }
-.reserve__check--disabled .reserve__check__mark {
+.reserve__check--disabled .reserve__check-mark {
   border-color: #1f1e1e;
 }
-.reserve__check--disabled .reserve__check__input {
+.reserve__check--disabled .reserve__check-input {
   position: absolute !important;
   width: 0 !important;
   height: 0 !important;
@@ -2575,10 +2575,10 @@ textarea {
   visibility: hidden !important;
   pointer-events: none !important;
 }
-.reserve__check--disabled .reserve__check__input:checked ~ .reserve__check__mark {
+.reserve__check--disabled .reserve__check-input:checked ~ .reserve__check-mark {
   background-color: #1f1e1e;
 }
-.reserve__check--disabled .reserve__check__input:checked ~ .reserve__check__mark::after {
+.reserve__check--disabled .reserve__check-input:checked ~ .reserve__check-mark::after {
   content: "";
   position: absolute;
   left: 7px;
@@ -2592,7 +2592,7 @@ textarea {
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
-.reserve__check__mark {
+.reserve__check-mark {
   position: absolute;
   left: 0;
   top: 0;
@@ -2603,7 +2603,7 @@ textarea {
   height: 24px;
   border: 1px solid #1f1e1e;
 }
-.reserve__check__label {
+.reserve__check-label {
   margin-left: 15px;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -4768,7 +4768,7 @@ a[href="mailto:hi@tagree.ru"] {
   margin-left: 15px;
   color: #bc3324;
 }
-.form__check-pp__input {
+.form__check-pp-input {
   position: absolute !important;
   width: 0 !important;
   height: 0 !important;
@@ -4783,10 +4783,10 @@ a[href="mailto:hi@tagree.ru"] {
   visibility: hidden !important;
   pointer-events: none !important;
 }
-.form__check-pp__input:checked ~ .form__check-pp__mark {
+.form__check-pp-input:checked ~ .form__check-pp-mark {
   background-color: #1f1e1e;
 }
-.form__check-pp__input:checked ~ .form__check-pp__mark::after {
+.form__check-pp-input:checked ~ .form__check-pp-mark::after {
   content: "";
   position: absolute;
   left: 7px;
@@ -4800,7 +4800,19 @@ a[href="mailto:hi@tagree.ru"] {
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
-.form__check-pp__mark {
+.form__check-pp-label {
+  margin-left: 15px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.375;
+}
+.form__check-pp-labs {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.357;
+}
+.form__check-pp-mark {
   position: absolute;
   left: 0;
   top: 0;
@@ -4810,18 +4822,6 @@ a[href="mailto:hi@tagree.ru"] {
   width: 24px;
   height: 24px;
   border: 1px solid #1f1e1e;
-}
-.form__check-pp__label {
-  margin-left: 15px;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.375;
-}
-.form__check-pp__label--s {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.357;
 }
 input,
 textarea,
@@ -5616,19 +5616,19 @@ textarea:focus::placeholder {
   .reserve__checks-title {
     width: 180px;
   }
-  .reserve__order__title {
+  .reserve__order-title {
     margin-top: 5px;
   }
   .reserve__scheme {
     margin: 0 auto;
   }
-  .reserve__legend__title {
+  .reserve__legend-title {
     margin: 10px 0 20px 0;
   }
-  .reserve__legend__title2 {
+  .reserve__legend-title2 {
     margin-bottom: 12px;
   }
-  .reserve__scheme__title {
+  .reserve__scheme-title {
     width: 130px;
     padding: 6px 47px;
     font-size: 11px;
@@ -6476,16 +6476,16 @@ textarea:focus::placeholder {
   .reserve__checks-title {
     width: 180px;
   }
-  .reserve__order__title {
+  .reserve__order-title {
     margin-top: 0;
   }
-  .reserve__legend__title {
+  .reserve__legend-title {
     margin: 0 0 20px;
   }
-  .reserve__legend__title2 {
+  .reserve__legend-title2 {
     margin-bottom: 12px;
   }
-  .reserve__scheme__title {
+  .reserve__scheme-title {
     width: 130px;
     padding: 6px 47px;
     font-size: 11px;
@@ -6564,7 +6564,7 @@ textarea:focus::placeholder {
   .reserve__text-descr2 {
     width: 165px;
   }
-  .reserve__check__label {
+  .reserve__check-label {
     font-size: 14px;
     line-height: 1.357;
   }
@@ -7238,7 +7238,7 @@ textarea:focus::placeholder {
   .form__check-pp span.error {
     top: 100px;
   }
-  .form__check-pp__label--s {
+  .form__check-pp-labs {
     font-size: 14px;
     line-height: 1.357;
   }

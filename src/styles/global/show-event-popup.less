@@ -240,13 +240,12 @@
             top: 100px;
          }
       }
+   }
+   &__check-pp-input {
+      .is-hidden ();
 
-
-      &__input {
-         .is-hidden ();
-
-         &:checked {
-            & ~ .form__check-pp__mark {
+      &:checked {
+         & ~ .form__check-pp-mark {
             background-color: @black;
             &::after {
                content: "";
@@ -260,35 +259,34 @@
                border-right: 2px solid @white;
                transform: rotate(45deg);
             }
-            }
          }
       }
-      &__mark {
-         position: absolute;
-         left: 0;
-         top: 0;
-         box-sizing: border-box;
-         display: block;
-         width: 24px;
-         height: 24px;
-         border: 1px solid @black;
+   }
+   &__check-pp-label {
+      margin-left: 15px;
+      font-size: @font_size3;
+      font-weight: @font_weight1;
+      line-height: @line_height5;
+   }
+   &__check-pp-labs {
+      font-family: @font1;
+      font-size: @font_size2;
+      font-weight: @font_weight2;
+      line-height: @line_height3;
+      @media @bw768 {
+         font-size: @font_size2;
+         line-height: @line_height3;
       }
-      &__label {
-         margin-left: 15px;
-         font-size: @font_size3;
-         font-weight: @font_weight1;
-         line-height: @line_height5;
-         &--s {
-            font-family: @font1;
-            font-size: @font_size2;
-            font-weight: @font_weight2;
-            line-height: @line_height3;
-            @media @bw768 {
-               font-size: @font_size2;
-               line-height: @line_height3;
-            }
-         }
-      }
+   }
+   &__check-pp-mark {
+      position: absolute;
+      left: 0;
+      top: 0;
+      box-sizing: border-box;
+      display: block;
+      width: 24px;
+      height: 24px;
+      border: 1px solid @black;
    }
 }
 
@@ -377,8 +375,8 @@ textarea:focus {
 }
 #title-format {
    font-size: @font_size4;
-      font-weight: @font_weight5;
-      line-height: @line_height6;
+   font-weight: @font_weight5;
+   line-height: @line_height6;
 }
 .field {
    display: flex;
