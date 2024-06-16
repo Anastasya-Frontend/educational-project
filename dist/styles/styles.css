@@ -2039,8 +2039,8 @@ textarea {
 }
 .doit__text {
   position: relative;
-  padding: 0;
   margin: 0 0 0 -2.5vw;
+  padding: 0;
   color: #1f1e1e;
   font-family: "mak", serif;
   font-size: 128px;
@@ -3109,8 +3109,8 @@ ol > li:last-child {
   top: 0;
   left: 0;
   right: 0;
-  height: 65%;
   width: 930px;
+  height: 65%;
   background-color: #bc3324;
 }
 .about__block3-picture::after {
@@ -3162,9 +3162,9 @@ ol > li:last-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 90px;
   width: 344px;
   height: 60px;
+  margin-top: 90px;
   white-space: nowrap;
 }
 .about__block3-button-link1 {
@@ -3476,7 +3476,7 @@ ol > li:last-child {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.357;
+  line-height: 1.375;
 }
 .event-card__time {
   margin: 15px 0 0;
@@ -3615,9 +3615,9 @@ ol > li:last-child {
   position: absolute;
   right: 0;
   bottom: 30px;
-  padding: 0;
   width: 91px;
   height: 60px;
+  padding: 0;
   border: none;
   background: none;
   color: inherit;
@@ -3904,8 +3904,8 @@ nav.event__nav a + a::before {
 }
 .info-card__link {
   display: block;
-  margin-bottom: 5px;
   width: 236px;
+  margin-bottom: 5px;
   color: #1f1e1e;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -5802,9 +5802,7 @@ textarea:focus::placeholder {
   }
   .about__block2-text {
     width: 345px;
-    margin-right: 2px;
-    margin-top: 41px;
-    margin-bottom: 28px;
+    margin: 41px 2px 28px auto;
   }
   .about__block3 {
     margin: 52px 0 0;
@@ -5813,7 +5811,7 @@ textarea:focus::placeholder {
   .about__block3__text {
     width: 280px;
     font-size: 16px;
-    line-height: 1.375;
+    line-height: 1.357;
   }
   .about__block3-picture {
     max-width: 708px;
@@ -6727,7 +6725,7 @@ textarea:focus::placeholder {
   .about__block3__text {
     width: 280px;
     font-size: 16px;
-    line-height: 1.375;
+    line-height: 1.357;
   }
   .about__block3-picture {
     max-width: 280px;
